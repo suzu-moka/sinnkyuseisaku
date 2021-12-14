@@ -1,0 +1,14 @@
+<svg id="ハンバーガーメニュー" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="長方形_75" data-name="長方形 75" transform="translate(0 9)" fill="#fff" stroke="#000" stroke-width="1">
+    <rect width="20" height="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="1" fill="none"/>
+  </g>
+  <g id="長方形_76" data-name="長方形 76" transform="translate(0 18)" fill="#fff" stroke="#000" stroke-width="1">
+    <rect width="20" height="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="1" fill="none"/>
+  </g>
+  <g id="長方形_77" data-name="長方形 77" fill="#fff" stroke="#000" stroke-width="1">
+    <rect width="20" height="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="19" height="1" fill="none"/>
+  </g>
+</svg>
