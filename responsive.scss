@@ -1,7 +1,16 @@
 @charset "utf-8";
 
+@mixin flex($w:wrap, $j:space-between) {
+    display: flex;
+    flex-wrap: $w;
+    justify-content: $j;
+}
+
+
+
 body{
     max-width: 414px;
+    margin: 0 auto;
 }
 
 img{
@@ -11,12 +20,9 @@ header{
     height: 60px;
     justify-content: center;
     .header__inner{
+        @include flex(nowrap, space-between);
         height: 60px;
         padding: 0 20px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         .logo{
             padding: 10px 0;
             img{
@@ -27,6 +33,23 @@ header{
         .nav{
             .gnav{
                 padding: 20px 0;
+            }
+        }
+    }
+}
+
+// main
+
+main{
+    .main__inner{
+        .main__visual{
+            .main__visual__img{
+                margin-left: 70px;
+                padding-bottom: 60px;
+                img{
+                    width: 343px;
+                    height: 776px;
+                }
             }
         }
     }

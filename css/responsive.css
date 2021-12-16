@@ -1,5 +1,6 @@
 body {
   max-width: 414px;
+  margin: 0 auto;
 }
 
 header {
@@ -9,17 +10,16 @@ header {
           justify-content: center;
 }
 header .header__inner {
-  height: 60px;
-  padding: 0 20px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
 }
 header .header__inner .logo {
   padding: 10px 0;
@@ -30,5 +30,14 @@ header .header__inner .logo img {
 }
 header .header__inner .nav .gnav {
   padding: 20px 0;
+}
+
+main .main__inner .main__visual .main__visual__img {
+  margin-left: 70px;
+  padding-bottom: 60px;
+}
+main .main__inner .main__visual .main__visual__img img {
+  width: 343px;
+  height: 776px;
 }
 /*# sourceMappingURL=responsive.css.map */
