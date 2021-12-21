@@ -1,0 +1,19 @@
+@import url("./index/index-res.scss");
+body {
+  background-color: #f6f4ee;
+  font-size: 14px;
+  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
+  max-width: 429px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=responsive.css.map */
