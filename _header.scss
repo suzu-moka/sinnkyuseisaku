@@ -1,0 +1,23 @@
+@charset "uft-8";
+
+header {
+    height: 60px;
+    justify-content: center;
+    .header__inner {
+        @include flex(nowrap, space-between);
+        @include inner();
+        height: 60px;
+        .logo {
+            padding: 10px 0;
+            img {
+                width: 56.39px;
+                height: 40px;
+            }
+        }
+        .nav {
+            .gnav {
+                padding: 20px 0;
+            }
+        }
+    }
+}

@@ -62,6 +62,13 @@ a {
 // img {
 // }
 
-@import "./index/index-res.scss";
-// /*about==================================== */
-@import "./about/about-res.scss";
+/* header==================================== */
+@import "./_header.scss";
+/* footer==================================== */
+@import "./_footer.scss";
+
+/* index==================================== */
+@import "./index-res.scss";
+
+/* about==================================== */
+@import "./about-res.scss";

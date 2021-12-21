@@ -1,26 +1,26 @@
 @charset "utf-8";
 
-header {
-    height: 60px;
-    justify-content: center;
-    .header__inner {
-        @include flex(nowrap, space-between);
-        @include inner();
-        height: 60px;
-        .logo {
-            padding: 10px 0;
-            img {
-                width: 56.39px;
-                height: 40px;
-            }
-        }
-        .nav {
-            .gnav {
-                padding: 20px 0;
-            }
-        }
-    }
-}
+// header {
+//     height: 60px;
+//     justify-content: center;
+//     .header__inner {
+//         @include flex(nowrap, space-between);
+//         @include inner();
+//         height: 60px;
+//         .logo {
+//             padding: 10px 0;
+//             img {
+//                 width: 56.39px;
+//                 height: 40px;
+//             }
+//         }
+//         .nav {
+//             .gnav {
+//                 padding: 20px 0;
+//             }
+//         }
+//     }
+// }
 
 // main
 main {
@@ -103,40 +103,40 @@ main {
     }
 }
 
-.footer {
-    @include inner();
-    color: $color-footer_text;
-    background-color: $color-footer;
+// .footer {
+//     @include inner();
+//     color: $color-footer_text;
+//     background-color: $color-footer;
 
-    &__about {
-        @include flex(wrap, center);
-        &__logo {
-            width: 50px;
-            height: 35px;
-        }
+//     &__about {
+//         @include flex(wrap, center);
+//         &__logo {
+//             width: 50px;
+//             height: 35px;
+//         }
 
-        &__title {
-            span {
-                font-size: 12px;
-            }
-        }
+//         &__title {
+//             span {
+//                 font-size: 12px;
+//             }
+//         }
 
-        .Instagram-link {
-            .Instagram {
-                max-width: 24px;
-                max-height: 24px;
-            }
-        }
-    }
-    &__nav {
-        .gnav {
-            @include flex(wrap, center);
-            li {
-                width: 33.3%;
-                a {
-                    color: $color-footer_text;
-                }
-            }
-        }
-    }
-}
+//         .Instagram-link {
+//             .Instagram {
+//                 max-width: 24px;
+//                 max-height: 24px;
+//             }
+//         }
+//     }
+//     &__nav {
+//         .gnav {
+//             @include flex(wrap, center);
+//             li {
+//                 width: 33.3%;
+//                 a {
+//                     color: $color-footer_text;
+//                 }
+//             }
+//         }
+//     }
+// }
