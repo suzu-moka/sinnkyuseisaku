@@ -24,7 +24,7 @@ footer {
         }
     }
     .footer__nav {
-        .footer__gnav {
+        &gnav {
             @include flex(wrap, center);
             li {
                 width: 33.3%;
