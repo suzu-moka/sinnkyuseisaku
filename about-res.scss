@@ -189,6 +189,25 @@
                 }
             }
         }
+        .gallery {
+            @include inner();
+            margin: (80em/14) 0 (40em/14);
+
+            &__title {
+            }
+            &__btn {
+            }
+            &__content {
+                &__list {
+                    @include flex(wrap, space-between);
+                }
+                .gallery1 {
+                    width: 48.07%;
+                    height: 219px;
+                    border: 1px solid #000;
+                }
+            }
+        }
     }
 }
 

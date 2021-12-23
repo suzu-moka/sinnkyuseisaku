@@ -51,6 +51,10 @@ body {
     text-align: center;
 }
 
+ul {
+    padding-left: 0;
+}
+
 li {
     list-style: none;
 }
@@ -60,9 +64,11 @@ a {
     color: #000;
 }
 
+/*ボタン*/
 .btn {
     width: 76.92%;
     margin-left: auto;
+
     &__link {
         &__submit {
             @include flex(nowrap, center);
@@ -70,7 +76,7 @@ a {
             border: (1em/14) solid $color-border;
             max-width: (110em/14);
             padding: (9em/14) (36em/14);
-
+            background-color: #fff;
             &__text {
                 margin: 0;
             }
