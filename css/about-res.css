@@ -354,7 +354,9 @@ header .header__inner .nav .gnav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 90.34%;
-  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .main__inner .gallery__content__list1 {
   width: 50%;
@@ -376,6 +378,9 @@ header .header__inner .nav .gnav {
 }
 .main__inner .gallery__content .gallery2:nth-of-type(1) {
   height: 160px;
+}
+.main__inner .btn.ga {
+  margin-bottom: 5em;
 }
 
 /* footer==================================== */

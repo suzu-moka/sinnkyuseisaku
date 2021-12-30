@@ -211,7 +211,7 @@
             &__content {
                 @include flex(wrap, center);
                 width: 90.34%;
-                text-align: center;
+                align-items: flex-start;
                 &__list1 {
                     width: 50%;
                 }
@@ -234,6 +234,9 @@
                     height: 160px;
                 }
             }
+        }
+        .btn.ga {
+            margin-bottom: (70em/14);
         }
     }
 }
