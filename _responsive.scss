@@ -25,6 +25,20 @@ $color-shop: #eaa1ba;
     padding-left: $l;
     padding-right: $r;
 }
+
+// 教室・サークル情報用
+@mixin culture_tit($c: center) {
+    text-align: $c;
+}
+
+@mixin culture_txt($c: left) {
+    text-align: $c;
+}
+
+@mixin tabella1($s: 1px, $l: solid, $c: $color-border) {
+    border-bottom: $s $l $c;
+}
+
 h1 {
     font-size: 21px;
 }
@@ -64,6 +78,10 @@ li {
 a {
     text-decoration: none;
     color: #000;
+}
+
+img {
+    vertical-align: middle;
 }
 
 /*ボタン*/

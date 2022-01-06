@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* コンポーネント==================================== */
+h1 {
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+body {
+  background-color: #f6f4ee;
+  font-size: 14px;
+  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
+  max-width: 429px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*ボタン*/
+.btn {
+  width: 76.92%;
+  margin-left: auto;
+}
+.btn__link__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px 20px 20px 20px;
+  border: 0.0714285714em solid #000;
+  max-width: 7.8571428571em;
+  padding: 0.6428571429em 2.5714285714em;
+  background-color: #fff;
+}
+.btn__link__submit__text {
+  margin: 0;
+}
+/* header==================================== */
+header {
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.4285714286em;
+  height: 60px;
+}
+header .header__inner .logo {
+  margin: 10px 0;
+}
+header .header__inner .logo img {
+  width: 56.39px;
+  height: 40px;
+}
+header .header__inner .nav .gnav {
+  padding: 20px 0;
+}
+
+/* footer==================================== */
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+footer .footer__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+footer .footer__about .footer__title span {
+  font-size: 12px;
+}
+footer .footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+footer .footer__navgnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .footer__navgnav li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+footer .footer__navgnav li a {
+  color: #fff;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+.main__inner .culture__visual {
+  position: relative;
+}
+.main__inner .culture__visual__img {
+  width: 100%;
+  height: 331px;
+}
+.main__inner .culture__visual .work {
+  padding: 0 1.4285714286em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main__inner .culture__visual .work__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.main__inner .culture__visual .work__nav__list {
+  color: #262845;
+  font-size: 16px;
+  margin-left: 0.5625em;
+  -webkit-text-decoration: 1px underline #262845;
+          text-decoration: 1px underline #262845;
+}
+.main__inner .charset__content {
+  padding: 0 1.4285714286em;
+}
+.main__inner .charset__content__class {
+  padding-left: 2em;
+  padding-right: 0;
+}
+.main__inner .charset__content__class__title__name .culture {
+  width: 90.34%;
+}
+.main__inner .charset__content__class__title__name .culture .culture {
+  padding: 0 1.4285714286em;
+}
+.main__inner .charset__content__class__title__name .culture .culture__day {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__day__title {
+  text-align: center;
+}
+.main__inner .charset__content__class__title__name .culture .culture__Place {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__Place__title {
+  text-align: center;
+}
+.main__inner .charset__content__class__title__name .culture .culture__time {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__time__title {
+  text-align: center;
+}
+.main__inner .charset__content__class__title__name .culture .culture__participation_cost {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__participation_cost__title {
+  text-align: center;
+}
+.main__inner .charset__content__class__title__name .culture .culture__TEL {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__TEL__title {
+  text-align: center;
+}
+.main__inner .charset__content__class__title__name .culture .culture__remarks {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__class__title__name .culture .culture__remarks__title {
+  text-align: center;
+}
+/*# sourceMappingURL=culture-class-res.css.map */

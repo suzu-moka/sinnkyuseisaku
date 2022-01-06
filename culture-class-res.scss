@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* コンポーネント==================================== */
+@import "./responsive.scss";
+
+/* header==================================== */
+@import "./_header.scss";
+
+/* footer==================================== */
+@import "./_footer.scss";
+
+.main {
+    &__inner {
+        // tumami__visual
+        .culture__visual {
+            position: relative;
+            &__img {
+                width: 100%;
+                height: 331px;
+            }
+            .work {
+                @include inner;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                &__nav {
+                    @include flex(wrap, flex-end);
+                    &__list {
+                        color: $color-work-nav;
+                        font-size: 16px;
+                        margin-left: (9em/16);
+                        text-decoration: 1px underline $color-work-nav;
+                    }
+                }
+            }
+        }
+        .charset__content {
+            @include inner();
+            &__class {
+                @include inner-one-side((28em/14), 0);
+                &__title {
+                    &__name .culture {
+                        width: 90.34%;
+                        .culture {
+                            @include inner();
+                            &__name {
+                            }
+                            &__day {
+                                @include tabella1();
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                            &__Place {
+                                @include tabella1();
+
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                            &__time {
+                                @include tabella1();
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                            &__participation_cost {
+                                @include tabella1();
+
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                            &__TEL {
+                                @include tabella1();
+
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                            &__remarks {
+                                @include tabella1();
+
+                                &__title {
+                                    @include culture_tit();
+                                }
+                                &__title {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
