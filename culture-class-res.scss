@@ -37,20 +37,27 @@
         .charset__content {
             @include inner();
             &__class {
-                @include inner-one-side((28em/14), 0);
+                margin-bottom: (120em/14);
                 &__title {
-                    &__name .culture {
-                        width: 90.34%;
+                    text-align: left;
+                    margin: (60em/20) 0 (60em/20);
+                    &__name.culture {
+                        @include inner-one-side(2em, 0);
+                        margin-bottom: (16em/14);
                         .culture {
                             @include inner();
                             &__name {
+                                text-align: left;
+                                margin-bottom: (20em/16);
                             }
                             &__day {
                                 @include tabella1();
+
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt();
                                 }
                             }
                             &__Place {
@@ -59,7 +66,8 @@
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt();
                                 }
                             }
                             &__time {
@@ -67,7 +75,8 @@
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt();
                                 }
                             }
                             &__participation_cost {
@@ -76,7 +85,8 @@
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt();
                                 }
                             }
                             &__TEL {
@@ -85,7 +95,8 @@
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt();
                                 }
                             }
                             &__remarks {
@@ -94,7 +105,15 @@
                                 &__title {
                                     @include culture_tit();
                                 }
-                                &__title {
+                                &__text {
+                                    @include culture_txt(left);
+                                }
+                            }
+                            &__map {
+                                margin-top: (36em/14);
+                                iframe {
+                                    max-width: 100%;
+                                    height: 225px;
                                 }
                             }
                         }

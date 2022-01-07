@@ -27,12 +27,24 @@ $color-shop: #eaa1ba;
 }
 
 // 教室・サークル情報用
-@mixin culture_tit($c: center) {
+@mixin culture_tit(
+    $c: center,
+    $m: (
+        15em/14,
+    )
+) {
     text-align: $c;
+    margin-bottom: $m;
 }
 
-@mixin culture_txt($c: left) {
+@mixin culture_txt(
+    $c: center,
+    $m: (
+        10em/14,
+    )
+) {
     text-align: $c;
+    margin-bottom: (10em/14);
 }
 
 @mixin tabella1($s: 1px, $l: solid, $c: $color-border) {
