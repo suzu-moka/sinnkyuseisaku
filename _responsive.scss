@@ -29,12 +29,16 @@ $color-shop: #eaa1ba;
 // 教室・サークル情報用
 @mixin culture_tit(
     $c: center,
-    $m: (
+    $mt: (
+        8em/14,
+    ),
+    $mb: (
         15em/14,
     )
 ) {
     text-align: $c;
-    margin-bottom: $m;
+    margin-top: $mt;
+    margin-bottom: $mb;
 }
 
 @mixin culture_txt(

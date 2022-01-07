@@ -218,19 +218,21 @@ footer .footer__navgnav li a {
           text-decoration: 1px underline #262845;
 }
 .main__inner .charset__content {
+  margin-bottom: 5em;
   padding: 0 1.4285714286em;
+  /* club */
 }
 .main__inner .charset__content__class {
-  margin-bottom: 8.5714285714em;
+  margin: 4.2857142857em 0 5em;
 }
 .main__inner .charset__content__class__title {
   text-align: left;
-  margin: 3em 0 3em;
+  margin: 0 0 3em;
 }
 .main__inner .charset__content__class__title__name.culture {
   padding-left: 2em;
   padding-right: 0;
-  margin-bottom: 1.1428571429em;
+  margin-bottom: 9.7142857143em;
 }
 .main__inner .charset__content__class__title__name.culture .culture {
   padding: 0 1.4285714286em;
@@ -244,6 +246,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__day__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__day__text {
@@ -255,6 +258,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__Place__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__Place__text {
@@ -266,6 +270,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__time__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__time__text {
@@ -277,6 +282,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__participation_cost__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__participation_cost__text {
@@ -288,6 +294,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__TEL__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__TEL__text {
@@ -299,6 +306,7 @@ footer .footer__navgnav li a {
 }
 .main__inner .charset__content__class__title__name.culture .culture__remarks__title {
   text-align: center;
+  margin-top: 0.5714285714em;
   margin-bottom: 1.0714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__remarks__text {
@@ -309,6 +317,104 @@ footer .footer__navgnav li a {
   margin-top: 2.5714285714em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__map iframe {
+  max-width: 100%;
+  height: 225px;
+}
+.main__inner .charset__content__club {
+  margin: 4.2857142857em 0 5em;
+}
+.main__inner .charset__content__club__title {
+  text-align: left;
+  margin-bottom: 3em;
+}
+.main__inner .charset__content__club__title__name.culture {
+  padding-left: 2em;
+  padding-right: 0;
+  margin-bottom: 1.1428571429em;
+}
+.main__inner .charset__content__club__title__name.culture .culture {
+  padding: 0 1.4285714286em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__name {
+  text-align: left;
+  margin-bottom: 1.25em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__day {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__day__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__day__text {
+  text-align: center;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__Place {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__Place__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__Place__text {
+  text-align: center;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__time {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__time__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__time__text {
+  text-align: center;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__participation_cost {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__participation_cost__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__participation_cost__text {
+  text-align: center;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__TEL {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__TEL__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__TEL__text {
+  text-align: center;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__remarks {
+  border-bottom: 1px solid #000;
+}
+.main__inner .charset__content__club__title__name.culture .culture__remarks__title {
+  text-align: center;
+  margin-top: 0.5714285714em;
+  margin-bottom: 1.0714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__remarks__text {
+  text-align: left;
+  margin-bottom: 0.7142857143em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__map {
+  margin-top: 2.5714285714em;
+}
+.main__inner .charset__content__club__title__name.culture .culture__map iframe {
   max-width: 100%;
   height: 225px;
 }
