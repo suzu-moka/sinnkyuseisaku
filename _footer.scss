@@ -2,37 +2,37 @@ footer {
     @include inner();
     color: $color-footer_text;
     background-color: $color-footer;
+}
 
-    .footer__about {
-        @include flex(wrap, center);
-        &__logo {
-            width: 50px;
-            height: 35px;
-        }
-
-        .footer__title {
-            span {
-                font-size: 12px;
-            }
-        }
-
-        .Instagram-link {
-            .Instagram {
-                max-width: 24px;
-                max-height: 24px;
-            }
+.footer__about {
+    @include flex(wrap, center);
+    &__logo {
+        width: 50px;
+        height: 35px;
+    }
+    .footer__title {
+        span {
+            font-size: 12px;
         }
     }
-    .footer__nav {
-        &gnav {
-            @include flex(wrap, center);
-            li {
-                width: 33.3%;
-                border-left: 1px solid #fff;
 
-                a {
-                    color: $color-footer_text;
-                }
+    .Instagram-link {
+        .Instagram {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+}
+.footer__nav {
+    background-color: #323232;
+    &__gnav {
+        @include flex(wrap, center);
+        &__li {
+            width: 33.3%;
+            border-left: 1px solid #fff;
+
+            a {
+                color: $color-footer_text;
             }
         }
     }
