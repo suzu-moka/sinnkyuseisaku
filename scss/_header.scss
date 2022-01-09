@@ -1,10 +1,10 @@
 @charset "uft-8";
-
+@import "./responsive-tub.scss";
 header {
     height: 60px;
     justify-content: center;
     .header__inner {
-        @include flex(nowrap, space-between);
+        @include flex();
         @include inner();
         height: 60px;
         .logo {

@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-/* コンポーネント==================================== */
-@import "./responsive.scss";
-
-/* header==================================== */
-@import "./_header.scss";
-
-/* footer==================================== */
-@import "./_footer.scss";
-
 .main {
     &__inner {
         // tumami__visual
