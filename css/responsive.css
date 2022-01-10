@@ -28,7 +28,7 @@ body {
   background-color: #f6f4ee;
   font-size: 14px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  max-width: 429px;
+  width: 98%;
   margin: 0 auto;
   text-align: center;
 }
@@ -74,7 +74,7 @@ img {
   margin: 0;
 }
 header {
-  height: 60px;
+  height: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -88,8 +88,11 @@ header .header__inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1.4285714286em;
-  height: 60px;
+  padding: 0 4.2857142857em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
 }
 header .header__inner .logo {
   margin: 10px 0;
@@ -162,167 +165,183 @@ header .header__inner .nav .gnav {
   width: 30%;
 }
 
+@media screen and (max-width: 414px) {
+  header {
+    height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1.4285714286em;
+    height: 60px;
+  }
+  header .header__inner .logo {
+    margin: 10px 0;
+  }
+  header .header__inner .logo img {
+    width: 56.39px;
+    height: 40px;
+  }
+  header .header__inner .nav .gnav {
+    padding: 20px 0;
+  }
+
+  .gnav {
+    position: relative;
+    /*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /*ボタン内側*/
+  .gnav span {
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    width: 45%;
+  }
+
+  .gnav span:nth-of-type(1) {
+    background-color: #000;
+    top: 15px;
+  }
+
+  .gnav span:nth-of-type(2) {
+    background-color: #000;
+    top: 23px;
+  }
+
+  .gnav span:nth-of-type(3) {
+    background-color: #000;
+    top: 31px;
+  }
+
+  /*activeクラスが付与されると線が回転して×に*/
+  .gnav.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .gnav.active span:nth-of-type(2) {
+    opacity: 0;
+    /*真ん中の線は透過*/
+  }
+
+  .gnav.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+}
 /* =========== footer ============================ */
-h1 {
-  font-size: 21px;
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
 }
 
-h2 {
-  font-size: 20px;
+.footer__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
-h3 {
-  font-size: 18px;
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
 }
-
-h4 {
-  font-size: 16px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h6 {
+.footer__about .footer__title span {
   font-size: 12px;
 }
-
-body {
-  background-color: #f6f4ee;
-  font-size: 14px;
-  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  max-width: 429px;
-  margin: 0 auto;
-  text-align: center;
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
 }
 
-ul {
-  padding-left: 0;
+.footer__nav {
+  background-color: #323232;
 }
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/*ボタン*/
-.btn {
-  width: 76.92%;
-  margin-left: auto;
-}
-.btn__link__submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
-  background-color: #fff;
-}
-.btn__link__submit__text {
-  margin: 0;
-}
-header {
-  height: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-header .header__inner {
+.footer__nav__gnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1.4285714286em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 60px;
-}
-header .header__inner .logo {
-  margin: 10px 0;
-}
-header .header__inner .logo img {
-  width: 56.39px;
-  height: 40px;
-}
-header .header__inner .nav .gnav {
-  padding: 20px 0;
-}
-
-.gnav {
-  position: relative;
-  /*ボタン内側の基点となるためrelativeを指定*/
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+  width: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
 }
 
-/*ボタン内側*/
-.gnav span {
-  display: inline-block;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  /*アニメーションの設定*/
-  position: absolute;
-  left: 14px;
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
   height: 3px;
-  border-radius: 2px;
-  background: #fff;
-  width: 45%;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
 }
 
-.gnav span:nth-of-type(1) {
-  background-color: #000;
-  top: 15px;
+.menu-btn span:before {
+  bottom: 8px;
 }
 
-.gnav span:nth-of-type(2) {
-  background-color: #000;
-  top: 23px;
-}
-
-.gnav span:nth-of-type(3) {
-  background-color: #000;
-  top: 31px;
-}
-
-/*activeクラスが付与されると線が回転して×に*/
-.gnav.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-          transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-
-.gnav.active span:nth-of-type(2) {
-  opacity: 0;
-  /*真ん中の線は透過*/
-}
-
-.gnav.active span:nth-of-type(3) {
-  top: 30px;
-  left: 18px;
-  -webkit-transform: translateY(-6px) rotate(45deg);
-          transform: translateY(-6px) rotate(45deg);
-  width: 30%;
+.menu-btn span:after {
+  top: 8px;
 }
 
 /* =========== tub ============================ */
@@ -354,7 +373,7 @@ body {
   background-color: #f6f4ee;
   font-size: 14px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  max-width: 429px;
+  width: 98%;
   margin: 0 auto;
   text-align: center;
 }

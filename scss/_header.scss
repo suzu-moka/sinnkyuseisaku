@@ -1,12 +1,14 @@
-@charset "uft-8";
 @import "./responsive-tub.scss";
+@import "./PC/PC";
+
 header {
-    height: 60px;
+    height: 100px;
     justify-content: center;
     .header__inner {
         @include flex();
-        @include inner();
-        height: 60px;
+        @include heder-innerPC();
+        align-items: center;
+        height: 100px;
         .logo {
             margin: 10px 0;
             img {
@@ -75,4 +77,83 @@ header {
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
+}
+
+@media screen and(max-width: 414px) {
+    header {
+        height: 60px;
+        justify-content: center;
+        .header__inner {
+            @include flex();
+            @include inner();
+            height: 60px;
+            .logo {
+                margin: 10px 0;
+                img {
+                    width: 56.39px;
+                    height: 40px;
+                }
+            }
+            .nav {
+                .gnav {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    .gnav {
+        position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    /*ボタン内側*/
+    .gnav span {
+        display: inline-block;
+        transition: all 0.4s; /*アニメーションの設定*/
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .gnav span:nth-of-type(1) {
+        background-color: $color-border;
+        top: 15px;
+    }
+
+    .gnav span:nth-of-type(2) {
+        background-color: $color-border;
+        top: 23px;
+    }
+
+    .gnav span:nth-of-type(3) {
+        background-color: $color-border;
+        top: 31px;
+    }
+
+    /*activeクラスが付与されると線が回転して×に*/
+
+    .gnav.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .gnav.active span:nth-of-type(2) {
+        opacity: 0; /*真ん中の線は透過*/
+    }
+
+    .gnav.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
 }

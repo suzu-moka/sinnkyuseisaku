@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@mixin heder-innerPC {
+    padding: 0 (60em/14);
+}
+
+@mixin innerPC {
+    padding: 0 (30em/14);
+}
