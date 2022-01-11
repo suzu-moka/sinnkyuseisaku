@@ -58,19 +58,27 @@ img {
   width: 76.92%;
   margin-left: auto;
 }
+
 .btn__link__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
+  border: 0.07143em solid #000;
+  max-width: 7.85714em;
+  padding: 0.64286em 2.57143em;
   background-color: #fff;
 }
+
 .btn__link__submit__text {
   margin: 0;
 }
+
 h1 {
   font-size: 21px;
 }
@@ -126,42 +134,63 @@ img {
   width: 76.92%;
   margin-left: auto;
 }
+
 .btn__link__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
+  border: 0.07143em solid #000;
+  max-width: 7.85714em;
+  padding: 0.64286em 2.57143em;
   background-color: #fff;
 }
+
 .btn__link__submit__text {
   margin: 0;
 }
+
 body {
   font-size: 16px;
 }
 
 header {
   height: 100px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 3.75em;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
 }
+
 header .header__inner .logo {
   margin: 10px 0;
 }
+
 header .header__inner .logo img {
   width: 56.39px;
   height: 40px;
 }
+
 header .header__inner .nav .gnav {
   padding: 20px 0;
 }
@@ -178,6 +207,7 @@ header .header__inner .nav .gnav {
 /*ボタン内側*/
 .gnav span {
   display: inline-block;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   /*アニメーションの設定*/
   position: absolute;
@@ -207,7 +237,8 @@ header .header__inner .nav .gnav {
 .gnav.active span:nth-of-type(1) {
   top: 18px;
   left: 18px;
-  transform: translateY(6px) rotate(-45deg);
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
   width: 30%;
 }
 
@@ -219,20 +250,28 @@ header .header__inner .nav .gnav {
 .gnav.active span:nth-of-type(3) {
   top: 30px;
   left: 18px;
-  transform: translateY(-6px) rotate(45deg);
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
   width: 30%;
 }
 
 @media screen and (max-width: 414px) {
   header {
     height: 60px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1.4285714286em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1.42857em;
     height: 60px;
   }
   header .header__inner .logo {
@@ -245,7 +284,6 @@ header .header__inner .nav .gnav {
   header .header__inner .nav .gnav {
     padding: 20px 0;
   }
-
   .gnav {
     position: relative;
     /*ボタン内側の基点となるためrelativeを指定*/
@@ -254,10 +292,10 @@ header .header__inner .nav .gnav {
     height: 50px;
     border-radius: 5px;
   }
-
   /*ボタン内側*/
   .gnav span {
     display: inline-block;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     /*アニメーションの設定*/
     position: absolute;
@@ -267,132 +305,149 @@ header .header__inner .nav .gnav {
     background: #fff;
     width: 45%;
   }
-
   .gnav span:nth-of-type(1) {
     background-color: #000;
     top: 15px;
   }
-
   .gnav span:nth-of-type(2) {
     background-color: #000;
     top: 23px;
   }
-
   .gnav span:nth-of-type(3) {
     background-color: #000;
     top: 31px;
   }
-
   /*activeクラスが付与されると線が回転して×に*/
   .gnav.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
-    transform: translateY(6px) rotate(-45deg);
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
     width: 30%;
   }
-
   .gnav.active span:nth-of-type(2) {
     opacity: 0;
     /*真ん中の線は透過*/
   }
-
   .gnav.active span:nth-of-type(3) {
     top: 30px;
     left: 18px;
-    transform: translateY(-6px) rotate(45deg);
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
     width: 30%;
   }
 }
+
 /*================== index ===================================*/
 main .main__inner .main__visual {
   padding: 0 1.875em;
 }
+
 main .main__inner .main__visual__list {
   padding-bottom: 60px;
 }
+
 main .main__inner .main__visual__list__img {
   width: 70%;
   right: 0;
 }
+
 main .main__inner .main__visual__list__img img {
   width: 100%;
   height: 100%;
 }
+
 main .main__inner .main__visual__list__img .img1 {
   display: none;
 }
+
 main .main__inner .main__contents {
-  margin-top: 7.1428571429em;
+  margin-top: 7.14286em;
   padding: 0 1.875em;
 }
+
 main .main__inner .main__contents__title {
-  margin-bottom: 7.1428571429em;
-  align-items: center;
+  margin-bottom: 7.14286em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 main .main__inner .main__contents__title .title-res {
   display: none;
 }
+
 main .main__inner .main__contents .main__contents__type1 {
-  margin-bottom: 10.7142857143em;
+  margin-bottom: 10.71429em;
 }
+
 main .main__inner .main__contents .type1 {
   position: relative;
   height: 600px;
-  margin-bottom: 8.5714285714em;
+  margin-bottom: 8.57143em;
 }
+
 main .main__inner .main__contents .type1__visual {
   border-radius: 25px 25px 25px 25px;
   padding-right: 20px;
   position: absolute;
   width: 73.66%;
   height: 500px;
-  border: 0.0714285714em solid #000;
+  border: 0.07143em solid #000;
   margin-right: auto;
 }
+
 main .main__inner .main__contents .type1__body {
   border-radius: 25px 25px 25px 25px;
   background-color: #fff;
   position: absolute;
-  padding: 4.2857142857em 0 4.2857142857em 4.2857142857em;
+  padding: 4.28571em 0 4.28571em 4.28571em;
   width: 49.11%;
   height: 400px;
   left: 570px;
   top: 200px;
 }
+
 main .main__inner .main__contents .type1__body-rig {
   border-radius: 25px 25px 25px 25px;
   background-color: #fff;
   position: absolute;
-  padding: 4.2857142857em 4.2857142857em 0 4.2857142857em;
+  padding: 4.28571em 4.28571em 0 4.28571em;
   width: 49.11%;
   height: 400px;
   left: 0;
   top: 200px;
 }
+
 main .main__inner .main__contents .type1 .type2__visual {
   border-radius: 25px 25px 25px 25px;
   padding-left: 20px;
   position: absolute;
   width: 73.66%;
   height: 500px;
-  border: 0.0714285714em solid #000;
+  border: 0.07143em solid #000;
   margin-left: auto;
   left: 295px;
 }
+
 main .main__inner .main__contents .type1__btn {
   display: block;
   text-align: right;
-  margin-top: 2.1428571429em;
+  margin-top: 2.14286em;
 }
+
 main .main__inner .main__contents .btn .btn__link .btn__co {
   display: block;
   border: none;
 }
+
 main .main__inner .main__contents .btn .btn__link .btn__co p {
   display: none;
 }
+
 main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   display: none;
 }
+
 /*================== index-res ===================================*/
 /*# sourceMappingURL=index.css.map */
