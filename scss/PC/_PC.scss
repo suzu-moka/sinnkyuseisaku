@@ -1,9 +1,16 @@
 @charset "utf-8";
+body {
+    font-size: 16px;
+}
 
 @mixin heder-innerPC {
-    padding: 0 (60em/14);
+    padding: 0 (60em/16);
 }
 
 @mixin innerPC {
-    padding: 0 (30em/14);
+    padding: 0 (30em/16);
+}
+
+@mixin text_card {
+    padding: (60em/16) 0 (60em/16) (60em/16);
 }

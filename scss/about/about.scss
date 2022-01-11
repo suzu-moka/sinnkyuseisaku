@@ -1,0 +1,271 @@
+@charset "utf-8";
+@import "../PC/PC";
+@import "../responsive-tub";
+@import "../header.scss";
+/* main */
+.main {
+    &__inner {
+        // about__visual
+        .about__visual {
+            &__img {
+                width: 414px;
+                height: 331px;
+            }
+        }
+        .about__me {
+            @include inner();
+            line-height: (21/14);
+            margin: (60em/14) 0 (150em/14);
+            &__title {
+                margin-bottom: (40em/14);
+                &__img {
+                    display: none;
+                }
+                &__img-pc {
+                }
+            }
+            .about__introduction {
+                margin-bottom: (69em/14);
+                &__text {
+                    font-size: 16px;
+                    text-align: left;
+                }
+            }
+            .about__purchase {
+                margin-bottom: (69em/14);
+                &__title {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: (36em/18);
+                }
+                &__text {
+                    text-align: left;
+                }
+            }
+        }
+        .business__description {
+            @include inner-one-side(0, (20em/14));
+            margin-bottom: (80em/14);
+
+            /* ショップ */
+            &__shop {
+                @include flex(wrap, space-between);
+                margin-bottom: (45em/14);
+                position: relative;
+                &__thumbnail {
+                    @include radius(30px, 30px, 30px, 30px);
+                    position: relative;
+                    margin-left: (20em/14);
+                    width: 71.24%;
+                    height: 500px;
+                    border: 1px solid #000;
+                    &-flowers {
+                        width: 24.24%;
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                    }
+                }
+                &__content {
+                    @include flex(wrap, center);
+                    @include radius(30px, 30px, 30px, 30px);
+                    @include text_card();
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    width: 38.24%;
+                    right: 0;
+                    bottom: 0;
+
+                    &__title {
+                        align-items: center;
+                        margin: 0;
+                        padding-bottom: (20em/18);
+                    }
+                    &__text {
+                        text-align: left;
+                        margin: 0;
+                        font-size: 16px;
+                        padding-bottom: (31em/16);
+                    }
+                }
+            }
+            /* つまみ細工 */
+            &__tumami {
+                @include flex(wrap, space-between);
+                margin-bottom: (45em/14);
+                position: relative;
+                &__thumbnail {
+                    @include radius(30px, 30px, 30px, 30px);
+                    position: relative;
+                    margin-left: (20em/14);
+                    width: 71.24%;
+                    height: 500px;
+                    border: 1px solid #000;
+
+                    &-flowers {
+                        width: 24.24%;
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                    }
+                }
+                &__content {
+                    @include flex(wrap, center);
+                    @include radius(30px, 30px, 30px, 30px);
+                    @include text_card();
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    width: 38.24%;
+                    right: 0;
+                    bottom: 0;
+                    &__title {
+                        align-items: center;
+                        margin: 0;
+                        padding-bottom: (20em/18);
+                    }
+                    &__text {
+                        text-align: left;
+                        font-size: 16px;
+                        margin: 0;
+                        padding-bottom: (31em/14);
+                    }
+                }
+            }
+            /* アートプラスター */
+            &__art-Plaster {
+                @include flex(wrap, space-between);
+                margin-bottom: (45em/14);
+                position: relative;
+                &__thumbnail {
+                    @include radius(30px, 30px, 30px, 30px);
+                    position: relative;
+                    margin-left: (20em/14);
+                    width: 71.24%;
+                    height: 500px;
+                    border: 1px solid #000;
+
+                    &-flowers {
+                        width: 24.24%;
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                    }
+                }
+                &__content {
+                    @include flex(wrap, center);
+                    @include radius(30px, 30px, 30px, 30px);
+                    @include text_card();
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    width: 38.24%;
+                    right: 0;
+                    bottom: 0;
+
+                    &__title {
+                        align-items: center;
+                        margin: 0;
+                        padding-bottom: (20em/18);
+                    }
+                    &__text {
+                        text-align: left;
+                        font-size: 16px;
+                        margin: 0;
+                        padding-bottom: (31em/14);
+                    }
+                }
+            }
+            /* 教室・サークル */
+            &__circle {
+                @include flex(wrap, space-between);
+                margin-bottom: (45em/14);
+                position: relative;
+                &__thumbnail {
+                    @include radius(30px, 30px, 30px, 30px);
+                    position: relative;
+                    margin-left: (20em/14);
+                    width: 71.24%;
+                    height: 500px;
+                    border: 1px solid #000;
+
+                    &-flowers {
+                        width: 24.24%;
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                    }
+                }
+                &__content {
+                    @include flex(wrap, center);
+                    @include radius(30px, 30px, 30px, 30px);
+                    @include text_card();
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    width: 38.24%;
+                    right: 0;
+                    bottom: 0;
+                    &__title {
+                        text-align: left;
+                        margin: 0;
+                        padding-bottom: (20em/18);
+                    }
+                    &__text {
+                        text-align: left;
+                        font-size: 16px;
+                        margin: 0;
+                        padding-bottom: (31em/16);
+                    }
+                }
+            }
+        }
+        .gallery {
+            @include inner();
+            margin: (80em/14) 0 (40em/14);
+
+            &__title {
+                img {
+                    width: 21.19%;
+                }
+            }
+            &__btn {
+                &1 {
+                    padding: (4em/14) (8em/14);
+                    @include radius(10px, 10px, 10px, 10px);
+                }
+                &2 {
+                    padding: (4em/14) (8em/14);
+                    @include radius(10px, 10px, 10px, 10px);
+                }
+            }
+            &__content {
+                @include flex(wrap, center);
+                width: 90.34%;
+                align-items: flex-start;
+                &__list1 {
+                    width: 50%;
+                }
+                &__list2 {
+                    width: 50%;
+                }
+                .gallery1 {
+                    width: 100%;
+                    height: 219px;
+                    border: 1px solid #000;
+                    margin: 0 (12em/14) (12em/14) 0;
+                }
+                .gallery2 {
+                    width: 100%;
+                    height: 219px;
+                    border: 1px solid #000;
+                    margin: 0 0 (12em/14) (12em/14);
+                }
+                .gallery2:nth-of-type(1) {
+                    height: 160px;
+                }
+            }
+        }
+        .btn.ga {
+            margin-bottom: (70em/14);
+        }
+    }
+}

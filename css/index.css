@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-size: 16px;
+}
+
 h1 {
   font-size: 21px;
 }
@@ -145,6 +149,10 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
+body {
+  font-size: 16px;
+}
+
 header {
   height: 100px;
   -webkit-box-pack: center;
@@ -160,7 +168,7 @@ header .header__inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 4.2857142857em;
+  padding: 0 3.75em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -329,7 +337,7 @@ header .header__inner .nav .gnav {
 }
 /*================== index ===================================-*/
 main .main__inner .main__visual {
-  padding: 0 2.1428571429em;
+  padding: 0 1.875em;
 }
 main .main__inner .main__visual__list {
   padding-bottom: 60px;
@@ -347,7 +355,7 @@ main .main__inner .main__visual__list__img .img1 {
 }
 main .main__inner .main__contents {
   margin-top: 7.1428571429em;
-  padding: 0 2.1428571429em;
+  padding: 0 1.875em;
 }
 main .main__inner .main__contents__title {
   margin-bottom: 7.1428571429em;
