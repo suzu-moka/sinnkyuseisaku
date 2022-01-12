@@ -56,27 +56,27 @@ $color-shop: #eaa1ba;
 }
 
 h1 {
-    font-size: 21px;
+    font-size: 28px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 26px;
 }
 h3 {
-    font-size: 18px;
+    font-size: 24px;
 }
 h4 {
-    font-size: 16px;
+    font-size: 21px;
 }
 h5 {
-    font-size: 14px;
+    font-size: 18px;
 }
 h6 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 body {
     background-color: $color-bass;
-    font-size: 14px;
+    font-size: 16px;
     font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
     width: 98%;
     margin: 0 auto;
@@ -103,7 +103,6 @@ img {
 /*ボタン*/
 .btn {
     width: 76.92%;
-    margin-left: auto;
 
     &__link {
         &__submit {
