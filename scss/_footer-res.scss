@@ -6,11 +6,13 @@ footer {
 
 .footer__about {
     @include flex(wrap, center);
+    margin-left: (10em/16);
+    align-items: center;
     &__logo {
         width: 50px;
         height: 35px;
     }
-    .footer__title {
+    &__title {
         span {
             font-size: 12px;
         }
@@ -24,15 +26,16 @@ footer {
     }
 }
 .footer__nav {
-    background-color: #323232;
     &__gnav {
         @include flex(wrap, center);
+        margin: (20em/16) 0;
         &__li {
             width: 33.3%;
             border-left: 1px solid #fff;
 
             a {
                 color: $color-footer_text;
+                font-size: 14px;
             }
         }
     }

@@ -594,6 +594,7 @@ header .header__inner .nav .gnav {
     margin: 1.6666666667em 0 5em 6.0833333333em;
   }
 }
+/* ============================= footer ========================= */
 footer {
   padding: 0 1.4285714286em;
   color: #fff;
@@ -604,12 +605,14 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
 }
 .footer__about__logo {
   width: 50px;
   height: 35px;
 }
-.footer__about .footer__title span {
+.footer__about__title span {
   font-size: 12px;
 }
 .footer__about .Instagram-link .Instagram {
@@ -617,13 +620,11 @@ footer {
   max-height: 24px;
 }
 
-.footer__nav {
-  background-color: #323232;
-}
 .footer__nav__gnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 1.25em 0;
 }
 .footer__nav__gnav__li {
   width: 33.3%;
@@ -631,6 +632,7 @@ footer {
 }
 .footer__nav__gnav__li a {
   color: #fff;
+  font-size: 14px;
 }
 
 .menu-btn {

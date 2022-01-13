@@ -154,6 +154,7 @@ main {
                     align-items: center;
                     .title-res {
                         display: block;
+                        margin-left: 30%;
                     }
                     .title-pc {
                         display: none;
@@ -210,8 +211,268 @@ main {
                                 @include radius(30px, 0, 0, 30px);
                                 border: (1em/14) solid $color-border;
                             }
-                            img:last-child {
-                                height: 248px;
+                        }
+                    }
+
+                    .type1__title {
+                        font-size: 18px;
+                        margin: 16px 0 30px;
+                    }
+                    .type1__text {
+                        font-size: 1em;
+                        margin: 30px 0;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+
+                    // btn
+                    &__btn {
+                        display: block;
+                        text-align: right;
+                        margin-top: (30em/14);
+                    }
+                }
+                .btn {
+                    .btn__link {
+                        .btn__co {
+                            @include flex(wrap, center);
+                            @include radius(20px, 20px, 20px, 20px);
+                            background-color: #fff;
+                            border: 1px solid #000;
+                            height: 32px;
+                            width: 110px;
+                            right: 0;
+                            margin-left: 80%;
+                            p {
+                                display: block;
+                            }
+                            .mark-or-symbol {
+                                display: block;
+                            }
+                            .mark-or-symbol-pc {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==================　footer　===================================*/
+@charset "utf-8";
+
+@import "../PC/PC";
+@import "../responsive-tub";
+@import "../header.scss";
+/*================== index ===================================*/
+main {
+    .main__inner {
+        // main__visual
+        .main__visual {
+            @include innerPC();
+            &__list {
+                padding-bottom: 60px;
+                &__img {
+                    width: 70%;
+                    right: 0;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .img1 {
+                        display: none;
+                    }
+                    .img2 {
+                    }
+                }
+            }
+        }
+
+        // main__contents
+        .main__contents {
+            margin-top: (100em/14);
+            @include innerPC();
+            &__title {
+                margin-bottom: (100em/14);
+                align-items: center;
+                .title-res {
+                    display: none;
+                }
+                .title-pc {
+                }
+            }
+
+            // type1
+            .main__contents__type1 {
+                margin-bottom: (150em/14);
+            }
+            .type1 {
+                position: relative;
+                height: 600px;
+                margin-bottom: (120em/14);
+                &__visual {
+                    @include radius(25px, 25px, 25px, 25px);
+                    padding-right: 20px;
+                    position: absolute;
+                    width: 73.66%;
+                    height: 500px;
+                    border: (1em/14) solid $color-border;
+                    margin-right: auto;
+                }
+                &__body {
+                    @include radius(25px, 25px, 25px, 25px);
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    padding: (60em/14) 0 (60em/14) (60em/14);
+                    width: 49.11%;
+                    height: 400px;
+                    left: 570px;
+                    top: 200px;
+                }
+
+                &__body-rig {
+                    @include radius(25px, 25px, 25px, 25px);
+                    background-color: $color-footer_text;
+                    position: absolute;
+                    padding: (60em/14) (60em/14) 0 (60em/14);
+                    width: 49.11%;
+                    height: 400px;
+                    left: 0;
+                    top: 200px;
+                }
+
+                .type2 {
+                    &__visual {
+                        @include radius(25px, 25px, 25px, 25px);
+                        padding-left: 20px;
+                        position: absolute;
+                        width: 73.66%;
+                        height: 500px;
+                        border: (1em/14) solid $color-border;
+                        margin-left: auto;
+                        left: 295px;
+                    }
+                }
+
+                // btn
+                &__btn {
+                    display: block;
+                    text-align: right;
+                    margin-top: (30em/14);
+                }
+            }
+            .btn {
+                text-align: right;
+                .btn__link {
+                    .btn__co {
+                        display: block;
+                        border: none;
+                        p {
+                            display: none;
+                        }
+                        .mark-or-symbol {
+                            display: none;
+                        }
+                        .mark-or-symbol-pc {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:414px) {
+    main {
+        .main__inner {
+            // main__visual
+            .main__visual {
+                padding: 0;
+                &__list {
+                    margin-left: 70px;
+                    &__img {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .img1 {
+                            display: block;
+                            width: 343px;
+                            height: 776px;
+                        }
+                        .img2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            // main__contents
+            .main__contents {
+                margin-top: (60em/14);
+                padding: 0;
+                &__title {
+                    margin-bottom: (60em/14);
+                    align-items: center;
+                    .title-res {
+                        display: block;
+                        margin-left: 30%;
+                    }
+                    .title-pc {
+                        display: none;
+                    }
+                }
+                // type1
+                .main__contents__type1 {
+                    margin-bottom: (80em/14);
+                    height: 435px;
+                }
+                .type1 {
+                    position: initial;
+                    &__visual {
+                        @include radius(0, 30px, 30px, 0);
+                        position: initial;
+                        width: 92.75%;
+                        height: 248px;
+                        margin-right: auto;
+                        border: none;
+                        img {
+                            @include radius(0, 30px, 30px, 0);
+                            border: (1em/14) solid $color-border;
+                        }
+                    }
+                    &__body {
+                        @include radius(25px, 25px, 25px, 25px);
+                        position: initial;
+                        background-color: transparent;
+                        padding: 0;
+                        width: 100%;
+                        height: 188px;
+                        left: 0;
+                    }
+                    &__body-rig {
+                        @include radius(25px, 25px, 25px, 25px);
+                        position: initial;
+                        background-color: transparent;
+                        padding: 0;
+                        width: 100%;
+                        height: 188px;
+                        left: 0;
+                    }
+
+                    .type2 {
+                        &__visual {
+                            @include radius(30px, 0, 0, 30px);
+                            position: sticky;
+                            width: 92.75%;
+                            height: 248px;
+                            padding: 0;
+                            margin-left: auto;
+                            border: none;
+                            img {
+                                @include radius(30px, 0, 0, 30px);
+                                border: (1em/14) solid $color-border;
                             }
                         }
                     }
@@ -244,6 +505,7 @@ main {
                             height: 32px;
                             width: 110px;
                             right: 0;
+                            margin-left: 80%;
                             p {
                                 display: block;
                             }
