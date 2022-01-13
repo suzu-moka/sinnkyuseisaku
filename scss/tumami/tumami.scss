@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+@import "../responsive-tub";
+@import "../PC/PC";
+@import "../header";
+
+/* main==================================== */
+.main {
+    &__inner {
+        // tumami__visual
+        .tumami__visual {
+            position: relative;
+            &__img {
+                width: 100%;
+                height: 331px;
+                display: none;
+            }
+            .work {
+                @include inner;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                &__nav {
+                    @include flex(wrap, flex-end);
+                    &__list {
+                        color: $color-work-nav;
+                        font-size: 16px;
+                        margin-left: (9em/16);
+                        text-decoration: 1px underline $color-work-nav;
+                    }
+                }
+            }
+        }
+        .work__content {
+            margin: (60em/24) 0 (120em/14);
+            text-align: left;
+            .tumami__title {
+                @include inner();
+                font-size: 24px;
+                color: $color-border;
+            }
+            .tumami__shop {
+                @include innerPC();
+                margin: (60em/14) 0 (80em/14);
+                height: 560px;
+                .tumami__visual {
+                    @include radius(30px, 30px, 30px, 30px);
+                    padding-right: 20px;
+                    width: 825px;
+                    height: 500px;
+                    border: (1em/14) solid $color-border;
+                    margin-right: auto;
+                    right: auto;
+                    position: absolute;
+                    left: 285px;
+                }
+                &__btn {
+                    a {
+                        @include radius(15px, 15px, 15px, 15px);
+                        color: $color-footer_text;
+                        font-size: 18px;
+                        background-color: $color-shop;
+                        border: 1px solid $color-shop;
+                        text-align: center;
+                        vertical-align: middle;
+                        display: table-cell;
+                        position: absolute;
+                        top: 500px;
+                        width: 550px;
+                        height: 300px;
+                        align-items: center;
+                        padding: (138em/20) (195em/20) (138em/20);
+                    }
+                }
+            }
+            .tumami__introduction {
+                margin: (80em/16) 0 (60em/16);
+                &__history {
+                    @include innerPC();
+                    margin-bottom: (80em/16);
+                    &__visual {
+                        @include flex(wrap, flex-start);
+                        margin-bottom: (60em/16);
+                        padding: 0 (41em/16);
+                        &-list1 {
+                            @include radius(25px, 25px, 25px, 25px);
+                            border: 1px solid #000;
+                            &__img {
+                            }
+                        }
+                        &-list1:nth-of-type(1) {
+                            width: 100%;
+                            height: 330px;
+                            margin-bottom: 5%;
+                        }
+                        &-list1:nth-of-type(2) {
+                            width: 30%;
+                            height: 434px;
+                        }
+                        &-list1:nth-of-type(3) {
+                            width: 30%;
+                            height: 434px;
+                            margin-left: 5%;
+                        }
+                        &-list1:nth-of-type(4) {
+                            width: 30%;
+                            height: 434px;
+                            margin-left: 5%;
+                        }
+                    }
+                    &__text {
+                        @include inner();
+                        font-size: 18px;
+                    }
+                }
+                &__Example_of_use {
+                    @include innerPC();
+                    &__visual {
+                        padding: 0 (60em/16) 0;
+                        margin-bottom: (60em/16);
+                        position: relative;
+                        height: 640px;
+                        &-list2 {
+                            @include radius(25px, 25px, 25px, 25px);
+                            position: absolute;
+                            border: 1px solid #000;
+                            &__img {
+                            }
+                        }
+
+                        &-list2:nth-of-type(1) {
+                            width: 30%;
+                            height: 434px;
+                            top: 0;
+                            left: 10%;
+                        }
+
+                        &-list2:nth-of-type(2) {
+                            width: 30%;
+                            height: 434px;
+                            top: 200px;
+                            left: 35%;
+                        }
+
+                        &-list2:nth-of-type(3) {
+                            width: 30%;
+                            height: 330px;
+                            top: 59px;
+                            right: 10%;
+                        }
+                    }
+                    &__text {
+                        @include inner();
+                        font-size: 18px;
+                        margin-bottom: (20em/18);
+                    }
+                    &__annotation {
+                        padding: 0 (20em/12);
+                        font-size: 12px;
+                        margin: (20em/12) 0 (70em/14) (73em/12);
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================= responsive ========================= */
+@media screen and(max-width:414px) {
+    .main {
+        &__inner {
+            // tumami__visual
+            .tumami__visual {
+                position: relative;
+                &__img {
+                    width: 100%;
+                    height: 331px;
+                }
+                .work {
+                    @include inner;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    &__nav {
+                        @include flex(wrap, flex-end);
+                        &__list {
+                            color: $color-work-nav;
+                            font-size: 16px;
+                            margin-left: (9em/16);
+                            text-decoration: 1px underline $color-work-nav;
+                        }
+                    }
+                }
+            }
+            .work__content {
+                margin: (60em/24) 0 (120em/14);
+                text-align: left;
+                .tumami__title {
+                    @include inner();
+                    font-size: 24px;
+                    color: $color-border;
+                }
+                .tumami__shop {
+                    margin: (60em/16) 0 (80em/16);
+                    padding: 0;
+                    height: auto;
+                    .tumami__visual {
+                        @include radius(0, 30px, 30px, 0);
+                        padding-right: 20px;
+                        width: (384em/16);
+                        height: (248em/16);
+                        border: (1em/16) solid $color-border;
+                        margin-right: auto;
+                        position: initial;
+                    }
+                    &__btn {
+                        @include radius(15px, 15px, 15px, 15px);
+                        margin: (60em/16) (20em/16) 0;
+                        width: 90.34%;
+                        a {
+                            font-size: 16px;
+                            color: $color-footer_text;
+                            background-color: $color-shop;
+                            border: 1px solid $color-shop;
+
+                            padding: (23em/16) (120em/16);
+                            text-align: center;
+                            width: auto;
+                            height: auto;
+                            position: initial;
+                        }
+                    }
+                }
+                .tumami__introduction {
+                    margin: (80em/14) 0 (60em/16);
+                    &__history {
+                        margin-bottom: (60em/16);
+                        &__visual {
+                            @include flex();
+                            margin-bottom: (60em/16);
+                            padding: 0;
+                            &-list1 {
+                                @include radius(25px, 25px, 25px, 25px);
+                                border: 1px solid #000;
+                                &__img {
+                                }
+                            }
+                            &-list1:nth-of-type(1) {
+                                width: 100%;
+                                height: 188px;
+                                margin-bottom: (10em/16);
+                            }
+                            &-list1:nth-of-type(2) {
+                                width: 48.49%;
+                                height: 212px;
+                            }
+                            &-list1:nth-of-type(3) {
+                                width: 48.49%;
+                                height: 212px;
+                                margin: 0;
+                            }
+                            &-list1:nth-of-type(4) {
+                                display: none;
+                            }
+                        }
+                        &__text {
+                            @include inner();
+                            font-size: 14px;
+                        }
+                    }
+                    &__Example_of_use {
+                        @include inner();
+                        &__visual {
+                            @include inner();
+                            position: relative;
+                            height: 315px;
+                            &-list2 {
+                                @include radius(25px, 25px, 25px, 25px);
+                                position: absolute;
+                                border: 1px solid #000;
+                                &__img {
+                                }
+                            }
+                            &-list2:nth-of-type(1) {
+                                width: 29.95%;
+                                height: 189px;
+                            }
+                            &-list2:nth-of-type(2) {
+                                width: 29.95%;
+                                height: 189px;
+                                top: 126px;
+                            }
+                            &-list2:nth-of-type(3) {
+                                width: 28.99%;
+                                height: 120px;
+                            }
+                        }
+                        &__text {
+                            @include inner();
+                            font-size: 14px;
+                            margin-bottom: (20em/14);
+                        }
+                        &__annotation {
+                            padding: 0 (20em/12);
+                            font-size: 12px;
+                            margin: (20em/12) 0 (70em/14) (73em/12);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@import "../footer-res";
