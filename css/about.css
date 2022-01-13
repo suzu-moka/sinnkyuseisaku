@@ -4,34 +4,34 @@ body {
 }
 
 h1 {
-  font-size: 21px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 21px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 body {
   background-color: #f6f4ee;
-  font-size: 14px;
+  font-size: 16px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  width: 98%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -56,17 +56,11 @@ img {
 /*ボタン*/
 .btn {
   width: 76.92%;
-  margin-left: auto;
 }
 .btn__link__submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   border-radius: 20px 20px 20px 20px;
   border: 0.0714285714em solid #000;
   max-width: 7.8571428571em;
@@ -76,35 +70,36 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
+/*==================　header　===================================*/
 h1 {
-  font-size: 21px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 21px;
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 body {
   background-color: #f6f4ee;
-  font-size: 14px;
+  font-size: 16px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  width: 98%;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -129,17 +124,11 @@ img {
 /*ボタン*/
 .btn {
   width: 76.92%;
-  margin-left: auto;
 }
 .btn__link__submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   border-radius: 20px 20px 20px 20px;
   border: 0.0714285714em solid #000;
   max-width: 7.8571428571em;
@@ -155,23 +144,14 @@ body {
 
 header {
   height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 header .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 3.75em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100px;
 }
 header .header__inner .logo {
@@ -197,7 +177,6 @@ header .header__inner .nav .gnav {
 /*ボタン内側*/
 .gnav span {
   display: inline-block;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   /*アニメーションの設定*/
   position: absolute;
@@ -227,8 +206,7 @@ header .header__inner .nav .gnav {
 .gnav.active span:nth-of-type(1) {
   top: 18px;
   left: 18px;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-          transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
   width: 30%;
 }
 
@@ -240,27 +218,19 @@ header .header__inner .nav .gnav {
 .gnav.active span:nth-of-type(3) {
   top: 30px;
   left: 18px;
-  -webkit-transform: translateY(-6px) rotate(45deg);
-          transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
   width: 30%;
 }
 
 @media screen and (max-width: 414px) {
   header {
     height: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   header .header__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 1.4285714286em;
     height: 60px;
   }
@@ -287,7 +257,6 @@ header .header__inner .nav .gnav {
   /*ボタン内側*/
   .gnav span {
     display: inline-block;
-    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     /*アニメーションの設定*/
     position: absolute;
@@ -317,8 +286,7 @@ header .header__inner .nav .gnav {
   .gnav.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
-    -webkit-transform: translateY(6px) rotate(-45deg);
-            transform: translateY(6px) rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
     width: 30%;
   }
 
@@ -330,12 +298,11 @@ header .header__inner .nav .gnav {
   .gnav.active span:nth-of-type(3) {
     top: 30px;
     left: 18px;
-    -webkit-transform: translateY(-6px) rotate(45deg);
-            transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(45deg);
     width: 30%;
   }
 }
-/* main */
+/*==================　about　===================================*/
 .main__inner .about__visual__img {
   width: 414px;
   height: 331px;
@@ -350,6 +317,9 @@ header .header__inner .nav .gnav {
 }
 .main__inner .about__me__title__img {
   display: none;
+}
+.main__inner .about__me__title__img-pc {
+  display: block;
 }
 .main__inner .about__me .about__introduction {
   margin-bottom: 4.9285714286em;
@@ -380,14 +350,9 @@ header .header__inner .nav .gnav {
   /* 教室・サークル */
 }
 .main__inner .business__description__shop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3.2142857143em;
   position: relative;
 }
@@ -406,14 +371,9 @@ header .header__inner .nav .gnav {
   left: -40px;
 }
 .main__inner .business__description__shop__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 30px 30px 30px 30px;
   padding: 3.75em 0 3.75em 3.75em;
   background-color: #fff;
@@ -423,9 +383,7 @@ header .header__inner .nav .gnav {
   bottom: 0;
 }
 .main__inner .business__description__shop__content__title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0;
   padding-bottom: 1.1111111111em;
 }
@@ -436,14 +394,9 @@ header .header__inner .nav .gnav {
   padding-bottom: 1.9375em;
 }
 .main__inner .business__description__tumami {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3.2142857143em;
   position: relative;
 }
@@ -462,14 +415,9 @@ header .header__inner .nav .gnav {
   left: -40px;
 }
 .main__inner .business__description__tumami__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 30px 30px 30px 30px;
   padding: 3.75em 0 3.75em 3.75em;
   background-color: #fff;
@@ -479,9 +427,7 @@ header .header__inner .nav .gnav {
   bottom: 0;
 }
 .main__inner .business__description__tumami__content__title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0;
   padding-bottom: 1.1111111111em;
 }
@@ -492,14 +438,9 @@ header .header__inner .nav .gnav {
   padding-bottom: 2.2142857143em;
 }
 .main__inner .business__description__art-Plaster {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3.2142857143em;
   position: relative;
 }
@@ -518,14 +459,9 @@ header .header__inner .nav .gnav {
   left: -40px;
 }
 .main__inner .business__description__art-Plaster__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 30px 30px 30px 30px;
   padding: 3.75em 0 3.75em 3.75em;
   background-color: #fff;
@@ -535,9 +471,7 @@ header .header__inner .nav .gnav {
   bottom: 0;
 }
 .main__inner .business__description__art-Plaster__content__title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0;
   padding-bottom: 1.1111111111em;
 }
@@ -548,14 +482,9 @@ header .header__inner .nav .gnav {
   padding-bottom: 2.2142857143em;
 }
 .main__inner .business__description__circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3.2142857143em;
   position: relative;
 }
@@ -574,14 +503,9 @@ header .header__inner .nav .gnav {
   left: -40px;
 }
 .main__inner .business__description__circle__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   border-radius: 30px 30px 30px 30px;
   padding: 3.75em 0 3.75em 3.75em;
   background-color: #fff;
@@ -617,18 +541,11 @@ header .header__inner .nav .gnav {
   border-radius: 10px 10px 10px 10px;
 }
 .main__inner .gallery__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90.34%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 .main__inner .gallery__content__list1 {
   width: 50%;
@@ -653,5 +570,319 @@ header .header__inner .nav .gnav {
 }
 .main__inner .btn.ga {
   margin-bottom: 5em;
+}
+
+/*==================　responsive　===================================*/
+@media screen and (max-width: 414px) {
+  .main__inner .about__visual__img {
+    width: 414px;
+    height: 331px;
+  }
+  .main__inner .about__me {
+    padding: 0 1.4285714286em;
+    line-height: 1.3125;
+    margin: 3.75em 0 9.375em;
+  }
+  .main__inner .about__me__title {
+    margin-bottom: 2.5em;
+  }
+  .main__inner .about__me__title__img {
+    display: block;
+    margin-left: 30%;
+  }
+  .main__inner .about__me__title__img-pc {
+    display: none;
+  }
+  .main__inner .about__me .about__introduction {
+    margin-bottom: 4.3125em;
+  }
+  .main__inner .about__me .about__introduction__text {
+    text-align: left;
+  }
+  .main__inner .about__me .about__purchase {
+    margin-bottom: 4.3125em;
+  }
+  .main__inner .about__me .about__purchase__title {
+    text-align: center;
+    margin-bottom: 2.25em;
+  }
+  .main__inner .about__me .about__purchase__text {
+    text-align: left;
+  }
+  .main__inner .business__description {
+    padding-left: 0;
+    padding-right: 1.25em;
+    margin-bottom: 5em;
+    /* ショップ */
+    /* つまみ細工 */
+    /* アートプラスター */
+    /* 教室・サークル */
+  }
+  .main__inner .business__description__shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.8125em;
+  }
+  .main__inner .business__description__shop__thumbnail {
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    margin-left: 1.25em;
+    width: 53.3%;
+    height: 275px;
+    border: 1px solid #000;
+  }
+  .main__inner .business__description__shop__thumbnail-flowers {
+    width: 47.62%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .main__inner .business__description__shop__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 38.24%;
+    padding: 0;
+  }
+  .main__inner .business__description__shop__content__title {
+    align-items: center;
+    margin: 0;
+    padding-bottom: 1.1111111111em;
+  }
+  .main__inner .business__description__shop__content__text {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2.2142857143em;
+  }
+  .main__inner .business__description__tumami {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.2142857143em;
+  }
+  .main__inner .business__description__tumami__thumbnail {
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    margin-left: 1.4285714286em;
+    width: 53.3%;
+    height: 275px;
+    border: 1px solid #000;
+  }
+  .main__inner .business__description__tumami__thumbnail-flowers {
+    width: 47.62%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .main__inner .business__description__tumami__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 38.24%;
+    padding: 0;
+  }
+  .main__inner .business__description__tumami__content__title {
+    align-items: center;
+    margin: 0;
+    padding-bottom: 1.1111111111em;
+  }
+  .main__inner .business__description__tumami__content__text {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2.2142857143em;
+  }
+  .main__inner .business__description__art-Plaster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.2142857143em;
+  }
+  .main__inner .business__description__art-Plaster__thumbnail {
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    margin-left: 1.4285714286em;
+    width: 53.3%;
+    height: 275px;
+    border: 1px solid #000;
+  }
+  .main__inner .business__description__art-Plaster__thumbnail-flowers {
+    width: 47.62%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .main__inner .business__description__art-Plaster__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 38.24%;
+  }
+  .main__inner .business__description__art-Plaster__content__title {
+    align-items: center;
+    margin: 0;
+    padding-bottom: 1.1111111111em;
+  }
+  .main__inner .business__description__art-Plaster__content__text {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2.2142857143em;
+  }
+  .main__inner .business__description__circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.2142857143em;
+  }
+  .main__inner .business__description__circle__thumbnail {
+    border-radius: 30px 30px 30px 30px;
+    position: relative;
+    margin-left: 1.4285714286em;
+    width: 53.3%;
+    height: 275px;
+    border: 1px solid #000;
+  }
+  .main__inner .business__description__circle__thumbnail-flowers {
+    width: 47.62%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .main__inner .business__description__circle__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 38.24%;
+    padding: 0;
+  }
+  .main__inner .business__description__circle__content__title {
+    align-items: center;
+    margin: 0;
+    padding-bottom: 1.1111111111em;
+  }
+  .main__inner .business__description__circle__content__text {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2.2142857143em;
+  }
+  .main__inner .gallery {
+    padding: 0 1.4285714286em;
+    margin: 5.7142857143em 0 2.8571428571em;
+  }
+  .main__inner .gallery__title img {
+    width: 21.19%;
+  }
+  .main__inner .gallery__btn1 {
+    padding: 0.2857142857em 0.5714285714em;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .main__inner .gallery__btn2 {
+    padding: 0.2857142857em 0.5714285714em;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .main__inner .gallery__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90.34%;
+    align-items: flex-start;
+  }
+  .main__inner .gallery__content__list1 {
+    width: 50%;
+  }
+  .main__inner .gallery__content__list2 {
+    width: 50%;
+  }
+  .main__inner .gallery__content .gallery1 {
+    width: 100%;
+    height: 219px;
+    border: 1px solid #000;
+    margin: 0 0.8571428571em 0.8571428571em 0;
+  }
+  .main__inner .gallery__content .gallery2 {
+    width: 100%;
+    height: 219px;
+    border: 1px solid #000;
+    margin: 0 0 0.8571428571em 0.8571428571em;
+  }
+  .main__inner .gallery__content .gallery2:nth-of-type(1) {
+    height: 160px;
+  }
+  .main__inner .btn.ga {
+    margin-bottom: 5em;
+  }
+}
+/* =========== footer ============================ */
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+
+.footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
+}
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+.footer__about__title span {
+  font-size: 12px;
+}
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__nav__gnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25em 0;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
 }
 /*# sourceMappingURL=about.css.map */
