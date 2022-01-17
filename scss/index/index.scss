@@ -126,18 +126,33 @@ main {
         .main__inner {
             // main__visual
             .main__visual {
+                &__text {
+                    position: relative;
+                    top: 332px;
+                    left: 20px;
+                    text-align: left;
+                }
+                span {
+                    font-size: 40px;
+                    line-height: 1.6em;
+                }
                 padding: 0;
                 &__list {
+                    width: 343px;
+                    height: 776px;
                     margin-left: 70px;
                     &__img {
                         img {
                             width: 100%;
                             height: 100%;
                         }
-                        .img1 {
+                        &1 {
                             display: block;
-                            width: 343px;
-                            height: 776px;
+                            height: 100%;
+                            background: url("/img/mainvisual-3.png");
+                            background-size: 343px 776px;
+                            background-repeat: no-repeat;
+                            background-position: right center;
                         }
                         .img2 {
                             display: none;

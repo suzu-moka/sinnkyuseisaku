@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  font-size: 16px;
-}
-
 h1 {
   font-size: 28px;
 }
@@ -35,7 +31,7 @@ body {
 }
 
 .main__inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -111,7 +107,7 @@ body {
 }
 
 .main__inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -155,10 +151,6 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
-body {
-  font-size: 16px;
-}
-
 header {
   height: 100px;
   justify-content: center;
@@ -418,17 +410,32 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   main .main__inner .main__visual {
     padding: 0;
   }
+  main .main__inner .main__visual__text {
+    position: relative;
+    top: 332px;
+    left: 20px;
+    text-align: left;
+  }
+  main .main__inner .main__visual span {
+    font-size: 40px;
+    line-height: 1.6em;
+  }
   main .main__inner .main__visual__list {
+    width: 343px;
+    height: 776px;
     margin-left: 70px;
   }
   main .main__inner .main__visual__list__img img {
     width: 100%;
     height: 100%;
   }
-  main .main__inner .main__visual__list__img .img1 {
+  main .main__inner .main__visual__list__img1 {
     display: block;
-    width: 343px;
-    height: 776px;
+    height: 100%;
+    background: url("/img/mainvisual-3.png");
+    background-size: 343px 776px;
+    background-repeat: no-repeat;
+    background-position: right center;
   }
   main .main__inner .main__visual__list__img .img2 {
     display: none;
