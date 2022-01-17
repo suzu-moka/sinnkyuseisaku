@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 @import "../responsive-tub";
+
 @import "../PC/PC";
+
 @import "../header";
 
 /* main==================================== */
@@ -52,7 +54,7 @@
                     margin-right: auto;
                     right: auto;
                     position: absolute;
-                    left: 285px;
+                    left: 800px;
                 }
                 &__btn {
                     a {

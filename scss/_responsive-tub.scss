@@ -78,9 +78,19 @@ body {
     background-color: $color-bass;
     font-size: 16px;
     font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-    max-width: 100%;
-    margin: 0 auto;
     text-align: center;
+}
+
+.main__inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+    .main__inner {
+        width: 414px;
+        margin: 0 auto;
+    }
 }
 
 ul {

@@ -31,11 +31,20 @@ body {
   background-color: #f6f4ee;
   font-size: 16px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  max-width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 
+.main__inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+  .main__inner {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
 ul {
   padding-left: 0;
 }
@@ -99,11 +108,20 @@ body {
   background-color: #f6f4ee;
   font-size: 16px;
   font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  max-width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 
+.main__inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+  .main__inner {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
 ul {
   padding-left: 0;
 }
@@ -306,30 +324,33 @@ header .header__inner .nav .gnav {
 .main__inner .about__visual__img {
   width: 414px;
   height: 331px;
+  display: none;
 }
 .main__inner .about__me {
-  padding: 0 1.4285714286em;
-  line-height: 1.5;
-  margin: 4.2857142857em 0 10.7142857143em;
+  padding: 0 1.875em;
+  padding: 0 3.75em;
+  line-height: 1.3125em;
+  margin: 3.75em auto 9.375em;
 }
 .main__inner .about__me__title {
-  margin-bottom: 2.8571428571em;
+  margin-bottom: 2.5em;
 }
 .main__inner .about__me__title__img {
   display: none;
 }
 .main__inner .about__me__title__img-pc {
   display: block;
+  margin-left: 30%;
 }
 .main__inner .about__me .about__introduction {
-  margin-bottom: 4.9285714286em;
+  margin-bottom: 4.3125em;
 }
 .main__inner .about__me .about__introduction__text {
   font-size: 16px;
   text-align: left;
 }
 .main__inner .about__me .about__purchase {
-  margin-bottom: 4.9285714286em;
+  margin-bottom: 4.3125em;
 }
 .main__inner .about__me .about__purchase__title {
   text-align: center;
@@ -341,9 +362,8 @@ header .header__inner .nav .gnav {
   text-align: left;
 }
 .main__inner .business__description {
-  padding-left: 0;
-  padding-right: 1.4285714286em;
-  margin-bottom: 5.7142857143em;
+  padding: 0 1.875em;
+  margin-bottom: 5em;
   /* ショップ */
   /* つまみ細工 */
   /* アートプラスター */
@@ -353,13 +373,13 @@ header .header__inner .nav .gnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 3.2142857143em;
+  margin-bottom: 7.5em;
   position: relative;
 }
 .main__inner .business__description__shop__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.4285714286em;
+  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -397,13 +417,13 @@ header .header__inner .nav .gnav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 3.2142857143em;
+  margin-bottom: 7.5em;
   position: relative;
 }
 .main__inner .business__description__tumami__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.4285714286em;
+  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -435,19 +455,19 @@ header .header__inner .nav .gnav {
   text-align: left;
   font-size: 16px;
   margin: 0;
-  padding-bottom: 2.2142857143em;
+  padding-bottom: 1.9375em;
 }
 .main__inner .business__description__art-Plaster {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 3.2142857143em;
+  margin-bottom: 7.5em;
   position: relative;
 }
 .main__inner .business__description__art-Plaster__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.4285714286em;
+  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -479,19 +499,19 @@ header .header__inner .nav .gnav {
   text-align: left;
   font-size: 16px;
   margin: 0;
-  padding-bottom: 2.2142857143em;
+  padding-bottom: 1.9375em;
 }
 .main__inner .business__description__circle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 3.2142857143em;
+  margin-bottom: 7.5em;
   position: relative;
 }
 .main__inner .business__description__circle__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.4285714286em;
+  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -644,13 +664,17 @@ header .header__inner .nav .gnav {
     justify-content: center;
     width: 38.24%;
     padding: 0;
+    background-color: initial;
+    position: initial;
   }
   .main__inner .business__description__shop__content__title {
+    font-size: 18px;
     align-items: center;
     margin: 0;
     padding-bottom: 1.1111111111em;
   }
   .main__inner .business__description__shop__content__text {
+    font-size: 14px;
     text-align: left;
     margin: 0;
     padding-bottom: 2.2142857143em;
@@ -681,13 +705,18 @@ header .header__inner .nav .gnav {
     justify-content: center;
     width: 38.24%;
     padding: 0;
+    background-color: initial;
+    position: initial;
+    padding: 0;
   }
   .main__inner .business__description__tumami__content__title {
+    font-size: 18px;
     align-items: center;
     margin: 0;
     padding-bottom: 1.1111111111em;
   }
   .main__inner .business__description__tumami__content__text {
+    font-size: 14px;
     text-align: left;
     margin: 0;
     padding-bottom: 2.2142857143em;
@@ -717,13 +746,18 @@ header .header__inner .nav .gnav {
     flex-wrap: wrap;
     justify-content: center;
     width: 38.24%;
+    padding: 0;
+    background-color: initial;
+    position: initial;
   }
   .main__inner .business__description__art-Plaster__content__title {
+    font-size: 18px;
     align-items: center;
     margin: 0;
     padding-bottom: 1.1111111111em;
   }
   .main__inner .business__description__art-Plaster__content__text {
+    font-size: 14px;
     text-align: left;
     margin: 0;
     padding-bottom: 2.2142857143em;
@@ -754,13 +788,17 @@ header .header__inner .nav .gnav {
     justify-content: center;
     width: 38.24%;
     padding: 0;
+    background-color: initial;
+    position: initial;
   }
   .main__inner .business__description__circle__content__title {
+    font-size: 18px;
     align-items: center;
     margin: 0;
     padding-bottom: 1.1111111111em;
   }
   .main__inner .business__description__circle__content__text {
+    font-size: 14px;
     text-align: left;
     margin: 0;
     padding-bottom: 2.2142857143em;
@@ -769,8 +807,14 @@ header .header__inner .nav .gnav {
     padding: 0 1.4285714286em;
     margin: 5.7142857143em 0 2.8571428571em;
   }
+  .main__inner .gallery__title {
+    margin-bottom: 1.25em;
+  }
   .main__inner .gallery__title img {
     width: 21.19%;
+  }
+  .main__inner .gallery__btn {
+    margin-bottom: 1.25em;
   }
   .main__inner .gallery__btn1 {
     padding: 0.2857142857em 0.5714285714em;
@@ -784,8 +828,10 @@ header .header__inner .nav .gnav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90.34%;
-    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    background-color: initial;
+    position: initial;
   }
   .main__inner .gallery__content__list1 {
     width: 50%;
@@ -810,6 +856,7 @@ header .header__inner .nav .gnav {
   }
   .main__inner .btn.ga {
     margin-bottom: 5em;
+    margin-left: auto;
   }
 }
 /* =========== footer ============================ */

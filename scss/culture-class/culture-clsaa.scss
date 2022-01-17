@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "../responsive-tub";
+
 /*                                                   */
 @import "../PC/PC";
 
@@ -440,76 +441,102 @@
                 &__club {
                     margin: (60em/14) 0 (70em/14);
                     &__title {
+                        font-size: 18px;
                         text-align: left;
-                        margin-bottom: (60em/20);
+                        margin: 0 0 (40em/18);
                         &__name.culture {
                             @include inner-one-side(2em, 0);
                             margin-bottom: (16em/14);
                             .culture {
                                 @include inner();
                                 &__name {
+                                    font-size: 16px;
                                     text-align: left;
                                     margin-bottom: (20em/16);
                                 }
+
                                 &__day {
                                     @include tabella1();
-
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt();
+                                        font-size: 14px;
                                     }
                                 }
+
                                 &__Place {
                                     @include tabella1();
-
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt();
+                                        font-size: 14px;
                                     }
                                 }
+
                                 &__time {
                                     @include tabella1();
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt();
+                                        font-size: 14px;
                                     }
                                 }
                                 &__participation_cost {
                                     @include tabella1();
-
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt();
+                                        font-size: 14px;
                                     }
                                 }
                                 &__TEL {
                                     @include tabella1();
-
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt();
+                                        font-size: 14px;
                                     }
                                 }
+
                                 &__remarks {
                                     @include tabella1();
-
+                                    display: block;
+                                    padding: 0;
                                     &__title {
                                         @include culture_tit();
+                                        font-size: 16px;
                                     }
                                     &__text {
                                         @include culture_txt(left);
+                                        font-size: 14px;
                                     }
                                 }
+
                                 &__map {
                                     margin-top: (36em/14);
                                     iframe {

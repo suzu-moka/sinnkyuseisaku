@@ -3,6 +3,7 @@
 @import "../PC/PC";
 
 @import "../responsive-tub";
+
 /*==================　header　===================================*/
 @import "../header.scss";
 
@@ -14,30 +15,33 @@
             &__img {
                 width: 414px;
                 height: 331px;
+                display: none;
             }
         }
         .about__me {
-            @include inner();
-            line-height: (21/14);
-            margin: (60em/14) 0 (150em/14);
+            @include innerPC();
+            padding: 0 (60em/16);
+            line-height: (21em/16);
+            margin: (60em/16) auto (150em/16);
             &__title {
-                margin-bottom: (40em/14);
+                margin-bottom: (40em/16);
                 &__img {
                     display: none;
                 }
                 &__img-pc {
                     display: block;
+                    margin-left: 30%;
                 }
             }
             .about__introduction {
-                margin-bottom: (69em/14);
+                margin-bottom: (69em/16);
                 &__text {
                     font-size: 16px;
                     text-align: left;
                 }
             }
             .about__purchase {
-                margin-bottom: (69em/14);
+                margin-bottom: (69em/16);
                 &__title {
                     text-align: center;
                     font-size: 18px;
@@ -50,18 +54,18 @@
             }
         }
         .business__description {
-            @include inner-one-side(0, (20em/14));
-            margin-bottom: (80em/14);
+            @include innerPC();
+            margin-bottom: (80em/16);
 
             /* ショップ */
             &__shop {
                 @include flex(wrap, space-between);
-                margin-bottom: (45em/14);
+                margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
                     @include radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/14);
+                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -98,12 +102,12 @@
             /* つまみ細工 */
             &__tumami {
                 @include flex(wrap, space-between);
-                margin-bottom: (45em/14);
+                margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
                     @include radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/14);
+                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -133,19 +137,19 @@
                         text-align: left;
                         font-size: 16px;
                         margin: 0;
-                        padding-bottom: (31em/14);
+                        padding-bottom: (31em/16);
                     }
                 }
             }
             /* アートプラスター */
             &__art-Plaster {
                 @include flex(wrap, space-between);
-                margin-bottom: (45em/14);
+                margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
                     @include radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/14);
+                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -176,19 +180,19 @@
                         text-align: left;
                         font-size: 16px;
                         margin: 0;
-                        padding-bottom: (31em/14);
+                        padding-bottom: (31em/16);
                     }
                 }
             }
             /* 教室・サークル */
             &__circle {
                 @include flex(wrap, space-between);
-                margin-bottom: (45em/14);
+                margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
                     @include radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/14);
+                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -345,12 +349,16 @@
                         @include flex(wrap, center);
                         width: 38.24%;
                         padding: 0;
+                        background-color: initial;
+                        position: initial;
                         &__title {
+                            font-size: 18px;
                             align-items: center;
                             margin: 0;
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            font-size: 14px;
                             text-align: left;
                             margin: 0;
                             padding-bottom: (31em/14);
@@ -381,12 +389,17 @@
                         @include flex(wrap, center);
                         width: 38.24%;
                         padding: 0;
+                        background-color: initial;
+                        position: initial;
+                        padding: 0;
                         &__title {
+                            font-size: 18px;
                             align-items: center;
                             margin: 0;
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            font-size: 14px;
                             text-align: left;
                             margin: 0;
                             padding-bottom: (31em/14);
@@ -416,13 +429,17 @@
                     &__content {
                         @include flex(wrap, center);
                         width: 38.24%;
-
+                        padding: 0;
+                        background-color: initial;
+                        position: initial;
                         &__title {
+                            font-size: 18px;
                             align-items: center;
                             margin: 0;
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            font-size: 14px;
                             text-align: left;
                             margin: 0;
                             padding-bottom: (31em/14);
@@ -453,12 +470,16 @@
                         @include flex(wrap, center);
                         width: 38.24%;
                         padding: 0;
+                        background-color: initial;
+                        position: initial;
                         &__title {
+                            font-size: 18px;
                             align-items: center;
                             margin: 0;
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            font-size: 14px;
                             text-align: left;
                             margin: 0;
                             padding-bottom: (31em/14);
@@ -471,11 +492,13 @@
                 margin: (80em/14) 0 (40em/14);
 
                 &__title {
+                    margin-bottom: (20em/16);
                     img {
                         width: 21.19%;
                     }
                 }
                 &__btn {
+                    margin-bottom: (20em/16);
                     &1 {
                         padding: (4em/14) (8em/14);
                         @include radius(10px, 10px, 10px, 10px);
@@ -487,8 +510,10 @@
                 }
                 &__content {
                     @include flex(wrap, center);
-                    width: 90.34%;
-                    align-items: flex-start;
+                    width: 100%;
+                    padding: 0;
+                    background-color: initial;
+                    position: initial;
                     &__list1 {
                         width: 50%;
                     }
@@ -514,6 +539,7 @@
             }
             .btn.ga {
                 margin-bottom: (70em/14);
+                margin-left: auto;
             }
         }
     }
