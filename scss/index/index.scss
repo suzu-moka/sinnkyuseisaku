@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import "../PC/PC";
-
 @import "../responsive-tub";
 
 @import "../header.scss";
@@ -62,7 +60,7 @@ main {
                 }
                 &__body {
                     @include radius(25px, 25px, 25px, 25px);
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     padding: (60em/14) 0 (60em/14) (60em/14);
                     width: 49.11%;
@@ -73,7 +71,7 @@ main {
 
                 &__body-rig {
                     @include radius(25px, 25px, 25px, 25px);
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     padding: (60em/14) (60em/14) 0 (60em/14);
                     width: 49.11%;

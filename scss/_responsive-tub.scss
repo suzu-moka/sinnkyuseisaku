@@ -3,9 +3,9 @@
 $color-bass: #f6f4ee;
 $color-border: #000;
 $color-footer: #2f1e17;
-$color-footer_text: #fff;
 $color-work-nav: #262845;
 $color-shop: #eaa1ba;
+$color-white: #fff;
 
 @mixin flex($w: wrap, $j: space-between) {
     display: flex;
@@ -53,6 +53,20 @@ $color-shop: #eaa1ba;
 
 @mixin tabella1($s: 1px, $l: solid, $c: $color-border) {
     border-bottom: $s $l $c;
+}
+
+// pc用　mixin
+
+@mixin heder-innerPC {
+    padding: 0 (60em/16);
+}
+
+@mixin innerPC {
+    padding: 0 (30em/16);
+}
+
+@mixin text_card {
+    padding: (60em/16) 0 (60em/16) (60em/16);
 }
 
 h1 {

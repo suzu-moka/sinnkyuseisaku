@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import "../PC/PC";
-
 @import "../responsive-tub";
 
 /*==================　header　===================================*/
@@ -80,7 +78,7 @@
                     @include flex(wrap, center);
                     @include radius(30px, 30px, 30px, 30px);
                     @include text_card();
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -123,7 +121,7 @@
                     @include flex(wrap, center);
                     @include radius(30px, 30px, 30px, 30px);
                     @include text_card();
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -165,7 +163,7 @@
                     @include flex(wrap, center);
                     @include radius(30px, 30px, 30px, 30px);
                     @include text_card();
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -208,7 +206,7 @@
                     @include flex(wrap, center);
                     @include radius(30px, 30px, 30px, 30px);
                     @include text_card();
-                    background-color: $color-footer_text;
+                    background-color: $color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
