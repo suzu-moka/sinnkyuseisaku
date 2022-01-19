@@ -1,14 +1,20 @@
 @charset "utf-8";
 
-@import "../responsive-tub";
+/*==================  component ===================================*/
+@use "../component" as co;
 
-@import "../header.scss";
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
+
 /*================== index ===================================*/
 main {
     .main__inner {
         // main__visual
         .main__visual {
-            @include innerPC();
+            @include co.innerPC();
             &__list {
                 padding-bottom: 60px;
                 &__img {
@@ -30,7 +36,7 @@ main {
         // main__contents
         .main__contents {
             margin-top: (100em/14);
-            @include innerPC();
+            @include co.innerPC();
             &__title {
                 margin-bottom: (100em/14);
                 align-items: center;
@@ -50,17 +56,17 @@ main {
                 height: 600px;
                 margin-bottom: (120em/14);
                 &__visual {
-                    @include radius(25px, 25px, 25px, 25px);
+                    @include co.radius(25px, 25px, 25px, 25px);
                     padding-right: 20px;
                     position: absolute;
                     width: 73.66%;
                     height: 500px;
-                    border: (1em/14) solid $color-border;
+                    border: (1em/14) solid co.$color-border;
                     margin-right: auto;
                 }
                 &__body {
-                    @include radius(25px, 25px, 25px, 25px);
-                    background-color: $color-white;
+                    @include co.radius(25px, 25px, 25px, 25px);
+                    background-color: co.$color-white;
                     position: absolute;
                     padding: (60em/14) 0 (60em/14) (60em/14);
                     width: 49.11%;
@@ -70,8 +76,8 @@ main {
                 }
 
                 &__body-rig {
-                    @include radius(25px, 25px, 25px, 25px);
-                    background-color: $color-white;
+                    @include co.radius(25px, 25px, 25px, 25px);
+                    background-color: co.$color-white;
                     position: absolute;
                     padding: (60em/14) (60em/14) 0 (60em/14);
                     width: 49.11%;
@@ -82,12 +88,12 @@ main {
 
                 .type2 {
                     &__visual {
-                        @include radius(25px, 25px, 25px, 25px);
+                        @include co.radius(25px, 25px, 25px, 25px);
                         padding-left: 20px;
                         position: absolute;
                         width: 73.66%;
                         height: 500px;
-                        border: (1em/14) solid $color-border;
+                        border: (1em/14) solid co.$color-border;
                         margin-left: auto;
                         left: 295px;
                     }
@@ -126,8 +132,9 @@ main {
         .main__inner {
             // main__visual
             .main__visual {
+                height: 836px;
                 &__text {
-                    position: relative;
+                    position: absolute;
                     top: 332px;
                     left: 20px;
                     text-align: left;
@@ -135,8 +142,8 @@ main {
                 span {
                     font-size: 40px;
                     line-height: 1.6em;
+                    letter-spacing: 0.1em;
                 }
-                padding: 0;
                 &__list {
                     width: 343px;
                     height: 776px;
@@ -152,7 +159,7 @@ main {
                             background: url("/img/mainvisual-3.png");
                             background-size: 343px 776px;
                             background-repeat: no-repeat;
-                            background-position: right center;
+                            background-position: 0 right;
                         }
                         .img2 {
                             display: none;
@@ -178,37 +185,37 @@ main {
                 }
                 // type1
                 .main__contents__type1 {
-                    margin-bottom: (80em/14);
+                    margin-bottom: (100em/14);
                     height: 435px;
                 }
                 .type1 {
                     position: initial;
                     &__visual {
-                        @include radius(0, 30px, 30px, 0);
+                        @include co.radius(0, 30px, 30px, 0);
                         position: initial;
                         width: 92.75%;
                         height: 248px;
                         margin-right: auto;
                         border: none;
                         img {
-                            @include radius(0, 30px, 30px, 0);
-                            border: (1em/14) solid $color-border;
+                            @include co.radius(0, 30px, 30px, 0);
+                            border: (1em/14) solid co.$color-border;
                         }
                     }
                     &__body {
-                        @include radius(25px, 25px, 25px, 25px);
+                        @include co.radius(25px, 25px, 25px, 25px);
+                        @include co.inner();
                         position: initial;
                         background-color: transparent;
-                        padding: 0;
                         width: 100%;
                         height: 188px;
                         left: 0;
                     }
                     &__body-rig {
-                        @include radius(25px, 25px, 25px, 25px);
+                        @include co.radius(25px, 25px, 25px, 25px);
+                        @include co.inner();
                         position: initial;
                         background-color: transparent;
-                        padding: 0;
                         width: 100%;
                         height: 188px;
                         left: 0;
@@ -216,16 +223,16 @@ main {
 
                     .type2 {
                         &__visual {
-                            @include radius(30px, 0, 0, 30px);
-                            position: sticky;
+                            @include co.radius(30px, 0, 0, 30px);
+                            position: initial;
                             width: 92.75%;
                             height: 248px;
                             padding: 0;
                             margin-left: auto;
                             border: none;
                             img {
-                                @include radius(30px, 0, 0, 30px);
-                                border: (1em/14) solid $color-border;
+                                @include co.radius(30px, 0, 0, 30px);
+                                border: (1em/14) solid co.$color-border;
                             }
                         }
                     }
@@ -238,7 +245,6 @@ main {
                         font-size: 1em;
                         margin: 30px 0;
                         text-align: left;
-                        padding-left: 10px;
                     }
 
                     // btn
@@ -251,14 +257,14 @@ main {
                 .btn {
                     .btn__link {
                         .btn__co {
-                            @include flex(wrap, center);
-                            @include radius(20px, 20px, 20px, 20px);
+                            @include co.flex(wrap, center);
+                            @include co.radius(20px, 20px, 20px, 20px);
+                            position: absolute;
                             background-color: #fff;
                             border: 1px solid #000;
                             height: 32px;
                             width: 110px;
-                            right: 0;
-                            margin-left: 80%;
+                            right: (20em/16);
                             p {
                                 display: block;
                             }
@@ -275,5 +281,3 @@ main {
         }
     }
 }
-/*==================　footer　===================================*/
-@import "../footer-res";

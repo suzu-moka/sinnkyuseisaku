@@ -1,11 +1,16 @@
-@import "./responsive-tub.scss";
+@charset "utf-8";
+
+/*==================  component ===================================*/
+@use "../scss/component" as co;
+
+/*==================  header ===================================*/
 
 header {
     height: 100px;
     justify-content: center;
     .header__inner {
-        @include flex();
-        @include heder-innerPC();
+        @include co.flex();
+        @include co.heder-innerPC();
         align-items: center;
         height: 100px;
         .logo {
@@ -44,17 +49,17 @@ header {
 }
 
 .gnav span:nth-of-type(1) {
-    background-color: $color-border;
+    background-color: co.$color-border;
     top: 15px;
 }
 
 .gnav span:nth-of-type(2) {
-    background-color: $color-border;
+    background-color: co.$color-border;
     top: 23px;
 }
 
 .gnav span:nth-of-type(3) {
-    background-color: $color-border;
+    background-color: co.$color-border;
     top: 31px;
 }
 
@@ -83,8 +88,8 @@ header {
         height: 60px;
         justify-content: center;
         .header__inner {
-            @include flex();
-            @include inner();
+            @include co.flex();
+            @include co.inner();
             height: 60px;
             .logo {
                 margin: 10px 0;
@@ -122,17 +127,17 @@ header {
     }
 
     .gnav span:nth-of-type(1) {
-        background-color: $color-border;
+        background-color: co.$color-border;
         top: 15px;
     }
 
     .gnav span:nth-of-type(2) {
-        background-color: $color-border;
+        background-color: co.$color-border;
         top: 23px;
     }
 
     .gnav span:nth-of-type(3) {
-        background-color: $color-border;
+        background-color: co.$color-border;
         top: 31px;
     }
 

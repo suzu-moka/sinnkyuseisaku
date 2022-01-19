@@ -75,82 +75,8 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-body {
-  background-color: #f6f4ee;
-  font-size: 16px;
-  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.main__inner {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 414px) {
-  .main__inner {
-    width: 414px;
-    margin: 0 auto;
-  }
-}
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/*ボタン*/
-.btn {
-  width: 76.92%;
-}
-.btn__link__submit {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
-  background-color: #fff;
-}
-.btn__link__submit__text {
-  margin: 0;
-}
+/*==================  component ===================================*/
+/*==================  header ===================================*/
 header {
   height: 100px;
   justify-content: center;
@@ -311,6 +237,84 @@ header .header__inner .nav .gnav {
     width: 30%;
   }
 }
+/*==================  component ===================================*/
+/*==================　footer　===================================*/
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+
+.footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
+}
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+.footer__about__title span {
+  font-size: 12px;
+}
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__nav__gnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25em 0;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/*==================  component ===================================*/
+/*==================  header ===================================*/
+/*==================　footer　===================================*/
 /*================== index ===================================*/
 main .main__inner .main__visual {
   padding: 0 1.875em;
@@ -408,10 +412,10 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
 /*==================　responsive　===================================*/
 @media screen and (max-width: 414px) {
   main .main__inner .main__visual {
-    padding: 0;
+    height: 836px;
   }
   main .main__inner .main__visual__text {
-    position: relative;
+    position: absolute;
     top: 332px;
     left: 20px;
     text-align: left;
@@ -419,6 +423,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   main .main__inner .main__visual span {
     font-size: 40px;
     line-height: 1.6em;
+    letter-spacing: 0.1em;
   }
   main .main__inner .main__visual__list {
     width: 343px;
@@ -435,7 +440,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     background: url("/img/mainvisual-3.png");
     background-size: 343px 776px;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 0 right;
   }
   main .main__inner .main__visual__list__img .img2 {
     display: none;
@@ -456,7 +461,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     display: none;
   }
   main .main__inner .main__contents .main__contents__type1 {
-    margin-bottom: 5.7142857143em;
+    margin-bottom: 7.1428571429em;
     height: 435px;
   }
   main .main__inner .main__contents .type1 {
@@ -476,26 +481,25 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   }
   main .main__inner .main__contents .type1__body {
     border-radius: 25px 25px 25px 25px;
+    padding: 0 1.4285714286em;
     position: initial;
     background-color: transparent;
-    padding: 0;
     width: 100%;
     height: 188px;
     left: 0;
   }
   main .main__inner .main__contents .type1__body-rig {
     border-radius: 25px 25px 25px 25px;
+    padding: 0 1.4285714286em;
     position: initial;
     background-color: transparent;
-    padding: 0;
     width: 100%;
     height: 188px;
     left: 0;
   }
   main .main__inner .main__contents .type1 .type2__visual {
     border-radius: 30px 0 0 30px;
-    position: -webkit-sticky;
-    position: sticky;
+    position: initial;
     width: 92.75%;
     height: 248px;
     padding: 0;
@@ -514,7 +518,6 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     font-size: 1em;
     margin: 30px 0;
     text-align: left;
-    padding-left: 10px;
   }
   main .main__inner .main__contents .type1__btn {
     display: block;
@@ -526,12 +529,12 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 20px 20px 20px 20px;
+    position: absolute;
     background-color: #fff;
     border: 1px solid #000;
     height: 32px;
     width: 110px;
-    right: 0;
-    margin-left: 80%;
+    right: 1.25em;
   }
   main .main__inner .main__contents .btn .btn__link .btn__co p {
     display: block;
@@ -542,78 +545,5 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol-pc {
     display: none;
   }
-}
-/*==================　footer　===================================*/
-footer {
-  padding: 0 1.4285714286em;
-  color: #fff;
-  background-color: #2f1e17;
-}
-
-.footer__about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 0.625em;
-  align-items: center;
-}
-.footer__about__logo {
-  width: 50px;
-  height: 35px;
-}
-.footer__about__title span {
-  font-size: 12px;
-}
-.footer__about .Instagram-link .Instagram {
-  max-width: 24px;
-  max-height: 24px;
-}
-
-.footer__nav__gnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.25em 0;
-}
-.footer__nav__gnav__li {
-  width: 33.3%;
-  border-left: 1px solid #fff;
-}
-.footer__nav__gnav__li a {
-  color: #fff;
-  font-size: 14px;
-}
-
-.menu-btn {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  z-index: 90;
-  background-color: #3584bb;
-}
-
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu-btn span:before {
-  bottom: 8px;
-}
-
-.menu-btn span:after {
-  top: 8px;
 }
 /*# sourceMappingURL=index.css.map */

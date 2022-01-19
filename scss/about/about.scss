@@ -1,9 +1,13 @@
 @charset "utf-8";
 
-@import "../responsive-tub";
+/*==================  component ===================================*/
+@use "../component" as co;
 
-/*==================　header　===================================*/
-@import "../header.scss";
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
 
 /*==================　about　===================================*/
 .main {
@@ -17,7 +21,7 @@
             }
         }
         .about__me {
-            @include innerPC();
+            @include co.innerPC();
             padding: 0 (60em/16);
             line-height: (21em/16);
             margin: (60em/16) auto (150em/16);
@@ -52,18 +56,17 @@
             }
         }
         .business__description {
-            @include innerPC();
+            @include co.innerPC();
             margin-bottom: (80em/16);
 
             /* ショップ */
             &__shop {
-                @include flex(wrap, space-between);
+                @include co.flex(wrap, space-between);
                 margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
-                    @include radius(30px, 30px, 30px, 30px);
+                    @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -75,10 +78,10 @@
                     }
                 }
                 &__content {
-                    @include flex(wrap, center);
-                    @include radius(30px, 30px, 30px, 30px);
-                    @include text_card();
-                    background-color: $color-white;
+                    @include co.flex(wrap, center);
+                    @include co.radius(30px, 30px, 30px, 30px);
+                    @include co.text_card();
+                    background-color: co.$color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -99,13 +102,12 @@
             }
             /* つまみ細工 */
             &__tumami {
-                @include flex(wrap, space-between);
+                @include co.flex(wrap, space-between);
                 margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
-                    @include radius(30px, 30px, 30px, 30px);
+                    @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -118,10 +120,10 @@
                     }
                 }
                 &__content {
-                    @include flex(wrap, center);
-                    @include radius(30px, 30px, 30px, 30px);
-                    @include text_card();
-                    background-color: $color-white;
+                    @include co.flex(wrap, center);
+                    @include co.radius(30px, 30px, 30px, 30px);
+                    @include co.text_card();
+                    background-color: co.$color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -141,13 +143,12 @@
             }
             /* アートプラスター */
             &__art-Plaster {
-                @include flex(wrap, space-between);
+                @include co.flex(wrap, space-between);
                 margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
-                    @include radius(30px, 30px, 30px, 30px);
+                    @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -160,10 +161,10 @@
                     }
                 }
                 &__content {
-                    @include flex(wrap, center);
-                    @include radius(30px, 30px, 30px, 30px);
-                    @include text_card();
-                    background-color: $color-white;
+                    @include co.flex(wrap, center);
+                    @include co.radius(30px, 30px, 30px, 30px);
+                    @include co.text_card();
+                    background-color: co.$color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -184,13 +185,12 @@
             }
             /* 教室・サークル */
             &__circle {
-                @include flex(wrap, space-between);
+                @include co.flex(wrap, space-between);
                 margin-bottom: (120em/16);
                 position: relative;
                 &__thumbnail {
-                    @include radius(30px, 30px, 30px, 30px);
+                    @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
-                    margin-left: (20em/16);
                     width: 71.24%;
                     height: 500px;
                     border: 1px solid #000;
@@ -203,10 +203,10 @@
                     }
                 }
                 &__content {
-                    @include flex(wrap, center);
-                    @include radius(30px, 30px, 30px, 30px);
-                    @include text_card();
-                    background-color: $color-white;
+                    @include co.flex(wrap, center);
+                    @include co.radius(30px, 30px, 30px, 30px);
+                    @include co.text_card();
+                    background-color: co.$color-white;
                     position: absolute;
                     width: 38.24%;
                     right: 0;
@@ -226,7 +226,7 @@
             }
         }
         .gallery {
-            @include inner();
+            @include co.inner();
             margin: (80em/14) 0 (40em/14);
 
             &__title {
@@ -237,15 +237,15 @@
             &__btn {
                 &1 {
                     padding: (4em/14) (8em/14);
-                    @include radius(10px, 10px, 10px, 10px);
+                    @include co.radius(10px, 10px, 10px, 10px);
                 }
                 &2 {
                     padding: (4em/14) (8em/14);
-                    @include radius(10px, 10px, 10px, 10px);
+                    @include co.radius(10px, 10px, 10px, 10px);
                 }
             }
             &__content {
-                @include flex(wrap, center);
+                @include co.flex(wrap, center);
                 width: 90.34%;
                 align-items: flex-start;
                 &__list1 {
@@ -289,7 +289,7 @@
                 }
             }
             .about__me {
-                @include inner();
+                @include co.inner();
                 line-height: (21/16);
                 margin: (60em/16) 0 (150em/16);
                 &__title {
@@ -320,18 +320,18 @@
                 }
             }
             .business__description {
-                @include inner-one-side(0, (20em/16));
+                @include co.inner();
                 margin-bottom: (80em/16);
 
                 /* ショップ */
                 &__shop {
-                    @include flex(wrap, space-between);
+                    @include co.flex(wrap, space-between);
                     margin-bottom: (45em/16);
 
                     &__thumbnail {
-                        @include radius(30px, 30px, 30px, 30px);
+                        @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-                        margin-left: (20em/16);
+
                         width: 53.3%;
                         height: 275px;
                         border: 1px solid #000;
@@ -344,8 +344,8 @@
                         }
                     }
                     &__content {
-                        @include flex(wrap, center);
-                        width: 38.24%;
+                        @include co.flex(wrap, center);
+                        width: 43%;
                         padding: 0;
                         background-color: initial;
                         position: initial;
@@ -365,13 +365,12 @@
                 }
                 /* つまみ細工 */
                 &__tumami {
-                    @include flex(wrap, space-between);
+                    @include co.flex(wrap, space-between);
                     margin-bottom: (45em/14);
 
                     &__thumbnail {
-                        @include radius(30px, 30px, 30px, 30px);
+                        @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-                        margin-left: (20em/14);
                         width: 53.3%;
                         height: 275px;
                         border: 1px solid #000;
@@ -384,8 +383,8 @@
                         }
                     }
                     &__content {
-                        @include flex(wrap, center);
-                        width: 38.24%;
+                        @include co.flex(wrap, center);
+                        width: 43%;
                         padding: 0;
                         background-color: initial;
                         position: initial;
@@ -402,17 +401,19 @@
                             margin: 0;
                             padding-bottom: (31em/14);
                         }
+                        .btn {
+                            right: 0;
+                        }
                     }
                 }
                 /* アートプラスター */
                 &__art-Plaster {
-                    @include flex(wrap, space-between);
+                    @include co.flex(wrap, space-between);
                     margin-bottom: (45em/14);
 
                     &__thumbnail {
-                        @include radius(30px, 30px, 30px, 30px);
+                        @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-                        margin-left: (20em/14);
                         width: 53.3%;
                         height: 275px;
                         border: 1px solid #000;
@@ -425,8 +426,8 @@
                         }
                     }
                     &__content {
-                        @include flex(wrap, center);
-                        width: 38.24%;
+                        @include co.flex(wrap, center);
+                        width: 43%;
                         padding: 0;
                         background-color: initial;
                         position: initial;
@@ -446,13 +447,12 @@
                 }
                 /* 教室・サークル */
                 &__circle {
-                    @include flex(wrap, space-between);
+                    @include co.flex(wrap, space-between);
                     margin-bottom: (45em/14);
 
                     &__thumbnail {
-                        @include radius(30px, 30px, 30px, 30px);
+                        @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-                        margin-left: (20em/14);
                         width: 53.3%;
                         height: 275px;
                         border: 1px solid #000;
@@ -465,8 +465,8 @@
                         }
                     }
                     &__content {
-                        @include flex(wrap, center);
-                        width: 38.24%;
+                        @include co.flex(wrap, center);
+                        width: 43%;
                         padding: 0;
                         background-color: initial;
                         position: initial;
@@ -486,7 +486,7 @@
                 }
             }
             .gallery {
-                @include inner();
+                @include co.inner();
                 margin: (80em/14) 0 (40em/14);
 
                 &__title {
@@ -499,15 +499,15 @@
                     margin-bottom: (20em/16);
                     &1 {
                         padding: (4em/14) (8em/14);
-                        @include radius(10px, 10px, 10px, 10px);
+                        @include co.radius(10px, 10px, 10px, 10px);
                     }
                     &2 {
                         padding: (4em/14) (8em/14);
-                        @include radius(10px, 10px, 10px, 10px);
+                        @include co.radius(10px, 10px, 10px, 10px);
                     }
                 }
                 &__content {
-                    @include flex(wrap, center);
+                    @include co.flex(wrap, center);
                     width: 100%;
                     padding: 0;
                     background-color: initial;
@@ -542,5 +542,3 @@
         }
     }
 }
-/* =========== footer ============================ */
-@import "../footer-res";

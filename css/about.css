@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  font-size: 16px;
-}
-
 h1 {
   font-size: 28px;
 }
@@ -35,7 +31,7 @@ body {
 }
 
 .main__inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -79,87 +75,8 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
-/*==================　header　===================================*/
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-body {
-  background-color: #f6f4ee;
-  font-size: 16px;
-  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.main__inner {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 414px) {
-  .main__inner {
-    width: 414px;
-    margin: 0 auto;
-  }
-}
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/*ボタン*/
-.btn {
-  width: 76.92%;
-}
-.btn__link__submit {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
-  background-color: #fff;
-}
-.btn__link__submit__text {
-  margin: 0;
-}
-body {
-  font-size: 16px;
-}
-
+/*==================  component ===================================*/
+/*==================  header ===================================*/
 header {
   height: 100px;
   justify-content: center;
@@ -320,6 +237,84 @@ header .header__inner .nav .gnav {
     width: 30%;
   }
 }
+/*==================  component ===================================*/
+/*==================　footer　===================================*/
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+
+.footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
+}
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+.footer__about__title span {
+  font-size: 12px;
+}
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__nav__gnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25em 0;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/*==================  component ===================================*/
+/*==================  header ===================================*/
+/*==================　footer　===================================*/
 /*==================　about　===================================*/
 .main__inner .about__visual__img {
   width: 414px;
@@ -379,7 +374,6 @@ header .header__inner .nav .gnav {
 .main__inner .business__description__shop__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -423,7 +417,6 @@ header .header__inner .nav .gnav {
 .main__inner .business__description__tumami__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -467,7 +460,6 @@ header .header__inner .nav .gnav {
 .main__inner .business__description__art-Plaster__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -511,7 +503,6 @@ header .header__inner .nav .gnav {
 .main__inner .business__description__circle__thumbnail {
   border-radius: 30px 30px 30px 30px;
   position: relative;
-  margin-left: 1.25em;
   width: 71.24%;
   height: 500px;
   border: 1px solid #000;
@@ -630,8 +621,7 @@ header .header__inner .nav .gnav {
     text-align: left;
   }
   .main__inner .business__description {
-    padding-left: 0;
-    padding-right: 1.25em;
+    padding: 0 1.4285714286em;
     margin-bottom: 5em;
     /* ショップ */
     /* つまみ細工 */
@@ -647,7 +637,6 @@ header .header__inner .nav .gnav {
   .main__inner .business__description__shop__thumbnail {
     border-radius: 30px 30px 30px 30px;
     position: relative;
-    margin-left: 1.25em;
     width: 53.3%;
     height: 275px;
     border: 1px solid #000;
@@ -662,7 +651,7 @@ header .header__inner .nav .gnav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 38.24%;
+    width: 43%;
     padding: 0;
     background-color: initial;
     position: initial;
@@ -688,7 +677,6 @@ header .header__inner .nav .gnav {
   .main__inner .business__description__tumami__thumbnail {
     border-radius: 30px 30px 30px 30px;
     position: relative;
-    margin-left: 1.4285714286em;
     width: 53.3%;
     height: 275px;
     border: 1px solid #000;
@@ -703,7 +691,7 @@ header .header__inner .nav .gnav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 38.24%;
+    width: 43%;
     padding: 0;
     background-color: initial;
     position: initial;
@@ -721,6 +709,9 @@ header .header__inner .nav .gnav {
     margin: 0;
     padding-bottom: 2.2142857143em;
   }
+  .main__inner .business__description__tumami__content .btn {
+    right: 0;
+  }
   .main__inner .business__description__art-Plaster {
     display: flex;
     flex-wrap: wrap;
@@ -730,7 +721,6 @@ header .header__inner .nav .gnav {
   .main__inner .business__description__art-Plaster__thumbnail {
     border-radius: 30px 30px 30px 30px;
     position: relative;
-    margin-left: 1.4285714286em;
     width: 53.3%;
     height: 275px;
     border: 1px solid #000;
@@ -745,7 +735,7 @@ header .header__inner .nav .gnav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 38.24%;
+    width: 43%;
     padding: 0;
     background-color: initial;
     position: initial;
@@ -771,7 +761,6 @@ header .header__inner .nav .gnav {
   .main__inner .business__description__circle__thumbnail {
     border-radius: 30px 30px 30px 30px;
     position: relative;
-    margin-left: 1.4285714286em;
     width: 53.3%;
     height: 275px;
     border: 1px solid #000;
@@ -786,7 +775,7 @@ header .header__inner .nav .gnav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 38.24%;
+    width: 43%;
     padding: 0;
     background-color: initial;
     position: initial;
@@ -858,78 +847,5 @@ header .header__inner .nav .gnav {
     margin-bottom: 5em;
     margin-left: auto;
   }
-}
-/* =========== footer ============================ */
-footer {
-  padding: 0 1.4285714286em;
-  color: #fff;
-  background-color: #2f1e17;
-}
-
-.footer__about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 0.625em;
-  align-items: center;
-}
-.footer__about__logo {
-  width: 50px;
-  height: 35px;
-}
-.footer__about__title span {
-  font-size: 12px;
-}
-.footer__about .Instagram-link .Instagram {
-  max-width: 24px;
-  max-height: 24px;
-}
-
-.footer__nav__gnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.25em 0;
-}
-.footer__nav__gnav__li {
-  width: 33.3%;
-  border-left: 1px solid #fff;
-}
-.footer__nav__gnav__li a {
-  color: #fff;
-  font-size: 14px;
-}
-
-.menu-btn {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  z-index: 90;
-  background-color: #3584bb;
-}
-
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu-btn span:before {
-  bottom: 8px;
-}
-
-.menu-btn span:after {
-  top: 8px;
 }
 /*# sourceMappingURL=about.css.map */

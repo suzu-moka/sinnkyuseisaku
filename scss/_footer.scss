@@ -1,11 +1,17 @@
+@charset "utf-8";
+
+/*==================  component ===================================*/
+@use "../scss/component" as co;
+
+/*==================　footer　===================================*/
 footer {
-    @include inner();
-    color: $color-white;
-    background-color: $color-footer;
+    @include co.inner();
+    color: co.$color-white;
+    background-color: co.$color-footer;
 }
 
 .footer__about {
-    @include flex(wrap, center);
+    @include co.flex(wrap, center);
     margin-left: (10em/16);
     align-items: center;
     &__logo {
@@ -27,14 +33,14 @@ footer {
 }
 .footer__nav {
     &__gnav {
-        @include flex(wrap, center);
+        @include co.flex(wrap, center);
         margin: (20em/16) 0;
         &__li {
             width: 33.3%;
             border-left: 1px solid #fff;
 
             a {
-                color: $color-white;
+                color: co.$color-white;
                 font-size: 14px;
             }
         }
