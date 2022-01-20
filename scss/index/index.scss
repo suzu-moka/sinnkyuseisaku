@@ -147,7 +147,7 @@ main {
                 &__list {
                     width: 343px;
                     height: 776px;
-                    margin-left: 70px;
+                    margin-left: (50em/16);
                     &__img {
                         img {
                             width: 100%;
@@ -159,7 +159,7 @@ main {
                             background: url("/img/mainvisual-3.png");
                             background-size: 343px 776px;
                             background-repeat: no-repeat;
-                            background-position: 0 right;
+                            background-position: right top;
                         }
                         .img2 {
                             display: none;

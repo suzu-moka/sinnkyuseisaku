@@ -69,6 +69,11 @@ $color-white: #fff;
     padding: (60em/16) 0 (60em/16) (60em/16);
 }
 
+@mixin text-d($lh: 1.7, $ls: 0.05em) {
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
 h1 {
     font-size: 28px;
 }

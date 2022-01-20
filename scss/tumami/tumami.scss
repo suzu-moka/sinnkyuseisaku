@@ -1,8 +1,13 @@
 @charset "utf-8";
 
-@import "../responsive-tub";
+/*==================  component ===================================*/
+@use "../component" as co;
 
-@import "../header";
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
 
 /* main==================================== */
 .main {
@@ -16,17 +21,17 @@
                 display: none;
             }
             .work {
-                @include inner;
+                @include co.inner;
                 position: absolute;
                 bottom: 0;
                 right: 0;
                 &__nav {
-                    @include flex(wrap, flex-end);
+                    @include co.flex(wrap, flex-end);
                     &__list {
-                        color: $color-work-nav;
+                        color: co.$color-work-nav;
                         font-size: 16px;
                         margin-left: (9em/16);
-                        text-decoration: 1px underline $color-work-nav;
+                        text-decoration: 1px underline co.$color-work-nav;
                     }
                 }
             }
@@ -35,20 +40,19 @@
             margin: (60em/24) 0 (120em/14);
             text-align: left;
             .tumami__title {
-                @include inner();
+                @include co.inner();
                 font-size: 24px;
-                color: $color-border;
+                color: co.$color-border;
             }
             .tumami__shop {
-                @include innerPC();
+                @include co.innerPC();
                 margin: (60em/14) 0 (80em/14);
                 height: 560px;
                 .tumami__visual {
-                    @include radius(30px, 30px, 30px, 30px);
-                    padding-right: 20px;
+                    @include co.radius(30px, 30px, 30px, 30px);
                     width: 825px;
                     height: 500px;
-                    border: (1em/14) solid $color-border;
+                    border: (1em/14) solid co.$color-border;
                     margin-right: auto;
                     right: auto;
                     position: absolute;
@@ -56,11 +60,11 @@
                 }
                 &__btn {
                     a {
-                        @include radius(15px, 15px, 15px, 15px);
-                        color: $color-white;
+                        @include co.radius(15px, 15px, 15px, 15px);
+                        color: co.$color-white;
                         font-size: 18px;
-                        background-color: $color-shop;
-                        border: 1px solid $color-shop;
+                        background-color: co.$color-shop;
+                        border: 1px solid co.$color-shop;
                         text-align: center;
                         vertical-align: middle;
                         display: table-cell;
@@ -76,29 +80,29 @@
             .tumami__introduction {
                 margin: (80em/16) 0 (60em/16);
                 &__history {
-                    @include innerPC();
+                    @include co.innerPC();
                     margin-bottom: (80em/16);
                     &__visual {
-                        @include flex(wrap, flex-start);
+                        @include co.flex(wrap, flex-start);
                         margin-bottom: (60em/16);
                         padding: 0 (41em/16);
                         &-list1 {
-                            @include radius(25px, 25px, 25px, 25px);
-                            border: 1px solid #000;
+                            @include co.radius(25px, 25px, 25px, 25px);
+                            // border: 1px solid #000;
                             &__img {
                             }
                         }
                         &-list1:nth-of-type(1) {
-                            width: 100%;
-                            height: 330px;
+                            // width: 100%;
+                            // height: 330px;
                             margin-bottom: 5%;
                         }
                         &-list1:nth-of-type(2) {
-                            width: 30%;
-                            height: 434px;
+                            // width: 30%;
+                            // height: 434px;
                         }
                         &-list1:nth-of-type(3) {
-                            width: 30%;
+                            // width: 30%;
                             height: 434px;
                             margin-left: 5%;
                         }
@@ -109,21 +113,21 @@
                         }
                     }
                     &__text {
-                        @include inner();
+                        @include co.inner();
                         font-size: 18px;
                     }
                 }
                 &__Example_of_use {
-                    @include innerPC();
+                    @include co.innerPC();
                     &__visual {
                         padding: 0 (60em/16) 0;
                         margin-bottom: (60em/16);
                         position: relative;
                         height: 640px;
                         &-list2 {
-                            @include radius(25px, 25px, 25px, 25px);
+                            // @include co.radius(25px, 25px, 25px, 25px);
                             position: absolute;
-                            border: 1px solid #000;
+                            // border: 1px solid #000;
                             &__img {
                             }
                         }
@@ -150,7 +154,7 @@
                         }
                     }
                     &__text {
-                        @include inner();
+                        @include co.inner();
                         font-size: 18px;
                         margin-bottom: (20em/18);
                     }
@@ -174,19 +178,20 @@
                 &__img {
                     width: 100%;
                     height: 331px;
+                    display: block;
                 }
                 .work {
-                    @include inner;
+                    @include co.inner;
                     position: absolute;
                     bottom: 0;
                     right: 0;
                     &__nav {
-                        @include flex(wrap, flex-end);
+                        @include co.flex(wrap, flex-end);
                         &__list {
-                            color: $color-work-nav;
+                            color: co.$color-work-nav;
                             font-size: 16px;
                             margin-left: (9em/16);
-                            text-decoration: 1px underline $color-work-nav;
+                            text-decoration: 1px underline co.$color-work-nav;
                         }
                     }
                 }
@@ -195,32 +200,31 @@
                 margin: (60em/24) 0 (120em/14);
                 text-align: left;
                 .tumami__title {
-                    @include inner();
+                    @include co.inner();
                     font-size: 24px;
-                    color: $color-border;
+                    color: co.$color-border;
                 }
                 .tumami__shop {
                     margin: (60em/16) 0 (80em/16);
                     padding: 0;
                     height: auto;
                     .tumami__visual {
-                        @include radius(0, 30px, 30px, 0);
-                        padding-right: 20px;
+                        @include co.radius(0, 30px, 30px, 0);
                         width: (384em/16);
                         height: (248em/16);
-                        border: (1em/16) solid $color-border;
+                        border: (1em/16) solid co.$color-border;
                         margin-right: auto;
                         position: initial;
                     }
                     &__btn {
-                        @include radius(15px, 15px, 15px, 15px);
+                        @include co.radius(15px, 15px, 15px, 15px);
                         margin: (60em/16) (20em/16) 0;
                         width: 90.34%;
                         a {
                             font-size: 16px;
-                            color: $color-white;
-                            background-color: $color-shop;
-                            border: 1px solid $color-shop;
+                            color: co.$color-white;
+                            background-color: co.$color-shop;
+                            border: 1px solid co.$color-shop;
 
                             padding: (23em/16) (120em/16);
                             text-align: center;
@@ -233,75 +237,89 @@
                 .tumami__introduction {
                     margin: (80em/14) 0 (60em/16);
                     &__history {
+                        @include co.inner();
                         margin-bottom: (60em/16);
                         &__visual {
-                            @include flex();
+                            @include co.flex(wrap, space-between);
                             margin-bottom: (60em/16);
                             padding: 0;
                             &-list1 {
-                                @include radius(25px, 25px, 25px, 25px);
-                                border: 1px solid #000;
+                                height: 188px;
+                                width: auto;
                                 &__img {
+                                    @include co.radius(25px, 25px, 25px, 25px);
+                                    border: 1px solid #000;
+                                    height: 188px;
+                                }
+                                &__img2 {
+                                    @include co.radius(25px, 25px, 25px, 25px);
+                                    border: 1px solid #000;
+                                    height: 212px;
                                 }
                             }
                             &-list1:nth-of-type(1) {
-                                width: 100%;
-                                height: 188px;
-                                margin-bottom: (10em/16);
+                                margin: 0 0 (10em/16) (20em/16);
+                                border: none;
                             }
                             &-list1:nth-of-type(2) {
-                                width: 48.49%;
                                 height: 212px;
+                                margin: 0 (10em/16) 0 0;
                             }
                             &-list1:nth-of-type(3) {
-                                width: 48.49%;
+                                margin: 0 0 0 (10em/16);
                                 height: 212px;
-                                margin: 0;
                             }
                             &-list1:nth-of-type(4) {
                                 display: none;
                             }
                         }
                         &__text {
-                            @include inner();
+                            padding: 0;
                             font-size: 14px;
+                            line-height: 1.7;
+                            letter-spacing: 0.05em;
                         }
                     }
                     &__Example_of_use {
-                        @include inner();
+                        @include co.inner();
                         &__visual {
-                            @include inner();
+                            padding: 0;
                             position: relative;
                             height: 315px;
                             &-list2 {
-                                @include radius(25px, 25px, 25px, 25px);
+                                // @include co.radius(25px, 25px, 25px, 25px);
                                 position: absolute;
-                                border: 1px solid #000;
+                                // border: 1px solid #000;
                                 &__img {
+                                    height: 189px;
+                                }
+                                &__img2 {
+                                    height: 120px;
                                 }
                             }
                             &-list2:nth-of-type(1) {
-                                width: 29.95%;
                                 height: 189px;
                             }
                             &-list2:nth-of-type(2) {
-                                width: 29.95%;
                                 height: 189px;
                                 top: 126px;
                             }
                             &-list2:nth-of-type(3) {
-                                width: 28.99%;
                                 height: 120px;
                             }
                         }
                         &__text {
-                            @include inner();
+                            padding: 0;
+                            letter-spacing: 0.05em;
+                            line-height: 1.7;
                             font-size: 14px;
                             margin-bottom: (20em/14);
                         }
                         &__annotation {
                             padding: 0 (20em/12);
                             font-size: 12px;
+                            letter-spacing: 0.05em;
+                            line-height: 1.6;
                             margin: (20em/12) 0 (70em/14) (73em/12);
                         }
                     }
@@ -310,5 +328,3 @@
         }
     }
 }
-/* ============================= footer ========================= */
-@import "../footer-res";

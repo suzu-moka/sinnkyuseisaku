@@ -31,7 +31,7 @@ body {
 }
 
 .main__inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -75,92 +75,8 @@ img {
 .btn__link__submit__text {
   margin: 0;
 }
-/*                                                   */
-body {
-  font-size: 16px;
-}
-
-/* =========== header ============================ */
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-body {
-  background-color: #f6f4ee;
-  font-size: 16px;
-  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.main__inner {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 414px) {
-  .main__inner {
-    width: 414px;
-    margin: 0 auto;
-  }
-}
-ul {
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/*ボタン*/
-.btn {
-  width: 76.92%;
-}
-.btn__link__submit {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border-radius: 20px 20px 20px 20px;
-  border: 0.0714285714em solid #000;
-  max-width: 7.8571428571em;
-  padding: 0.6428571429em 2.5714285714em;
-  background-color: #fff;
-}
-.btn__link__submit__text {
-  margin: 0;
-}
-body {
-  font-size: 16px;
-}
-
+/*==================  component ===================================*/
+/*==================  header ===================================*/
 header {
   height: 100px;
   justify-content: center;
@@ -321,6 +237,84 @@ header .header__inner .nav .gnav {
     width: 30%;
   }
 }
+/*==================  component ===================================*/
+/*==================　footer　===================================*/
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+
+.footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
+}
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+.footer__about__title span {
+  font-size: 12px;
+}
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__nav__gnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25em 0;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/*==================  component ===================================*/
+/*==================  header ===================================*/
+/*==================　footer　===================================*/
 /* =========== culture-class ============================ */
 .main__inner {
   padding: 0 1.875em;
@@ -368,7 +362,7 @@ header .header__inner .nav .gnav {
 .main__inner .charset__content__class__title__name.culture {
   padding-left: 2em;
   padding-right: 0;
-  margin: 0 20% 9.7142857143em;
+  margin: 0 20% 8.5em;
 }
 .main__inner .charset__content__class__title__name.culture .culture {
   padding: 0 1.4285714286em;
@@ -482,7 +476,7 @@ header .header__inner .nav .gnav {
   margin-left: 2em;
 }
 .main__inner .charset__content__class__title__name.culture .culture__map {
-  margin-top: 2.5714285714em;
+  margin-top: 2.25em;
   align-items: center;
 }
 .main__inner .charset__content__class__title__name.culture .culture__map iframe {
@@ -490,7 +484,7 @@ header .header__inner .nav .gnav {
   height: 500px;
 }
 .main__inner .charset__content__club {
-  margin: 4.2857142857em 20% 5em;
+  margin: 4.2857142857em 20% 4.375em;
 }
 .main__inner .charset__content__club__title {
   text-align: left;
@@ -499,7 +493,7 @@ header .header__inner .nav .gnav {
 .main__inner .charset__content__club__title__name.culture {
   padding-left: 2em;
   padding-right: 0;
-  margin-bottom: 1.1428571429em;
+  margin-bottom: 1em;
 }
 .main__inner .charset__content__club__title__name.culture .culture {
   padding: 0 1.4285714286em;
@@ -613,7 +607,7 @@ header .header__inner .nav .gnav {
   margin-left: 2em;
 }
 .main__inner .charset__content__club__title__name.culture .culture__map {
-  margin-top: 2.5714285714em;
+  margin-top: 2.25em;
   align-items: center;
 }
 .main__inner .charset__content__club__title__name.culture .culture__map iframe {
@@ -632,6 +626,7 @@ header .header__inner .nav .gnav {
   .main__inner .culture__visual__img {
     width: 100%;
     height: 331px;
+    display: block;
   }
   .main__inner .culture__visual .work {
     padding: 0 1.4285714286em;
@@ -652,12 +647,12 @@ header .header__inner .nav .gnav {
             text-decoration: 1px underline #262845;
   }
   .main__inner .charset__content {
-    margin-bottom: 5em;
+    margin-bottom: 4.375em;
     padding: 0 1.4285714286em;
     /* club */
   }
   .main__inner .charset__content__class {
-    margin: 4.2857142857em 0 5em;
+    margin: 4.2857142857em 0 4.375em;
   }
   .main__inner .charset__content__class__title {
     font-size: 18px;
@@ -665,9 +660,8 @@ header .header__inner .nav .gnav {
     margin: 0 0 2.2222222222em;
   }
   .main__inner .charset__content__class__title__name.culture {
-    padding-left: 2em;
-    padding-right: 0;
-    margin: 0 0 9.7142857143em;
+    padding: 0 1.4285714286em;
+    margin: 0 0 8.5em;
   }
   .main__inner .charset__content__class__title__name.culture .culture {
     padding: 0 1.4285714286em;
@@ -755,6 +749,7 @@ header .header__inner .nav .gnav {
   }
   .main__inner .charset__content__class__title__name.culture .culture__remarks {
     border-bottom: 1px solid #000;
+    display: block;
   }
   .main__inner .charset__content__class__title__name.culture .culture__remarks__title {
     text-align: center;
@@ -775,7 +770,7 @@ header .header__inner .nav .gnav {
     height: 225px;
   }
   .main__inner .charset__content__club {
-    margin: 4.2857142857em 0 5em;
+    margin: 3.75em 0 4.375em;
   }
   .main__inner .charset__content__club__title {
     font-size: 18px;
@@ -783,9 +778,8 @@ header .header__inner .nav .gnav {
     margin: 0 0 2.2222222222em;
   }
   .main__inner .charset__content__club__title__name.culture {
-    padding-left: 2em;
-    padding-right: 0;
-    margin-bottom: 1.1428571429em;
+    padding: 0 1.4285714286em;
+    margin-bottom: 1em;
   }
   .main__inner .charset__content__club__title__name.culture .culture {
     padding: 0 1.4285714286em;
@@ -892,84 +886,11 @@ header .header__inner .nav .gnav {
     font-size: 14px;
   }
   .main__inner .charset__content__club__title__name.culture .culture__map {
-    margin-top: 2.5714285714em;
+    margin-top: 2.25em;
   }
   .main__inner .charset__content__club__title__name.culture .culture__map iframe {
     max-width: 100%;
     height: 225px;
   }
-}
-/* =========== footer ============================ */
-footer {
-  padding: 0 1.4285714286em;
-  color: #fff;
-  background-color: #2f1e17;
-}
-
-.footer__about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 0.625em;
-  align-items: center;
-}
-.footer__about__logo {
-  width: 50px;
-  height: 35px;
-}
-.footer__about__title span {
-  font-size: 12px;
-}
-.footer__about .Instagram-link .Instagram {
-  max-width: 24px;
-  max-height: 24px;
-}
-
-.footer__nav__gnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.25em 0;
-}
-.footer__nav__gnav__li {
-  width: 33.3%;
-  border-left: 1px solid #fff;
-}
-.footer__nav__gnav__li a {
-  color: #fff;
-  font-size: 14px;
-}
-
-.menu-btn {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  z-index: 90;
-  background-color: #3584bb;
-}
-
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu-btn span:before {
-  bottom: 8px;
-}
-
-.menu-btn span:after {
-  top: 8px;
 }
 /*# sourceMappingURL=culture-clsaa.css.map */

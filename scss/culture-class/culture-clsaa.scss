@@ -1,14 +1,18 @@
 @charset "utf-8";
 
-@import "../responsive-tub";
+/*==================  component ===================================*/
+@use "../component" as co;
 
-/* =========== header ============================ */
-@import "../header";
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
 
 /* =========== culture-class ============================ */
 .main {
     &__inner {
-        @include innerPC();
+        @include co.innerPC();
         // tumami__visual
         .culture__visual {
             position: relative;
@@ -18,24 +22,24 @@
                 display: none;
             }
             .work {
-                @include inner();
+                @include co.inner();
                 position: absolute;
                 bottom: 0;
                 right: 0;
                 &__nav {
-                    @include flex(wrap, flex-end);
+                    @include co.flex(wrap, flex-end);
                     &__list {
-                        color: $color-work-nav;
+                        color: co.$color-work-nav;
                         font-size: 16px;
                         margin-left: (9em/16);
-                        text-decoration: 1px underline $color-work-nav;
+                        text-decoration: 1px underline co.$color-work-nav;
                     }
                 }
             }
         }
         .charset__content {
             margin-bottom: (70em/16);
-            @include inner();
+            @include co.inner();
             &__class {
                 margin: (60em/16) 0 (70em/16);
                 &__title {
@@ -44,10 +48,10 @@
                     text-align: left;
                     margin: 0 0 (60em/24);
                     &__name.culture {
-                        @include inner-one-side(2em, 0);
-                        margin: 0 20% (136em/14);
+                        @include co.inner-one-side(2em, 0);
+                        margin: 0 20% (136em/16);
                         .culture {
-                            @include inner();
+                            @include co.inner();
 
                             &__name {
                                 text-align: left;
@@ -57,8 +61,8 @@
                             }
                             // day
                             &__day {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -73,8 +77,8 @@
                             }
                             // place
                             &__Place {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -89,8 +93,8 @@
                             }
                             // time
                             &__time {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -105,8 +109,8 @@
                             }
                             // participation_cost
                             &__participation_cost {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -121,8 +125,8 @@
                             }
                             // TEL
                             &__TEL {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -137,8 +141,8 @@
                             }
                             // remarks
                             &__remarks {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -153,7 +157,7 @@
                             }
                             // map
                             &__map {
-                                margin-top: (36em/14);
+                                margin-top: (36em/16);
                                 align-items: center;
                                 iframe {
                                     width: 100%;
@@ -167,15 +171,15 @@
 
             /* club */
             &__club {
-                margin: (60em/14) 20% (70em/14);
+                margin: (60em/14) 20% (70em/16);
                 &__title {
                     text-align: left;
                     margin-bottom: (60em/20);
                     &__name.culture {
-                        @include inner-one-side(2em, 0);
-                        margin-bottom: (16em/14);
+                        @include co.inner-one-side(2em, 0);
+                        margin-bottom: (16em/16);
                         .culture {
-                            @include inner();
+                            @include co.inner();
                             &__name {
                                 text-align: left;
                                 margin-bottom: (40em/24);
@@ -184,8 +188,8 @@
                             }
                             // day
                             &__day {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -200,8 +204,8 @@
                             }
                             // place
                             &__Place {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -216,8 +220,8 @@
                             }
                             // time
                             &__time {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -232,8 +236,8 @@
                             }
                             // participation_cost
                             &__participation_cost {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -248,8 +252,8 @@
                             }
                             // TEL
                             &__TEL {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -264,8 +268,8 @@
                             }
                             // remarks
                             &__remarks {
-                                @include tabella1();
-                                @include flex(wrap, flex-start);
+                                @include co.tabella1();
+                                @include co.flex(wrap, flex-start);
                                 align-items: center;
                                 padding: (40em/16) 0;
                                 &__title {
@@ -280,7 +284,7 @@
                             }
                             // map
                             &__map {
-                                margin-top: (36em/14);
+                                margin-top: (36em/16);
                                 align-items: center;
                                 iframe {
                                     width: 100%;
@@ -306,37 +310,38 @@
                 &__img {
                     width: 100%;
                     height: 331px;
+                    display: block;
                 }
                 .work {
-                    @include inner;
+                    @include co.inner;
                     position: absolute;
                     bottom: 0;
                     right: 0;
                     &__nav {
-                        @include flex(wrap, flex-end);
+                        @include co.flex(wrap, flex-end);
                         &__list {
-                            color: $color-work-nav;
+                            color: co.$color-work-nav;
                             font-size: 16px;
                             margin-left: (9em/16);
-                            text-decoration: 1px underline $color-work-nav;
+                            text-decoration: 1px underline co.$color-work-nav;
                         }
                     }
                 }
             }
             .charset__content {
-                margin-bottom: (70em/14);
-                @include inner();
+                margin-bottom: (70em/16);
+                @include co.inner();
                 &__class {
-                    margin: (60em/14) 0 (70em/14);
+                    margin: (60em/14) 0 (70em/16);
                     &__title {
                         font-size: 18px;
                         text-align: left;
                         margin: 0 0 (40em/18);
                         &__name.culture {
-                            @include inner-one-side(2em, 0);
-                            margin: 0 0 (136em/14);
+                            @include co.inner();
+                            margin: 0 0 (136em/16);
                             .culture {
-                                @include inner();
+                                @include co.inner();
                                 &__name {
                                     font-size: 16px;
                                     text-align: left;
@@ -344,80 +349,80 @@
                                 }
                                 // day
                                 &__day {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 //place
                                 &__Place {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 //time
                                 &__time {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 //participation_cost
                                 &__participation_cost {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 //TEL
                                 &__TEL {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 //remarks
                                 &__remarks {
-                                    @include tabella1();
-
+                                    @include co.tabella1();
+                                    display: block;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt(left);
+                                        @include co.culture_txt(left);
                                         font-size: 14px;
                                     }
                                 }
@@ -436,16 +441,16 @@
 
                 /* club */
                 &__club {
-                    margin: (60em/14) 0 (70em/14);
+                    margin: (60em/16) 0 (70em/16);
                     &__title {
                         font-size: 18px;
                         text-align: left;
                         margin: 0 0 (40em/18);
                         &__name.culture {
-                            @include inner-one-side(2em, 0);
-                            margin-bottom: (16em/14);
+                            @include co.inner();
+                            margin-bottom: (16em/16);
                             .culture {
-                                @include inner();
+                                @include co.inner();
                                 &__name {
                                     font-size: 16px;
                                     text-align: left;
@@ -453,89 +458,89 @@
                                 }
 
                                 &__day {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
 
                                 &__Place {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
 
                                 &__time {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 &__participation_cost {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
                                 &__TEL {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt();
+                                        @include co.culture_txt();
                                         font-size: 14px;
                                     }
                                 }
 
                                 &__remarks {
-                                    @include tabella1();
+                                    @include co.tabella1();
                                     display: block;
                                     padding: 0;
                                     &__title {
-                                        @include culture_tit();
+                                        @include co.culture_tit();
                                         font-size: 16px;
                                     }
                                     &__text {
-                                        @include culture_txt(left);
+                                        @include co.culture_txt(left);
                                         font-size: 14px;
                                     }
                                 }
 
                                 &__map {
-                                    margin-top: (36em/14);
+                                    margin-top: (36em/16);
                                     iframe {
                                         max-width: 100%;
                                         height: 225px;
@@ -549,5 +554,3 @@
         }
     }
 }
-/* =========== footer ============================ */
-@import "../footer-res";

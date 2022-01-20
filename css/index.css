@@ -428,7 +428,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
   main .main__inner .main__visual__list {
     width: 343px;
     height: 776px;
-    margin-left: 70px;
+    margin-left: 3.125em;
   }
   main .main__inner .main__visual__list__img img {
     width: 100%;
@@ -440,7 +440,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     background: url("/img/mainvisual-3.png");
     background-size: 343px 776px;
     background-repeat: no-repeat;
-    background-position: 0 right;
+    background-position: right top;
   }
   main .main__inner .main__visual__list__img .img2 {
     display: none;

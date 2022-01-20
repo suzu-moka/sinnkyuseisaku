@@ -286,6 +286,7 @@
                 &__img {
                     width: 414px;
                     height: 331px;
+                    display: block;
                 }
             }
             .about__me {
@@ -305,6 +306,7 @@
                 .about__introduction {
                     margin-bottom: (69em/16);
                     &__text {
+                        @include co.text-d();
                         text-align: left;
                     }
                 }
@@ -315,6 +317,7 @@
                         margin-bottom: (36em/16);
                     }
                     &__text {
+                        @include co.text-d();
                         text-align: left;
                     }
                 }
@@ -331,7 +334,10 @@
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-
+                        background: url("/img/about/about-shop-res.png");
+                        background-size: 194px 273px;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
                         width: 53.3%;
                         height: 275px;
                         border: 1px solid #000;
@@ -356,6 +362,7 @@
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            @include co.text-d();
                             font-size: 14px;
                             text-align: left;
                             margin: 0;
@@ -370,6 +377,10 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
+                        background: url("/img/about/about-tumami-res.png");
+                        background-size: 194px 273px;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
                         position: relative;
                         width: 53.3%;
                         height: 275px;
@@ -380,6 +391,10 @@
                             position: absolute;
                             top: -20px;
                             left: -20px;
+                        }
+                        &-thumbnail {
+                            width: 194px;
+                            height: 273px;
                         }
                     }
                     &__content {
@@ -396,6 +411,7 @@
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            @include co.text-d();
                             font-size: 14px;
                             text-align: left;
                             margin: 0;
@@ -413,6 +429,10 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
+                        background: url("/img/about/about-art_plaster-res.png");
+                        background-size: 194px 273px;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
                         position: relative;
                         width: 53.3%;
                         height: 275px;
@@ -438,6 +458,7 @@
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            @include co.text-d();
                             font-size: 14px;
                             text-align: left;
                             margin: 0;
@@ -452,6 +473,10 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
+                        background: url("/img/about/about-art_class-res.png");
+                        background-size: 194px 273px;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
                         position: relative;
                         width: 53.3%;
                         height: 275px;
@@ -477,6 +502,7 @@
                             padding-bottom: (20em/18);
                         }
                         &__text {
+                            @include co.text-d();
                             font-size: 14px;
                             text-align: left;
                             margin: 0;
