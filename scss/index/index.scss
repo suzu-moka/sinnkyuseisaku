@@ -60,10 +60,10 @@ main {
 
         // main__contents
         .main__contents {
+            @include co.innerPC();
             max-width: 1280px;
             margin: 0 auto;
             margin-top: (100em/14);
-            @include co.innerPC();
             &__title {
                 margin-bottom: (100em/14);
                 align-items: center;
@@ -94,15 +94,6 @@ main {
                     }
 
                     &__about {
-                        @include co.radius(25px, 25px, 25px, 25px);
-                        background: url("/img/index-img/about-thumbnail-pc.png");
-                        border: (1em/14) solid co.$color-border;
-                        height: 500px;
-                        width: auto;
-                        display: block;
-                    }
-
-                    &__tumami {
                         @include co.radius(25px, 25px, 25px, 25px);
                         background: url("/img/index-img/about-thumbnail-pc.png");
                         border: (1em/14) solid co.$color-border;
@@ -148,6 +139,30 @@ main {
                             @include co.radius(25px, 25px, 25px, 25px);
                             background: url("/img/index-img/shop-thumbnail-pc.png");
                             background-repeat: no-repeat;
+                            border: (1em/14) solid co.$color-border;
+                            height: 500px;
+                            width: auto;
+                            display: block;
+                        }
+                        &__tumami {
+                            @include co.radius(25px, 25px, 25px, 25px);
+                            background: url("/img/index-img/tumami-thumbnail-pc.png");
+                            border: (1em/14) solid co.$color-border;
+                            height: 500px;
+                            width: auto;
+                            display: block;
+                        }
+                        &__art_plaster {
+                            @include co.radius(25px, 25px, 25px, 25px);
+                            background: url("/img/index-img/art_plaster-thumbnail-pc.png");
+                            border: (1em/14) solid co.$color-border;
+                            height: 500px;
+                            width: auto;
+                            display: block;
+                        }
+                        &__class {
+                            @include co.radius(25px, 25px, 25px, 25px);
+                            background: url("/img/index-img/class-thumbnail-pc.png");
                             border: (1em/14) solid co.$color-border;
                             height: 500px;
                             width: auto;
@@ -307,6 +322,15 @@ main {
                                 display: block;
                             }
                             &__shop {
+                                display: none;
+                            }
+                            &__tumami {
+                                display: none;
+                            }
+                            &__art_plaster {
+                                display: none;
+                            }
+                            &__class {
                                 display: none;
                             }
                         }

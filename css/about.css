@@ -30,11 +30,6 @@ body {
   text-align: center;
 }
 
-.main__inner {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 414px) {
   .main__inner {
     width: 414px;
@@ -316,19 +311,32 @@ footer {
 /*==================  header ===================================*/
 /*==================　footer　===================================*/
 /*==================　about　===================================*/
+.main__inner .about__visual {
+  height: 500px;
+}
 .main__inner .about__visual__img {
   width: 414px;
   height: 331px;
   display: none;
 }
+.main__inner .about__visual__img-pc {
+  background: url("/img/about/about-thumbnail-pc.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 500px;
+  width: 100%;
+  display: block;
+}
 .main__inner .about__me {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 1.875em;
   padding: 0 3.75em;
   line-height: 1.3125em;
   margin: 3.75em auto 9.375em;
 }
 .main__inner .about__me__title {
-  margin-bottom: 2.5em;
+  margin-bottom: 3.75em;
 }
 .main__inner .about__me__title__img {
   display: none;
@@ -348,17 +356,20 @@ footer {
   margin-bottom: 4.3125em;
 }
 .main__inner .about__me .about__purchase__title {
+  font-size: 21px;
   text-align: center;
-  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 1.7142857143em;
 }
 .main__inner .about__me .about__purchase__text {
   text-align: left;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
 }
 .main__inner .business__description {
   padding: 0 1.875em;
-  margin-bottom: 5em;
+  max-width: 1280px;
+  margin: 0 auto 5em;
   /* ショップ */
   /* つまみ細工 */
   /* アートプラスター */

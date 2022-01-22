@@ -349,10 +349,10 @@ main .main__inner .main__visual__list__img2 {
   z-index: -1;
 }
 main .main__inner .main__contents {
+  padding: 0 1.875em;
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 7.1428571429em;
-  padding: 0 1.875em;
 }
 main .main__inner .main__contents__title {
   margin-bottom: 7.1428571429em;
@@ -379,14 +379,6 @@ main .main__inner .main__contents .type1__visual img {
   display: none;
 }
 main .main__inner .main__contents .type1__visual__about {
-  border-radius: 25px 25px 25px 25px;
-  background: url("/img/index-img/about-thumbnail-pc.png");
-  border: 0.0714285714em solid #000;
-  height: 500px;
-  width: auto;
-  display: block;
-}
-main .main__inner .main__contents .type1__visual__tumami {
   border-radius: 25px 25px 25px 25px;
   background: url("/img/index-img/about-thumbnail-pc.png");
   border: 0.0714285714em solid #000;
@@ -426,6 +418,30 @@ main .main__inner .main__contents .type1 .type2__visual__shop {
   border-radius: 25px 25px 25px 25px;
   background: url("/img/index-img/shop-thumbnail-pc.png");
   background-repeat: no-repeat;
+  border: 0.0714285714em solid #000;
+  height: 500px;
+  width: auto;
+  display: block;
+}
+main .main__inner .main__contents .type1 .type2__visual__tumami {
+  border-radius: 25px 25px 25px 25px;
+  background: url("/img/index-img/tumami-thumbnail-pc.png");
+  border: 0.0714285714em solid #000;
+  height: 500px;
+  width: auto;
+  display: block;
+}
+main .main__inner .main__contents .type1 .type2__visual__art_plaster {
+  border-radius: 25px 25px 25px 25px;
+  background: url("/img/index-img/art_plaster-thumbnail-pc.png");
+  border: 0.0714285714em solid #000;
+  height: 500px;
+  width: auto;
+  display: block;
+}
+main .main__inner .main__contents .type1 .type2__visual__class {
+  border-radius: 25px 25px 25px 25px;
+  background: url("/img/index-img/class-thumbnail-pc.png");
   border: 0.0714285714em solid #000;
   height: 500px;
   width: auto;
@@ -564,6 +580,15 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     display: block;
   }
   main .main__inner .main__contents .type1 .type2__visual__shop {
+    display: none;
+  }
+  main .main__inner .main__contents .type1 .type2__visual__tumami {
+    display: none;
+  }
+  main .main__inner .main__contents .type1 .type2__visual__art_plaster {
+    display: none;
+  }
+  main .main__inner .main__contents .type1 .type2__visual__class {
     display: none;
   }
   main .main__inner .main__contents .type1 .type1__title {

@@ -14,19 +14,30 @@
     &__inner {
         // about__visual
         .about__visual {
+            height: 500px;
             &__img {
                 width: 414px;
                 height: 331px;
                 display: none;
             }
+            &__img-pc {
+                background: url("/img/about/about-thumbnail-pc.png");
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                height: 500px;
+                width: 100%;
+                display: block;
+            }
         }
         .about__me {
+            max-width: 1280px;
+            margin: 0 auto;
             @include co.innerPC();
             padding: 0 (60em/16);
             line-height: (21em/16);
             margin: (60em/16) auto (150em/16);
             &__title {
-                margin-bottom: (40em/16);
+                margin-bottom: (60em/16);
                 &__img {
                     display: none;
                 }
@@ -45,20 +56,22 @@
             .about__purchase {
                 margin-bottom: (69em/16);
                 &__title {
+                    font-size: 21px;
                     text-align: center;
-                    font-size: 18px;
                     font-weight: bold;
-                    margin-bottom: (36em/18);
+                    margin-bottom: (36em/21);
                 }
                 &__text {
                     text-align: left;
+                    line-height: 1.6em;
+                    letter-spacing: 0.1em;
                 }
             }
         }
         .business__description {
             @include co.innerPC();
-            margin-bottom: (80em/16);
-
+            max-width: 1280px;
+            margin: 0 auto (80em/16);
             /* ショップ */
             &__shop {
                 @include co.flex(wrap, space-between);
