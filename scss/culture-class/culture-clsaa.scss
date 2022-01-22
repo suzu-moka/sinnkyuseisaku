@@ -12,7 +12,6 @@
 /* =========== culture-class ============================ */
 .main {
     &__inner {
-        @include co.innerPC();
         // tumami__visual
         .culture__visual {
             position: relative;
