@@ -14,7 +14,6 @@
     &__inner {
         // about__visual
         .about__visual {
-            height: 500px;
             &__img {
                 width: 414px;
                 height: 331px;
@@ -23,16 +22,18 @@
             &__img-pc {
                 background: url("/img/about/about-thumbnail-pc.png");
                 background-repeat: no-repeat;
-                background-position: 0 0;
-                height: 500px;
+                background-size: cover;
+                background-position: bottom;
+                height: 655px;
                 width: 100%;
                 display: block;
             }
         }
         .about__me {
+            @include co.innerPC();
             max-width: 1280px;
             margin: 0 auto;
-            @include co.innerPC();
+
             padding: 0 (60em/16);
             line-height: (21em/16);
             margin: (60em/16) auto (150em/16);
@@ -51,6 +52,8 @@
                 &__text {
                     font-size: 16px;
                     text-align: left;
+                    line-height: 2.8em;
+                    letter-spacing: 0.05em;
                 }
             }
             .about__purchase {
@@ -63,8 +66,8 @@
                 }
                 &__text {
                     text-align: left;
-                    line-height: 1.6em;
-                    letter-spacing: 0.1em;
+                    line-height: 2.8em;
+                    letter-spacing: 0.05em;
                 }
             }
         }
@@ -74,10 +77,11 @@
             margin: 0 auto (80em/16);
             /* ショップ */
             &__shop {
-                @include co.flex(wrap, space-between);
-                margin-bottom: (120em/16);
+                // @include co.flex(wrap, space-between);
+                margin-bottom: (200em/16);
                 position: relative;
                 &__thumbnail {
+                    background: url("/img/about/about-shop-pc.png");
                     @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
                     width: 71.24%;
@@ -90,15 +94,19 @@
                         left: -40px;
                     }
                 }
+                .btn__link__submit {
+                    float: right;
+                }
                 &__content {
                     @include co.flex(wrap, center);
                     @include co.radius(30px, 30px, 30px, 30px);
                     @include co.text_card();
                     background-color: co.$color-white;
-                    position: absolute;
+                    float: right;
                     width: 38.24%;
                     right: 0;
-                    bottom: 0;
+                    bottom: -80px;
+                    position: absolute;
 
                     &__title {
                         align-items: center;
@@ -110,16 +118,19 @@
                         margin: 0;
                         font-size: 16px;
                         padding-bottom: (31em/16);
+                        line-height: 2.8em;
+                        letter-spacing: 0.05em;
                     }
                 }
             }
             /* つまみ細工 */
             &__tumami {
-                @include co.flex(wrap, space-between);
-                margin-bottom: (120em/16);
+                // @include co.flex(wrap, space-between);
+                margin-bottom: (200em/16);
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
+                    background: url("/img/about/about-tumami-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -140,7 +151,7 @@
                     position: absolute;
                     width: 38.24%;
                     right: 0;
-                    bottom: 0;
+                    bottom: -80px;
                     &__title {
                         align-items: center;
                         margin: 0;
@@ -151,16 +162,19 @@
                         font-size: 16px;
                         margin: 0;
                         padding-bottom: (31em/16);
+                        line-height: 2.8em;
+                        letter-spacing: 0.05em;
                     }
                 }
             }
             /* アートプラスター */
             &__art-Plaster {
                 @include co.flex(wrap, space-between);
-                margin-bottom: (120em/16);
+                margin-bottom: (200em/16);
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
+                    background: url("/img/about/about-art_plaster-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -181,7 +195,7 @@
                     position: absolute;
                     width: 38.24%;
                     right: 0;
-                    bottom: 0;
+                    bottom: -80px;
 
                     &__title {
                         align-items: center;
@@ -193,16 +207,20 @@
                         font-size: 16px;
                         margin: 0;
                         padding-bottom: (31em/16);
+                        line-height: 2.8em;
+                        letter-spacing: 0.05em;
                     }
                 }
             }
+
             /* 教室・サークル */
             &__circle {
-                @include co.flex(wrap, space-between);
-                margin-bottom: (120em/16);
+                // @include co.flex(wrap, space-between);
+                margin-bottom: (200em/16);
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
+                    background: url("/img/about/about-art_class-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -223,7 +241,8 @@
                     position: absolute;
                     width: 38.24%;
                     right: 0;
-                    bottom: 0;
+                    bottom: -80px;
+
                     &__title {
                         text-align: left;
                         margin: 0;
@@ -234,13 +253,16 @@
                         font-size: 16px;
                         margin: 0;
                         padding-bottom: (31em/16);
+                        line-height: 2.8em;
+                        letter-spacing: 0.05em;
                     }
                 }
             }
         }
         .gallery {
             @include co.inner();
-            margin: (80em/14) 0 (40em/14);
+            max-width: 1280px;
+            margin: (80em/14) auto (40em/14);
 
             &__title {
                 img {
@@ -300,6 +322,9 @@
                     width: 414px;
                     height: 331px;
                     display: block;
+                    &-pc {
+                        display: none;
+                    }
                 }
             }
             .about__me {

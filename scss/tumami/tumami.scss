@@ -15,10 +15,20 @@
         // tumami__visual
         .tumami__visual {
             position: relative;
+
             &__img {
                 width: 100%;
                 height: 331px;
                 display: none;
+                &-pc {
+                    height: 655px;
+                    background: url("/img/tumami/tumami-main_visual-pc.png");
+                    display: block;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    background-size: cover;
+                }
             }
             .work {
                 @include co.inner;
@@ -37,7 +47,8 @@
             }
         }
         .work__content {
-            margin: (60em/24) 0 (120em/14);
+            max-width: 1280px;
+            margin: (80em/16) auto (120em/16);
             text-align: left;
             .tumami__title {
                 @include co.inner();
@@ -46,8 +57,10 @@
             }
             .tumami__shop {
                 @include co.innerPC();
-                margin: (60em/14) 0 (80em/14);
-                height: 560px;
+                margin: (60em/16) 0 (120em/16);
+                height: 554px;
+                position: relative;
+                // height: 560px;
                 .tumami__visual {
                     @include co.radius(30px, 30px, 30px, 30px);
                     width: 825px;
@@ -55,10 +68,13 @@
                     border: (1em/14) solid co.$color-border;
                     margin-right: auto;
                     right: auto;
-                    position: absolute;
-                    left: 800px;
+                    // position: absolute;
+                    float: right;
                 }
                 &__btn {
+                    position: absolute;
+                    float: left;
+                    bottom: 0;
                     a {
                         @include co.radius(15px, 15px, 15px, 15px);
                         color: co.$color-white;
@@ -67,13 +83,13 @@
                         border: 1px solid co.$color-shop;
                         text-align: center;
                         vertical-align: middle;
-                        display: table-cell;
-                        position: absolute;
-                        top: 500px;
+                        display: block;
+
+                        // top: 500px;
                         width: 550px;
-                        height: 300px;
+
                         align-items: center;
-                        padding: (138em/20) (195em/20) (138em/20);
+                        padding: (60em/18) (195em/18) (60em/18);
                     }
                 }
             }
@@ -83,7 +99,7 @@
                     @include co.innerPC();
                     margin-bottom: (80em/16);
                     &__visual {
-                        @include co.flex(wrap, flex-start);
+                        @include co.flex(wrap, center);
                         margin-bottom: (60em/16);
                         padding: 0 (41em/16);
                         &-list1 {
@@ -110,15 +126,19 @@
                             width: 30%;
                             height: 434px;
                             margin-left: 5%;
+                            display: none;
                         }
                     }
                     &__text {
                         @include co.inner();
                         font-size: 18px;
+                        line-height: 1.8em;
+                        letter-spacing: 0.05em;
                     }
                 }
                 &__Example_of_use {
                     @include co.innerPC();
+                    height: 800px;
                     &__visual {
                         padding: 0 (60em/16) 0;
                         margin-bottom: (60em/16);
@@ -151,6 +171,8 @@
                             height: 330px;
                             top: 59px;
                             right: 10%;
+                            line-height: 1.6em;
+                            letter-spacing: 0.1em;
                         }
                     }
                     &__text {
@@ -161,7 +183,9 @@
                     &__annotation {
                         padding: 0 (20em/12);
                         font-size: 12px;
-                        margin: (20em/12) 0 (70em/14) (73em/12);
+                        line-height: 1.2em;
+                        letter-spacing: 0.05em;
+                        margin: (20em/12) 0 (120em/12) (73em/12);
                     }
                 }
             }
@@ -179,6 +203,9 @@
                     width: 100%;
                     height: 331px;
                     display: block;
+                    &-pc {
+                        display: none;
+                    }
                 }
                 .work {
                     @include co.inner;
@@ -207,7 +234,8 @@
                 .tumami__shop {
                     margin: (60em/16) 0 (80em/16);
                     padding: 0;
-                    height: auto;
+                    height: 372px;
+                    // height: auto;
                     .tumami__visual {
                         @include co.radius(0, 30px, 30px, 0);
                         width: (384em/16);
@@ -215,11 +243,13 @@
                         border: (1em/16) solid co.$color-border;
                         margin-right: auto;
                         position: initial;
+                        float: left;
                     }
                     &__btn {
                         @include co.radius(15px, 15px, 15px, 15px);
                         margin: (60em/16) (20em/16) 0;
                         width: 90.34%;
+                        bottom: 0;
                         a {
                             font-size: 16px;
                             color: co.$color-white;
@@ -241,6 +271,7 @@
                         margin-bottom: (60em/16);
                         &__visual {
                             @include co.flex(wrap, space-between);
+                            // display: block;
                             margin-bottom: (60em/16);
                             padding: 0;
                             &-list1 {
