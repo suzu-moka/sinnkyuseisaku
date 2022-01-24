@@ -28,136 +28,104 @@ header {
     }
 }
 
-.gnav {
-    position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+/*　ハンバーガーボタン　*/
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 42px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+    text-align: center;
 }
-
-/*ボタン内側*/
-.gnav span {
-    display: inline-block;
-    transition: all 0.4s; /*アニメーションの設定*/
+.hamburger span {
+    display: block;
     position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-    background: #fff;
-    width: 45%;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-
-.gnav span:nth-of-type(1) {
-    background-color: co.$color-border;
-    top: 15px;
+.hamburger span:nth-child(1) {
+    top: 10px;
 }
-
-.gnav span:nth-of-type(2) {
-    background-color: co.$color-border;
-    top: 23px;
+.hamburger span:nth-child(2) {
+    top: 20px;
 }
-
-.gnav span:nth-of-type(3) {
-    background-color: co.$color-border;
-    top: 31px;
-}
-
-/*activeクラスが付与されると線が回転して×に*/
-
-.gnav.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-}
-
-.gnav.active span:nth-of-type(2) {
-    opacity: 0; /*真ん中の線は透過*/
-}
-
-.gnav.active span:nth-of-type(3) {
+.hamburger span:nth-child(3) {
     top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
 }
 
-@media screen and(max-width: 414px) {
-    header {
-        height: 60px;
-        justify-content: center;
-        .header__inner {
-            @include co.flex();
-            @include co.inner();
-            height: 60px;
-            .logo {
-                margin: 10px 0;
-                img {
-                    width: 56.39px;
-                    height: 40px;
-                }
-            }
-            .nav {
-                .gnav {
-                    padding: 20px 0;
-                }
-            }
-        }
-    }
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 
-    .gnav {
-        position: relative; /*ボタン内側の基点となるためrelativeを指定*/
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
-    }
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+    top: 16px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
-    /*ボタン内側*/
-    .gnav span {
-        display: inline-block;
-        transition: all 0.4s; /*アニメーションの設定*/
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
-        background: #fff;
-        width: 45%;
-    }
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
 
-    .gnav span:nth-of-type(1) {
-        background-color: co.$color-border;
-        top: 15px;
-    }
+nav.globalMenuSp ul {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
 
-    .gnav span:nth-of-type(2) {
-        background-color: co.$color-border;
-        top: 23px;
-    }
+nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    transition: 0.4s all;
+}
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover {
+    background: #ddd;
+}
 
-    .gnav span:nth-of-type(3) {
-        background-color: co.$color-border;
-        top: 31px;
-    }
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: (40em/21) 0;
+    text-decoration: none;
+    font-size: 21px;
+}
 
-    /*activeクラスが付与されると線が回転して×に*/
-
-    .gnav.active span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }
-
-    .gnav.active span:nth-of-type(2) {
-        opacity: 0; /*真ん中の線は透過*/
-    }
-
-    .gnav.active span:nth-of-type(3) {
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    opacity: 100;
+    height: 100%;
 }

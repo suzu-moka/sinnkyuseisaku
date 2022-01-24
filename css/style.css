@@ -1,4 +1,218 @@
 @charset "UTF-8";
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a {
+  background: #fff;
+}
+
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  background: #fff;
+  padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a {
+  background: #fff;
+}
+
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  background: #fff;
+  padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*========= レイアウトのためのCSS ===============*/
+body {
+  background: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 30px auto;
+  background: #fefefe;
+}
+
+.area h2 {
+  font-size: 1.3rem;
+  margin: 0 0 20px 10px;
+}
+
+.area li {
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  padding: 0;
+}
+
+#tumami {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tumami-list1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list1 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list3 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img:nth-of-type(1) {
+  height: 361px;
+}
+
+.art-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.area .art-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 30%;
+}
+
+.area .art-img:nth-of-type(2) {
+  height: 361px;
+}
+
+/*==================  gallery ===================================*/
 h1 {
   font-size: 28px;
 }
@@ -95,143 +309,108 @@ header .header__inner .nav .gnav {
   padding: 20px 0;
 }
 
-.gnav {
-  position: relative;
-  /*ボタン内側の基点となるためrelativeを指定*/
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+  text-align: center;
 }
 
-/*ボタン内側*/
-.gnav span {
-  display: inline-block;
-  transition: all 0.4s;
-  /*アニメーションの設定*/
+.hamburger span {
+  display: block;
   position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-  background: #fff;
-  width: 45%;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: #555;
+  transition: 0.3s ease-in-out;
 }
 
-.gnav span:nth-of-type(1) {
-  background-color: #000;
-  top: 15px;
+.hamburger span:nth-child(1) {
+  top: 10px;
 }
 
-.gnav span:nth-of-type(2) {
-  background-color: #000;
-  top: 23px;
+.hamburger span:nth-child(2) {
+  top: 20px;
 }
 
-.gnav span:nth-of-type(3) {
-  background-color: #000;
-  top: 31px;
-}
-
-/*activeクラスが付与されると線が回転して×に*/
-.gnav.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-
-.gnav.active span:nth-of-type(2) {
-  opacity: 0;
-  /*真ん中の線は透過*/
-}
-
-.gnav.active span:nth-of-type(3) {
+.hamburger span:nth-child(3) {
   top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
 }
 
-@media screen and (max-width: 414px) {
-  header {
-    height: 60px;
-    justify-content: center;
-  }
-  header .header__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1.4285714286em;
-    height: 60px;
-  }
-  header .header__inner .logo {
-    margin: 10px 0;
-  }
-  header .header__inner .logo img {
-    width: 56.39px;
-    height: 40px;
-  }
-  header .header__inner .nav .gnav {
-    padding: 20px 0;
-  }
-
-  .gnav {
-    position: relative;
-    /*ボタン内側の基点となるためrelativeを指定*/
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-  }
-
-  /*ボタン内側*/
-  .gnav span {
-    display: inline-block;
-    transition: all 0.4s;
-    /*アニメーションの設定*/
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-    background: #fff;
-    width: 45%;
-  }
-
-  .gnav span:nth-of-type(1) {
-    background-color: #000;
-    top: 15px;
-  }
-
-  .gnav span:nth-of-type(2) {
-    background-color: #000;
-    top: 23px;
-  }
-
-  .gnav span:nth-of-type(3) {
-    background-color: #000;
-    top: 31px;
-  }
-
-  /*activeクラスが付与されると線が回転して×に*/
-  .gnav.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-  }
-
-  .gnav.active span:nth-of-type(2) {
-    opacity: 0;
-    /*真ん中の線は透過*/
-  }
-
-  .gnav.active span:nth-of-type(3) {
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
-  }
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #fff;
+  transform: rotate(-45deg);
 }
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 20%;
+  transition: 0.4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1.9047619048em 0;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+  height: 100%;
+}
+
 /*==================  component ===================================*/
 /*==================　footer　===================================*/
 footer {
@@ -897,6 +1076,15 @@ footer {
   height: 331px;
   display: none;
 }
+.main__inner .tumami__visual__img-pc {
+  height: 655px;
+  background: url("/img/tumami/tumami-main_visual-pc.png");
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
 .main__inner .tumami__visual .work {
   padding: 0 1.4285714286em;
   position: absolute;
@@ -916,7 +1104,8 @@ footer {
           text-decoration: 1px underline #262845;
 }
 .main__inner .work__content {
-  margin: 2.5em 0 8.5714285714em;
+  max-width: 1280px;
+  margin: 5em auto 7.5em;
   text-align: left;
 }
 .main__inner .work__content .tumami__title {
@@ -926,8 +1115,9 @@ footer {
 }
 .main__inner .work__content .tumami__shop {
   padding: 0 1.875em;
-  margin: 4.2857142857em 0 5.7142857143em;
-  height: 560px;
+  margin: 3.75em 0 7.5em;
+  height: 554px;
+  position: relative;
 }
 .main__inner .work__content .tumami__shop .tumami__visual {
   border-radius: 30px 30px 30px 30px;
@@ -936,8 +1126,12 @@ footer {
   border: 0.0714285714em solid #000;
   margin-right: auto;
   right: auto;
+  float: right;
+}
+.main__inner .work__content .tumami__shop__btn {
   position: absolute;
-  left: 800px;
+  float: left;
+  bottom: 0;
 }
 .main__inner .work__content .tumami__shop__btn a {
   border-radius: 15px 15px 15px 15px;
@@ -947,13 +1141,10 @@ footer {
   border: 1px solid #eaa1ba;
   text-align: center;
   vertical-align: middle;
-  display: table-cell;
-  position: absolute;
-  top: 500px;
+  display: block;
   width: 550px;
-  height: 300px;
   align-items: center;
-  padding: 6.9em 9.75em 6.9em;
+  padding: 3.3333333333em 10.8333333333em 3.3333333333em;
 }
 .main__inner .work__content .tumami__introduction {
   margin: 5em 0 3.75em;
@@ -965,7 +1156,7 @@ footer {
 .main__inner .work__content .tumami__introduction__history__visual {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 3.75em;
   padding: 0 2.5625em;
 }
@@ -983,13 +1174,17 @@ footer {
   width: 30%;
   height: 434px;
   margin-left: 5%;
+  display: none;
 }
 .main__inner .work__content .tumami__introduction__history__text {
   padding: 0 1.4285714286em;
   font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use {
   padding: 0 1.875em;
+  height: 800px;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual {
   padding: 0 3.75em 0;
@@ -1017,6 +1212,8 @@ footer {
   height: 330px;
   top: 59px;
   right: 10%;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__text {
   padding: 0 1.4285714286em;
@@ -1026,7 +1223,9 @@ footer {
 .main__inner .work__content .tumami__introduction__Example_of_use__annotation {
   padding: 0 1.6666666667em;
   font-size: 12px;
-  margin: 1.6666666667em 0 5em 6.0833333333em;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  margin: 1.6666666667em 0 10em 6.0833333333em;
 }
 
 /* ============================= responsive ========================= */
@@ -1038,6 +1237,9 @@ footer {
     width: 100%;
     height: 331px;
     display: block;
+  }
+  .main__inner .tumami__visual__img-pc {
+    display: none;
   }
   .main__inner .tumami__visual .work {
     padding: 0 1.4285714286em;
@@ -1069,7 +1271,7 @@ footer {
   .main__inner .work__content .tumami__shop {
     margin: 3.75em 0 5em;
     padding: 0;
-    height: auto;
+    height: 372px;
   }
   .main__inner .work__content .tumami__shop .tumami__visual {
     border-radius: 0 30px 30px 0;
@@ -1078,11 +1280,13 @@ footer {
     border: 0.0625em solid #000;
     margin-right: auto;
     position: initial;
+    float: left;
   }
   .main__inner .work__content .tumami__shop__btn {
     border-radius: 15px 15px 15px 15px;
     margin: 3.75em 1.25em 0;
     width: 90.34%;
+    bottom: 0;
   }
   .main__inner .work__content .tumami__shop__btn a {
     font-size: 16px;
