@@ -13,17 +13,12 @@
 }
 
 /*liにactiveクラスがついた時の形状*/
-.tab li.active a {
-  background: #fff;
-}
-
 /*エリアの表示非表示と形状*/
 .area {
   display: none;
   /*はじめは非表示*/
   opacity: 0;
   /*透過0*/
-  background: #fff;
   padding: 50px 20px;
 }
 
@@ -61,6 +56,7 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 60px;
 }
 
 .tab li a {
@@ -71,18 +67,13 @@
 }
 
 /*liにactiveクラスがついた時の形状*/
-.tab li.active a {
-  background: #fff;
-}
-
 /*エリアの表示非表示と形状*/
 .area {
   display: none;
   /*はじめは非表示*/
   opacity: 0;
   /*透過0*/
-  background: #fff;
-  padding: 50px 20px;
+  padding: 0 20px;
 }
 
 /*areaにis-activeというクラスがついた時の形状*/
@@ -122,8 +113,7 @@ a {
 
 .wrapper {
   max-width: 1280px;
-  margin: 30px auto;
-  background: #fefefe;
+  margin: 1.875em auto 5em;
 }
 
 .area h2 {
@@ -142,6 +132,7 @@ ul {
 #tumami {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tumami-list1 {
@@ -360,6 +351,7 @@ header .header__inner .nav .gnav {
 }
 
 nav.globalMenuSp {
+  display: none;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -407,6 +399,7 @@ nav.globalMenuSp ul li a {
 
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {
+  display: block;
   opacity: 100;
   height: 100%;
 }
@@ -1163,7 +1156,16 @@ footer {
 .main__inner .work__content .tumami__introduction__history__visual-list1 {
   border-radius: 25px 25px 25px 25px;
 }
+.main__inner .work__content .tumami__introduction__history__visual-list1__img {
+  width: 715px;
+  height: 330px;
+}
+.main__inner .work__content .tumami__introduction__history__visual-list1__img2 {
+  width: 330px;
+  height: 434px;
+}
 .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(1) {
+  padding: 0 192.5px 0;
   margin-bottom: 5%;
 }
 .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(3) {
@@ -1184,7 +1186,6 @@ footer {
 }
 .main__inner .work__content .tumami__introduction__Example_of_use {
   padding: 0 1.875em;
-  height: 800px;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual {
   padding: 0 3.75em 0;
@@ -1195,20 +1196,32 @@ footer {
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2 {
   position: absolute;
 }
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img2 {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img3 {
+  width: 330px;
+  height: 330px;
+}
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(1) {
-  width: 30%;
+  width: 330px;
   height: 434px;
   top: 0;
   left: 10%;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(2) {
-  width: 30%;
+  width: 330px;
   height: 434px;
   top: 200px;
   left: 35%;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(3) {
-  width: 30%;
+  width: 330px;
   height: 330px;
   top: 59px;
   right: 10%;
@@ -1321,15 +1334,18 @@ footer {
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #000;
     height: 188px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1__img2 {
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #000;
     height: 212px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(1) {
     margin: 0 0 0.625em 1.25em;
     border: none;
+    padding: 0;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(2) {
     height: 212px;
@@ -1361,9 +1377,11 @@ footer {
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img {
     height: 189px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img2 {
     height: 120px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(1) {
     height: 189px;
@@ -1374,6 +1392,7 @@ footer {
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(3) {
     height: 120px;
+    left: 230px;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__text {
     padding: 0;

@@ -1,4 +1,209 @@
 @charset "UTF-8";
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  padding: 0 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*========= レイアウトのためのCSS ===============*/
+body {
+  background: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 1.875em auto 5em;
+}
+
+.area h2 {
+  font-size: 1.3rem;
+  margin: 0 0 20px 10px;
+}
+
+.area li {
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  padding: 0;
+}
+
+#tumami {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tumami-list1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list1 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list3 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img:nth-of-type(1) {
+  height: 361px;
+}
+
+.art-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.area .art-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 30%;
+}
+
+.area .art-img:nth-of-type(2) {
+  height: 361px;
+}
+
+/*==================  gallery ===================================*/
 h1 {
   font-size: 28px;
 }
@@ -95,143 +300,110 @@ header .header__inner .nav .gnav {
   padding: 20px 0;
 }
 
-.gnav {
-  position: relative;
-  /*ボタン内側の基点となるためrelativeを指定*/
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+  text-align: center;
 }
 
-/*ボタン内側*/
-.gnav span {
-  display: inline-block;
-  transition: all 0.4s;
-  /*アニメーションの設定*/
+.hamburger span {
+  display: block;
   position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-  background: #fff;
-  width: 45%;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: #555;
+  transition: 0.3s ease-in-out;
 }
 
-.gnav span:nth-of-type(1) {
-  background-color: #000;
-  top: 15px;
+.hamburger span:nth-child(1) {
+  top: 10px;
 }
 
-.gnav span:nth-of-type(2) {
-  background-color: #000;
-  top: 23px;
+.hamburger span:nth-child(2) {
+  top: 20px;
 }
 
-.gnav span:nth-of-type(3) {
-  background-color: #000;
-  top: 31px;
-}
-
-/*activeクラスが付与されると線が回転して×に*/
-.gnav.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-
-.gnav.active span:nth-of-type(2) {
-  opacity: 0;
-  /*真ん中の線は透過*/
-}
-
-.gnav.active span:nth-of-type(3) {
+.hamburger span:nth-child(3) {
   top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
 }
 
-@media screen and (max-width: 414px) {
-  header {
-    height: 60px;
-    justify-content: center;
-  }
-  header .header__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1.4285714286em;
-    height: 60px;
-  }
-  header .header__inner .logo {
-    margin: 10px 0;
-  }
-  header .header__inner .logo img {
-    width: 56.39px;
-    height: 40px;
-  }
-  header .header__inner .nav .gnav {
-    padding: 20px 0;
-  }
-
-  .gnav {
-    position: relative;
-    /*ボタン内側の基点となるためrelativeを指定*/
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-  }
-
-  /*ボタン内側*/
-  .gnav span {
-    display: inline-block;
-    transition: all 0.4s;
-    /*アニメーションの設定*/
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-    background: #fff;
-    width: 45%;
-  }
-
-  .gnav span:nth-of-type(1) {
-    background-color: #000;
-    top: 15px;
-  }
-
-  .gnav span:nth-of-type(2) {
-    background-color: #000;
-    top: 23px;
-  }
-
-  .gnav span:nth-of-type(3) {
-    background-color: #000;
-    top: 31px;
-  }
-
-  /*activeクラスが付与されると線が回転して×に*/
-  .gnav.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
-  }
-
-  .gnav.active span:nth-of-type(2) {
-    opacity: 0;
-    /*真ん中の線は透過*/
-  }
-
-  .gnav.active span:nth-of-type(3) {
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
-  }
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #fff;
+  transform: rotate(-45deg);
 }
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 20%;
+  transition: 0.4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1.9047619048em 0;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  display: block;
+  opacity: 100;
+  height: 100%;
+}
+
 /*==================  component ===================================*/
 /*==================　footer　===================================*/
 footer {
@@ -406,7 +578,16 @@ footer {
 .main__inner .work__content .tumami__introduction__history__visual-list1 {
   border-radius: 25px 25px 25px 25px;
 }
+.main__inner .work__content .tumami__introduction__history__visual-list1__img {
+  width: 715px;
+  height: 330px;
+}
+.main__inner .work__content .tumami__introduction__history__visual-list1__img2 {
+  width: 330px;
+  height: 434px;
+}
 .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(1) {
+  padding: 0 192.5px 0;
   margin-bottom: 5%;
 }
 .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(3) {
@@ -427,7 +608,6 @@ footer {
 }
 .main__inner .work__content .tumami__introduction__Example_of_use {
   padding: 0 1.875em;
-  height: 800px;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual {
   padding: 0 3.75em 0;
@@ -438,20 +618,32 @@ footer {
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2 {
   position: absolute;
 }
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img2 {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img3 {
+  width: 330px;
+  height: 330px;
+}
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(1) {
-  width: 30%;
+  width: 330px;
   height: 434px;
   top: 0;
   left: 10%;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(2) {
-  width: 30%;
+  width: 330px;
   height: 434px;
   top: 200px;
   left: 35%;
 }
 .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(3) {
-  width: 30%;
+  width: 330px;
   height: 330px;
   top: 59px;
   right: 10%;
@@ -564,15 +756,18 @@ footer {
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #000;
     height: 188px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1__img2 {
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #000;
     height: 212px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(1) {
     margin: 0 0 0.625em 1.25em;
     border: none;
+    padding: 0;
   }
   .main__inner .work__content .tumami__introduction__history__visual-list1:nth-of-type(2) {
     height: 212px;
@@ -604,9 +799,11 @@ footer {
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img {
     height: 189px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2__img2 {
     height: 120px;
+    width: auto;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(1) {
     height: 189px;
@@ -617,6 +814,7 @@ footer {
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__visual-list2:nth-of-type(3) {
     height: 120px;
+    left: 230px;
   }
   .main__inner .work__content .tumami__introduction__Example_of_use__text {
     padding: 0;

@@ -106,11 +106,18 @@
                             @include co.radius(25px, 25px, 25px, 25px);
                             // border: 1px solid #000;
                             &__img {
+                                width: 715px;
+                                height: 330px;
+                            }
+                            &__img2 {
+                                width: 330px;
+                                height: 434px;
                             }
                         }
                         &-list1:nth-of-type(1) {
                             // width: 100%;
                             // height: 330px;
+                            padding: 0 192.5px 0;
                             margin-bottom: 5%;
                         }
                         &-list1:nth-of-type(2) {
@@ -138,7 +145,7 @@
                 }
                 &__Example_of_use {
                     @include co.innerPC();
-                    height: 800px;
+                    // height: 800px;
                     &__visual {
                         padding: 0 (60em/16) 0;
                         margin-bottom: (60em/16);
@@ -149,25 +156,35 @@
                             position: absolute;
                             // border: 1px solid #000;
                             &__img {
+                                width: 330px;
+                                height: 434px;
+                            }
+                            &__img2 {
+                                width: 330px;
+                                height: 434px;
+                            }
+                            &__img3 {
+                                width: 330px;
+                                height: 330px;
                             }
                         }
 
                         &-list2:nth-of-type(1) {
-                            width: 30%;
+                            width: 330px;
                             height: 434px;
                             top: 0;
                             left: 10%;
                         }
 
                         &-list2:nth-of-type(2) {
-                            width: 30%;
+                            width: 330px;
                             height: 434px;
                             top: 200px;
                             left: 35%;
                         }
 
                         &-list2:nth-of-type(3) {
-                            width: 30%;
+                            width: 330px;
                             height: 330px;
                             top: 59px;
                             right: 10%;
@@ -281,16 +298,19 @@
                                     @include co.radius(25px, 25px, 25px, 25px);
                                     border: 1px solid #000;
                                     height: 188px;
+                                    width: auto;
                                 }
                                 &__img2 {
                                     @include co.radius(25px, 25px, 25px, 25px);
                                     border: 1px solid #000;
                                     height: 212px;
+                                    width: auto;
                                 }
                             }
                             &-list1:nth-of-type(1) {
                                 margin: 0 0 (10em/16) (20em/16);
                                 border: none;
+                                padding: 0;
                             }
                             &-list1:nth-of-type(2) {
                                 height: 212px;
@@ -323,9 +343,11 @@
                                 // border: 1px solid #000;
                                 &__img {
                                     height: 189px;
+                                    width: auto;
                                 }
                                 &__img2 {
                                     height: 120px;
+                                    width: auto;
                                 }
                             }
                             &-list2:nth-of-type(1) {
@@ -337,6 +359,7 @@
                             }
                             &-list2:nth-of-type(3) {
                                 height: 120px;
+                                left: 230px;
                             }
                         }
                         &__text {
