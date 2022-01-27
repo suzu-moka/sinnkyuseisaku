@@ -203,6 +203,11 @@ ul {
   height: 361px;
 }
 
+@media screen and (max-width: 414px) {
+  .wrapper {
+    display: none;
+  }
+}
 /*==================  gallery ===================================*/
 h1 {
   font-size: 28px;
