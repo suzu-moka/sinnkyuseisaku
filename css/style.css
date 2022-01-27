@@ -2394,7 +2394,7 @@ main .main__inner .main__visual__list__img1 .img1 {
   display: none;
 }
 main .main__inner .main__visual__list__img2 {
-  background: url("https://bell-cocoro.org/sinnkyuuseisaku/img/index-img/tumami-thumbnail-pc-1.png");
+  background: url("/img/index-img/tumami-thumbnail-pc-1.png");
   background-repeat: no-repeat;
   width: 80%;
   height: 600px;
