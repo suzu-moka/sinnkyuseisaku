@@ -1,0 +1,834 @@
+@charset "UTF-8";
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*tabの形状*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+/*エリアの表示非表示と形状*/
+.area {
+  display: none;
+  /*はじめは非表示*/
+  opacity: 0;
+  /*透過0*/
+  padding: 0 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+  display: block;
+  /*表示*/
+  -webkit-animation-name: displayAnime;
+          animation-name: displayAnime;
+  /*ふわっと表示させるためのアニメーション*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*========= レイアウトのためのCSS ===============*/
+body {
+  background: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 1.875em auto 5em;
+}
+
+.area h2 {
+  font-size: 1.3rem;
+  margin: 0 0 20px 10px;
+}
+
+.area li {
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  padding: 0;
+}
+
+#tumami {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tumami-list1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.tumami-list1 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list3 .tumami-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 361px;
+}
+
+.tumami-list2 .tumami-img:nth-of-type(1) {
+  height: 361px;
+}
+
+.art-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.area .art-img {
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #000;
+  height: 488px;
+  width: 30%;
+}
+
+.area .art-img:nth-of-type(2) {
+  height: 361px;
+}
+
+/*==================  gallery ===================================*/
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f6f4ee;
+  font-size: 16px;
+  font-family: YuMincho, "Yu Mincho", "SFpro", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .main__inner {
+    width: 414px;
+    margin: 0 auto;
+  }
+}
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*ボタン*/
+.btn {
+  width: 76.92%;
+}
+.btn__link__submit {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-radius: 20px 20px 20px 20px;
+  border: 0.0714285714em solid #000;
+  max-width: 7.8571428571em;
+  padding: 0.6428571429em 2.5714285714em;
+  background-color: #fff;
+}
+.btn__link__submit__text {
+  margin: 0;
+}
+/*==================  component ===================================*/
+/*==================  header ===================================*/
+header {
+  height: 100px;
+  justify-content: center;
+}
+header .header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 3.75em;
+  align-items: center;
+  height: 100px;
+}
+header .header__inner .logo {
+  margin: 10px 0;
+}
+header .header__inner .logo img {
+  width: 56.39px;
+  height: 40px;
+}
+header .header__inner .nav .gnav {
+  padding: 20px 0;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: #555;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 20%;
+  transition: 0.4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1.9047619048em 0;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  display: block;
+  opacity: 100;
+  height: 100%;
+}
+
+/*==================  component ===================================*/
+/*==================　footer　===================================*/
+footer {
+  padding: 0 1.4285714286em;
+  color: #fff;
+  background-color: #2f1e17;
+}
+
+.footer__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0.625em;
+  align-items: center;
+}
+.footer__about__logo {
+  width: 50px;
+  height: 35px;
+}
+.footer__about__title span {
+  font-size: 12px;
+}
+.footer__about .Instagram-link .Instagram {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.footer__nav__gnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25em 0;
+}
+.footer__nav__gnav__li {
+  width: 33.3%;
+  border-left: 1px solid #fff;
+}
+.footer__nav__gnav__li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/*==================  component ===================================*/
+/*==================  header ===================================*/
+/*==================　footer　===================================*/
+/* main==================================== */
+.main__inner .art_plaster__visual {
+  position: relative;
+}
+.main__inner .art_plaster__visual__img {
+  width: 100%;
+  height: 331px;
+  display: none;
+}
+.main__inner .art_plaster__visual__img-pc {
+  height: 655px;
+  background: url("/img/tumami/tumami-main_visual-pc.png");
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.main__inner .art_plaster__visual .work {
+  padding: 0 1.4285714286em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main__inner .art_plaster__visual .work__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.main__inner .art_plaster__visual .work__nav__list {
+  color: #262845;
+  font-size: 16px;
+  margin-left: 0.5625em;
+  -webkit-text-decoration: 1px underline #262845;
+          text-decoration: 1px underline #262845;
+}
+.main__inner .work__content {
+  max-width: 1280px;
+  margin: 5em auto 7.5em;
+  text-align: left;
+}
+.main__inner .work__content .art_plaster__title {
+  padding: 0 1.4285714286em;
+  font-size: 24px;
+  color: #000;
+}
+.main__inner .work__content .art_plaster__shop {
+  padding: 0 1.875em;
+  margin: 3.75em 0 7.5em;
+  height: 554px;
+  position: relative;
+}
+.main__inner .work__content .art_plaster__shop .tumami__visual {
+  border-radius: 30px 30px 30px 30px;
+  width: 825px;
+  height: 500px;
+  border: 0.0714285714em solid #000;
+  margin-right: auto;
+  right: auto;
+  float: right;
+}
+.main__inner .work__content .art_plaster__shop__btn {
+  position: absolute;
+  float: left;
+  bottom: 0;
+}
+.main__inner .work__content .art_plaster__shop__btn a {
+  border-radius: 15px 15px 15px 15px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #eaa1ba;
+  border: 1px solid #eaa1ba;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  width: 550px;
+  align-items: center;
+  padding: 3.3333333333em 10.8333333333em 3.3333333333em;
+}
+.main__inner .work__content .art_plaster__introduction {
+  margin: 5em 0 3.75em;
+}
+.main__inner .work__content .art_plaster__introduction__history {
+  padding: 0 1.875em;
+  margin-bottom: 5em;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3.75em;
+  padding: 0 2.5625em;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1 {
+  border-radius: 25px 25px 25px 25px;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1__img {
+  width: 715px;
+  height: 330px;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1__img2 {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(1) {
+  padding: 0 192.5px 0;
+  margin-bottom: 5%;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(3) {
+  height: 434px;
+  margin-left: 5%;
+}
+.main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(4) {
+  width: 30%;
+  height: 434px;
+  margin-left: 5%;
+  display: none;
+}
+.main__inner .work__content .art_plaster__introduction__history__text {
+  padding: 0 1.4285714286em;
+  font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use {
+  padding: 0 1.875em;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual {
+  padding: 0 3.75em 0;
+  margin-bottom: 3.75em;
+  position: relative;
+  height: 640px;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2 {
+  position: absolute;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2__img {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2__img2 {
+  width: 330px;
+  height: 434px;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2__img3 {
+  width: 330px;
+  height: 330px;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(1) {
+  width: 330px;
+  height: 434px;
+  top: 0;
+  left: 10%;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(2) {
+  width: 330px;
+  height: 434px;
+  top: 200px;
+  left: 35%;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(3) {
+  width: 330px;
+  height: 330px;
+  top: 59px;
+  right: 10%;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__text {
+  padding: 0 1.4285714286em;
+  font-size: 18px;
+  margin-bottom: 1.1111111111em;
+}
+.main__inner .work__content .art_plaster__introduction__Example_of_use__annotation {
+  padding: 0 1.6666666667em;
+  font-size: 12px;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  margin: 1.6666666667em 0 10em 6.0833333333em;
+}
+
+/* ============================= responsive ========================= */
+@media screen and (max-width: 414px) {
+  .main__inner .art_plaster__visual {
+    position: relative;
+  }
+  .main__inner .art_plaster__visual__img {
+    width: 100%;
+    height: 331px;
+    display: block;
+  }
+  .main__inner .art_plaster__visual__img-pc {
+    display: none;
+  }
+  .main__inner .art_plaster__visual .work {
+    padding: 0 1.4285714286em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .main__inner .art_plaster__visual .work__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .main__inner .art_plaster__visual .work__nav__list {
+    color: #262845;
+    font-size: 16px;
+    margin-left: 0.5625em;
+    -webkit-text-decoration: 1px underline #262845;
+            text-decoration: 1px underline #262845;
+  }
+  .main__inner .work__content {
+    margin: 2.5em 0 8.5714285714em;
+    text-align: left;
+  }
+  .main__inner .work__content .art_plaster__title {
+    padding: 0 1.4285714286em;
+    font-size: 24px;
+    color: #000;
+  }
+  .main__inner .work__content .art_plaster__shop {
+    margin: 3.75em 0 5em;
+    padding: 0;
+    height: 372px;
+  }
+  .main__inner .work__content .art_plaster__shop .art_plaster__visual {
+    border-radius: 0 30px 30px 0;
+    width: 24em;
+    height: 15.5em;
+    border: 0.0625em solid #000;
+    margin-right: auto;
+    position: initial;
+    float: left;
+  }
+  .main__inner .work__content .art_plaster__shop__btn {
+    border-radius: 15px 15px 15px 15px;
+    margin: 3.75em 1.25em 0;
+    width: 90.34%;
+    bottom: 0;
+  }
+  .main__inner .work__content .art_plaster__shop__btn a {
+    font-size: 16px;
+    color: #fff;
+    background-color: #eaa1ba;
+    border: 1px solid #eaa1ba;
+    padding: 1.4375em 7.5em;
+    text-align: center;
+    width: auto;
+    height: auto;
+    position: initial;
+  }
+  .main__inner .work__content .art_plaster__introduction {
+    margin: 5.7142857143em 0 3.75em;
+  }
+  .main__inner .work__content .art_plaster__introduction__history {
+    padding: 0 1.4285714286em;
+    margin-bottom: 3.75em;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3.75em;
+    padding: 0;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1 {
+    height: 188px;
+    width: auto;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1__img {
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000;
+    height: 188px;
+    width: auto;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1__img2 {
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid #000;
+    height: 212px;
+    width: auto;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(1) {
+    margin: 0 0 0.625em 1.25em;
+    border: none;
+    padding: 0;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(2) {
+    height: 212px;
+    margin: 0 0.625em 0 0;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(3) {
+    margin: 0 0 0 0.625em;
+    height: 212px;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__visual-list1:nth-of-type(4) {
+    display: none;
+  }
+  .main__inner .work__content .art_plaster__introduction__history__text {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use {
+    padding: 0 1.4285714286em;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual {
+    padding: 0;
+    position: relative;
+    height: 315px;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2 {
+    position: absolute;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2__img {
+    height: 189px;
+    width: auto;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2__img2 {
+    height: 120px;
+    width: auto;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(1) {
+    height: 189px;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(2) {
+    height: 189px;
+    top: 126px;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__visual-list2:nth-of-type(3) {
+    height: 120px;
+    left: 230px;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__text {
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 1.4285714286em;
+  }
+  .main__inner .work__content .art_plaster__introduction__Example_of_use__annotation {
+    padding: 0 1.6666666667em;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    margin: 1.6666666667em 0 5em 6.0833333333em;
+  }
+}
+/*# sourceMappingURL=art_plaster.css.map */
