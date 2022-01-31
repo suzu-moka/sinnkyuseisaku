@@ -45,7 +45,7 @@ main {
                     }
                 }
                 &__img2 {
-                    background: url("/img/index-img/tumami-thumbnail-pc-1.png");
+                    background: url("../img/index-img/tumami-thumbnail-pc-1.png");
                     // background-position: ;
                     background-repeat: no-repeat;
                     width: 80%;
@@ -95,7 +95,7 @@ main {
 
                     &__about {
                         @include co.radius(25px, 25px, 25px, 25px);
-                        background: url("/img/index-img/about-thumbnail-pc.png");
+                        background: url("../img/index-img/about-thumbnail-pc.png");
                         border: (1em/14) solid co.$color-border;
                         height: 500px;
                         width: auto;
@@ -141,7 +141,7 @@ main {
                         }
                         &__shop {
                             @include co.radius(25px, 25px, 25px, 25px);
-                            background: url("/img/index-img/shop-thumbnail-pc.png");
+                            background: url("../img/index-img/shop-thumbnail-pc.png");
                             background-repeat: no-repeat;
                             border: (1em/14) solid co.$color-border;
                             height: 500px;
@@ -150,7 +150,7 @@ main {
                         }
                         &__tumami {
                             @include co.radius(25px, 25px, 25px, 25px);
-                            background: url("/img/index-img/tumami-thumbnail-pc.png");
+                            background: url("../img/index-img/tumami-thumbnail-pc.png");
                             border: (1em/14) solid co.$color-border;
                             height: 500px;
                             width: auto;
@@ -158,7 +158,7 @@ main {
                         }
                         &__art_plaster {
                             @include co.radius(25px, 25px, 25px, 25px);
-                            background: url("/img/index-img/art_plaster-thumbnail-pc.png");
+                            background: url("../img/index-img/art_plaster-thumbnail-pc.png");
                             border: (1em/14) solid co.$color-border;
                             height: 500px;
                             width: auto;
@@ -166,7 +166,7 @@ main {
                         }
                         &__class {
                             @include co.radius(25px, 25px, 25px, 25px);
-                            background: url("/img/index-img/class-thumbnail-pc.png");
+                            background: url("../img/index-img/class-thumbnail-pc.png");
                             border: (1em/14) solid co.$color-border;
                             height: 500px;
                             width: auto;
@@ -236,7 +236,7 @@ main {
                         &1 {
                             display: block;
                             height: 100%;
-                            background: url("/img/mainvisual-3.png");
+                            background: url("../img/mainvisual-3.png");
                             background-size: 343px 776px;
                             background-repeat: no-repeat;
                             background-position: right top;
