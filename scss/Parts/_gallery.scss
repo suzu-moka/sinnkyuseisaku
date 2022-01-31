@@ -122,6 +122,12 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: none;
+}
+#tumami .area.is-active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tumami-list1 {
@@ -169,22 +175,56 @@ ul {
     height: 361px;
 }
 
-.art-list {
+// art
+
+#art {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
 }
 
-.area .art-img {
+.art-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.art-list2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.art-list3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.art-list1 .art-img {
     padding: 0;
     margin: 5px;
     border: 1px solid #000;
     height: 488px;
-    width: 30%;
+    width: 361px;
+}
+.art-list2 .art-img {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid #000;
+    height: 488px;
+    width: 361px;
+}
+.art-list3 .art-img {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid #000;
+    height: 488px;
+    width: 361px;
 }
 
-.area .art-img:nth-of-type(2) {
+.art-list2 .art-img:nth-of-type(1) {
     height: 361px;
 }
 
