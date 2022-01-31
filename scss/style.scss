@@ -12,16 +12,16 @@ header
 @use "./footer";
 
 /*================== class ===================================*/
-@use "./culture-class/culture-clsaa.scss";
+@use "./culture-class/culture-clsaa";
 
 /*================== tumami ===================================*/
-@use "./tumami/tumami.scss";
+@use "./tumami/tumami";
 
 /*================== art-p ===================================*/
-@use "./art_plaster/art_plaster.scss";
+@use "./art_plaster/art_plaster";
 
 /*================== about ===================================*/
-@use "./about/about.scss";
+@use "./about/about";
 
 /*================== index ===================================*/
-@use "./index/index.scss";
+@use "./index/index";

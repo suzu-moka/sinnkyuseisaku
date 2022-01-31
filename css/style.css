@@ -133,6 +133,13 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  display: none;
+}
+
+#tumami .area.is-active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tumami-list1 {
@@ -383,7 +390,7 @@ ul {
   .scrolldown2 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
-    top: 900px;
+    top: 870px;
     left: inherit;
     right: 40px;
   }
@@ -616,6 +623,30 @@ nav.globalMenuSp.active {
   height: 100%;
 }
 
+@media screen and (max-width: 414px) {
+  header {
+    height: 100px;
+    justify-content: center;
+  }
+  header .header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3.75em;
+    align-items: center;
+    height: 100px;
+  }
+  header .header__inner .logo {
+    margin: 10px 0;
+  }
+  header .header__inner .logo img {
+    width: 56.39px;
+    height: 40px;
+  }
+  header .header__inner .nav .gnav {
+    padding: 20px 0;
+  }
+}
 /*==================  component ===================================*/
 /*==================　footer　===================================*/
 footer {
@@ -2654,6 +2685,9 @@ main .main__inner .main__contents .type1__body {
   width: 49.11%;
   left: 570px;
   bottom: 0;
+}
+main .main__inner .main__contents .type1__text {
+  text-align: left;
 }
 main .main__inner .main__contents .type1__body-rig {
   border-radius: 25px 25px 25px 25px;
