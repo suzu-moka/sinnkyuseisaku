@@ -3,12 +3,6 @@
 /*==================  component ===================================*/
 @use "../component" as co;
 
-/*==================  header ===================================*/
-@use "../header";
-
-/*==================　footer　===================================*/
-@use "../footer";
-
 /* =========== culture-class ============================ */
 .main {
     &__inner {
@@ -19,6 +13,15 @@
                 width: 100%;
                 height: 331px;
                 display: none;
+                &-pc {
+                    height: 655px;
+                    background: url("/img/class/class-main_visual-res.png");
+                    display: block;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    background-size: cover;
+                }
             }
             .work {
                 @include co.inner();
