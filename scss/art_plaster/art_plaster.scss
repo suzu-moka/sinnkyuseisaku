@@ -3,11 +3,17 @@
 /*==================  component ===================================*/
 @use "../component" as co;
 
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
+
 /* main==================================== */
 .main {
     &__inner {
         // tumami__visual
-        .tumami__visual {
+        .art_plaster__visual {
             position: relative;
 
             &__img {
@@ -16,7 +22,7 @@
                 display: none;
                 &-pc {
                     height: 655px;
-                    background: url("../img/tumami/tumami-main_visual-pc.png");
+                    background: url("/img/tumami/tumami-main_visual-pc.png");
                     display: block;
                     width: 100%;
                     background-repeat: no-repeat;
@@ -44,12 +50,12 @@
             max-width: 1280px;
             margin: (80em/16) auto (120em/16);
             text-align: left;
-            .tumami__title {
+            .art_plaster__title {
                 @include co.inner();
                 font-size: 24px;
                 color: co.$color-border;
             }
-            .tumami__shop {
+            .art_plaster__shop {
                 @include co.innerPC();
                 margin: (60em/16) 0 (120em/16);
                 height: 554px;
@@ -87,7 +93,7 @@
                     }
                 }
             }
-            .tumami__introduction {
+            .art_plaster__introduction {
                 margin: (80em/16) 0 (60em/16);
                 &__history {
                     @include co.innerPC();
@@ -111,7 +117,7 @@
                         &-list1:nth-of-type(1) {
                             // width: 100%;
                             // height: 330px;
-                            padding: 0 (192.5em/14) 0;
+                            padding: 0 192.5px 0;
                             margin-bottom: 5%;
                         }
                         &-list1:nth-of-type(2) {
@@ -155,6 +161,7 @@
                             }
                             &__img2 {
                                 width: 330px;
+                                height: 434px;
                             }
                             &__img3 {
                                 width: 330px;
@@ -163,21 +170,21 @@
                         }
 
                         &-list2:nth-of-type(1) {
-                            // width: 330px;
+                            width: 330px;
                             height: 434px;
                             top: 0;
                             left: 10%;
                         }
 
                         &-list2:nth-of-type(2) {
-                            // width: 330px;
+                            width: 330px;
                             height: 434px;
                             top: 200px;
                             left: 35%;
                         }
 
                         &-list2:nth-of-type(3) {
-                            // width: 330px;
+                            width: 330px;
                             height: 330px;
                             top: 59px;
                             right: 10%;
@@ -207,7 +214,7 @@
     .main {
         &__inner {
             // tumami__visual
-            .tumami__visual {
+            .art_plaster__visual {
                 position: relative;
                 &__img {
                     width: 100%;
@@ -236,17 +243,17 @@
             .work__content {
                 margin: (60em/24) 0 (120em/14);
                 text-align: left;
-                .tumami__title {
+                .art_plaster__title {
                     @include co.inner();
                     font-size: 24px;
                     color: co.$color-border;
                 }
-                .tumami__shop {
+                .art_plaster__shop {
                     margin: (60em/16) 0 (80em/16);
                     padding: 0;
                     height: 372px;
                     // height: auto;
-                    .tumami__visual {
+                    .art_plaster__visual {
                         @include co.radius(0, 30px, 30px, 0);
                         width: (384em/16);
                         height: (248em/16);
@@ -274,7 +281,7 @@
                         }
                     }
                 }
-                .tumami__introduction {
+                .art_plaster__introduction {
                     margin: (80em/14) 0 (60em/16);
                     &__history {
                         @include co.inner();

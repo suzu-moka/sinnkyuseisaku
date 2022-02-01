@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="9.182" viewBox="0 0 24 9.182">
+  <g id="グループ_243" data-name="グループ 243" transform="translate(-74 -12.818)">
+    <g id="楕円形_6" data-name="楕円形 6" transform="translate(90 14)" fill="none" stroke="#c44763" stroke-width="1">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <g id="パス_289" data-name="パス 289" transform="translate(74 18.182)" fill="#2f1e17">
+      <path d="M0,0H20V1H0Z" stroke="none"/>
+      <path d="M 0 0 L 20 0 L 20 1 L 0 1 L 0 0 Z" stroke="none" fill="#2f1e17"/>
+    </g>
+    <g id="長方形_107" data-name="長方形 107" transform="translate(88.929 12.818) rotate(45)" fill="#2f1e17" stroke="#2f1e17" stroke-width="1">
+      <rect width="8" height="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="7" fill="none"/>
+    </g>
+  </g>
+</svg>
