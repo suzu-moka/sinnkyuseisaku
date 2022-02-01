@@ -6,6 +6,8 @@
 /* main==================================== */
 .main {
     &__inner {
+        max-width: 1280px;
+        margin: 0 auto;
         // tumami__visual
         .tumami__visual {
             position: relative;
@@ -155,7 +157,6 @@
                             }
                             &__img2 {
                                 width: 330px;
-                                height: 434px;
                             }
                             &__img3 {
                                 width: 330px;

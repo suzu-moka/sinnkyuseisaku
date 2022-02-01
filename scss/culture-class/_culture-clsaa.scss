@@ -178,7 +178,6 @@
                     text-align: left;
                     margin-bottom: (60em/20);
                     &__name.culture {
-                        @include co.inner-one-side(2em, 0);
                         margin-bottom: (16em/16);
                         .culture {
                             @include co.inner();
