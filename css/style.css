@@ -1752,7 +1752,7 @@ footer {
   height: 554px;
   position: relative;
 }
-.main__inner .work__content .art_plaster__shop .tumami__visual {
+.main__inner .work__content .art_plaster__shop .art_plaster__visual {
   border-radius: 30px 30px 30px 30px;
   width: 825px;
   height: 500px;
@@ -2966,7 +2966,6 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     display: none;
   }
 }
-/*==================  component ===================================*/
 /*==================
 header
 ===================================*/
