@@ -3,19 +3,26 @@
 /*==================  component ===================================*/
 @use "../component" as co;
 
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
+
 /* main==================================== */
 .main {
     &__inner {
-        
+        // tumami__visual
         .art_plaster__visual {
             position: relative;
+
             &__img {
                 width: 100%;
                 height: 331px;
                 display: none;
                 &-pc {
                     height: 655px;
-                    background: url("../img/tumami/tumami-main_visual-pc.png");
+                    background: url("/img/tumami/tumami-main_visual-pc.png");
                     display: block;
                     width: 100%;
                     background-repeat: no-repeat;
@@ -54,7 +61,7 @@
                 height: 554px;
                 position: relative;
                 // height: 560px;
-                .art_plaster__visual{
+                .tumami__visual {
                     @include co.radius(30px, 30px, 30px, 30px);
                     width: 825px;
                     height: 500px;
@@ -110,7 +117,7 @@
                         &-list1:nth-of-type(1) {
                             // width: 100%;
                             // height: 330px;
-                            padding: 0 (192.5em/14) 0;
+                            padding: 0 192.5px 0;
                             margin-bottom: 5%;
                         }
                         &-list1:nth-of-type(2) {
@@ -149,37 +156,38 @@
                             position: absolute;
                             // border: 1px solid #000;
                             &__img {
-                                // width: 330px;
+                                width: 330px;
                                 height: 434px;
                             }
                             &__img2 {
-                                // width: 330px;
+                                width: 330px;
+                                height: 434px;
                             }
                             &__img3 {
-                                // width: 330px;
+                                width: 330px;
                                 height: 330px;
                             }
                         }
 
                         &-list2:nth-of-type(1) {
-                            // width: 330px;
+                            width: 330px;
                             height: 434px;
                             top: 0;
                             left: 10%;
                         }
 
                         &-list2:nth-of-type(2) {
-                            // width: 330px;
+                            width: 330px;
                             height: 434px;
                             top: 200px;
                             left: 35%;
                         }
 
                         &-list2:nth-of-type(3) {
-                            // width: 330px;
+                            width: 330px;
                             height: 330px;
                             top: 59px;
-                            right: 12%;
+                            right: 10%;
                             line-height: 1.6em;
                             letter-spacing: 0.1em;
                         }
@@ -205,6 +213,7 @@
 @media screen and(max-width:414px) {
     .main {
         &__inner {
+            // tumami__visual
             .art_plaster__visual {
                 position: relative;
                 &__img {
@@ -284,11 +293,12 @@
                             padding: 0;
                             &-list1 {
                                 height: 188px;
+                                width: auto;
                                 &__img {
                                     @include co.radius(25px, 25px, 25px, 25px);
                                     border: 1px solid #000;
                                     height: 188px;
-                                    width: 100%;
+                                    width: auto;
                                 }
                                 &__img2 {
                                     @include co.radius(25px, 25px, 25px, 25px);

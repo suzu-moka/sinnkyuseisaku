@@ -3,6 +3,12 @@
 /*==================  component ===================================*/
 @use "../component" as co;
 
+/*==================  header ===================================*/
+@use "../header";
+
+/*==================　footer　===================================*/
+@use "../footer";
+
 /*==================　about　===================================*/
 .main {
     &__inner {
@@ -14,7 +20,7 @@
                 display: none;
             }
             &__img-pc {
-                background: url("../img/about/about-thumbnail-pc.png");
+                background: url("/img/about/about-thumbnail-pc.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: bottom;
@@ -75,7 +81,7 @@
                 margin-bottom: (200em/16);
                 position: relative;
                 &__thumbnail {
-                    background: url("../img/about/about-shop-pc.png");
+                    background: url("/img/about/about-shop-pc.png");
                     @include co.radius(30px, 30px, 30px, 30px);
                     position: relative;
                     width: 71.24%;
@@ -124,7 +130,7 @@
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
-                    background: url("../img/about/about-tumami-pc.png");
+                    background: url("/img/about/about-tumami-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -168,7 +174,7 @@
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
-                    background: url("../img/about/about-art_plaster-pc.png");
+                    background: url("/img/about/about-art_plaster-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -214,7 +220,7 @@
                 position: relative;
                 &__thumbnail {
                     @include co.radius(30px, 30px, 30px, 30px);
-                    background: url("../img/about/about-art_class-pc.png");
+                    background: url("/img/about/about-art_class-pc.png");
                     position: relative;
                     width: 71.24%;
                     height: 500px;
@@ -366,7 +372,7 @@
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
                         position: relative;
-                        background: url("../img/about/about-shop-res.png");
+                        background: url("/img/about/about-shop-res.png");
                         background-size: 194px 273px;
                         background-repeat: no-repeat;
                         background-position: 0 0;
@@ -409,7 +415,7 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
-                        background: url("../img/about/about-tumami-res.png");
+                        background: url("/img/about/about-tumami-res.png");
                         background-size: 194px 273px;
                         background-repeat: no-repeat;
                         background-position: 0 0;
@@ -461,7 +467,7 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
-                        background: url("../img/about/about-art_plaster-res.png");
+                        background: url("/img/about/about-art_plaster-res.png");
                         background-size: 194px 273px;
                         background-repeat: no-repeat;
                         background-position: 0 0;
@@ -505,7 +511,7 @@
 
                     &__thumbnail {
                         @include co.radius(30px, 30px, 30px, 30px);
-                        background: url("../img/about/about-art_class-res.png");
+                        background: url("/img/about/about-art_class-res.png");
                         background-size: 194px 273px;
                         background-repeat: no-repeat;
                         background-position: 0 0;
