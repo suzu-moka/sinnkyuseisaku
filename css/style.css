@@ -1698,8 +1698,6 @@ footer {
   }
 }
 /*==================  component ===================================*/
-/*==================  header ===================================*/
-/*==================　footer　===================================*/
 /* main==================================== */
 .main__inner .art_plaster__visual {
   position: relative;
@@ -2050,8 +2048,6 @@ footer {
   }
 }
 /*==================  component ===================================*/
-/*==================  header ===================================*/
-/*==================　footer　===================================*/
 /*==================　about　===================================*/
 .main__inner .about__visual__img {
   width: 414px;
@@ -2059,7 +2055,7 @@ footer {
   display: none;
 }
 .main__inner .about__visual__img-pc {
-  background: url("/img/about/about-thumbnail-pc.png");
+  background: url("../img/about/about-thumbnail-pc.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -2122,7 +2118,7 @@ footer {
   position: relative;
 }
 .main__inner .business__description__shop__thumbnail {
-  background: url("/img/about/about-shop-pc.png");
+  background: url("../img/about/about-shop-pc.png");
   border-radius: 30px 30px 30px 30px;
   position: relative;
   width: 71.24%;
@@ -2170,7 +2166,7 @@ footer {
 }
 .main__inner .business__description__tumami__thumbnail {
   border-radius: 30px 30px 30px 30px;
-  background: url("/img/about/about-tumami-pc.png");
+  background: url("../about/about-tumami-pc.png");
   position: relative;
   width: 71.24%;
   height: 500px;
@@ -2216,7 +2212,7 @@ footer {
 }
 .main__inner .business__description__art-Plaster__thumbnail {
   border-radius: 30px 30px 30px 30px;
-  background: url("/img/about/about-art_plaster-pc.png");
+  background: url("../img/about/about-art_plaster-pc.png");
   position: relative;
   width: 71.24%;
   height: 500px;
@@ -2259,7 +2255,7 @@ footer {
 }
 .main__inner .business__description__circle__thumbnail {
   border-radius: 30px 30px 30px 30px;
-  background: url("/img/about/about-art_class-pc.png");
+  background: url("../img/about/about-art_class-pc.png");
   position: relative;
   width: 71.24%;
   height: 500px;
@@ -2406,7 +2402,7 @@ footer {
   .main__inner .business__description__shop__thumbnail {
     border-radius: 30px 30px 30px 30px;
     position: relative;
-    background: url("/img/about/about-shop-res.png");
+    background: url("../img/about/about-shop-res.png");
     background-size: 194px 273px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -2451,7 +2447,7 @@ footer {
   }
   .main__inner .business__description__tumami__thumbnail {
     border-radius: 30px 30px 30px 30px;
-    background: url("/img/about/about-tumami-res.png");
+    background: url("../img/about/about-tumami-res.png");
     background-size: 194px 273px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -2505,7 +2501,7 @@ footer {
   }
   .main__inner .business__description__art-Plaster__thumbnail {
     border-radius: 30px 30px 30px 30px;
-    background: url("/img/about/about-art_plaster-res.png");
+    background: url("../img/about/about-art_plaster-res.png");
     background-size: 194px 273px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -2551,7 +2547,7 @@ footer {
   }
   .main__inner .business__description__circle__thumbnail {
     border-radius: 30px 30px 30px 30px;
-    background: url("/img/about/about-art_class-res.png");
+    background: url("../img/about/about-art_class-res.png");
     background-size: 194px 273px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -2966,6 +2962,7 @@ main .main__inner .main__contents .btn .btn__link .btn__co .mark-or-symbol {
     display: none;
   }
 }
+/*==================  component ===================================*/
 /*==================
 header
 ===================================*/
